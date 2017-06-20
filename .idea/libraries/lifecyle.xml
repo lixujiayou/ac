@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="lifecyle">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mc-resources-delivery/libs/lifecyle.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

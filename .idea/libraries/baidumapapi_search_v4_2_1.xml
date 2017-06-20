@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="baidumapapi_search_v4_2_1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mc-resources-delivery/libs/baidumapapi_search_v4_2_1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
