@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:cacheColorHint="@android:color/transparent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5.0dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5.0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_poleroute_info_ename" />
+
+                    <EditText
+                        android:id="@id/gldname"
+                        style="@style/edit_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:paddingTop="3.0dip"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="所属维护区域" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@id/maintenance_edit"
+                            style="@style/edit_3"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4.0"
+                            android:editable="false"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1.0dip"
+                            android:background="@drawable/get"
+                            android:onClick="maintenance_select_onc"
+                            android:text="获取" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_poleroute_info_length" />
+
+                    <EditText
+                        android:id="@id/gldcd"
+                        style="@style/edit_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:numeric="integer"
+                        android:paddingTop="3.0dip"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_poleroute_info_state" />
+
+                    <Spinner
+                        android:id="@id/status_spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_poleline_info_qsss" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@id/glqsss"
+                            style="@style/edit_3"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5.0"
+                            android:enabled="false"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+
+                        <ImageView
+                            android:id="@id/choosebutton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0.0dip"
+                            android:background="@drawable/get"
+                            android:text="@string/add_poleroute_info_choose" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_poleline_info_zzss" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@id/glzzss"
+                            style="@style/edit_3"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5.0"
+                            android:enabled="false"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+
+                        <ImageView
+                            android:id="@id/choosebutton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0.0dip"
+                            android:background="@drawable/get"
+                            android:text="@string/add_poleroute_info_choose" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@id/layout_czdld"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_more_item_default"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10.0dip" >
+
+                        <TextView
+                            android:id="@id/text_czdld"
+                            style="@style/text_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:text="承载的缆段：" />
+
+                        <ImageView
+                            android:id="@id/add1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/add"
+                            android:onClick="gl_onc"
+                            android:text="添加" />
+
+                        <com.inspur.common.ListViewForScrollView
+                            android:id="@id/listview_gld"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@id/text_czdld"
+                            android:cacheColorHint="@android:color/transparent" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:id="@id/layout_czdld2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/ic_more_item_default"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10.0dip" >
+
+                        <TextView
+                            android:id="@id/text_czdld2"
+                            style="@style/text_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:text="承载的缆段(备用)：" />
+
+                        <ImageView
+                            android:id="@id/add2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/add"
+                            android:onClick="by_gl_onc"
+                            android:text="添加" />
+
+                        <com.inspur.common.ListViewForScrollView
+                            android:id="@id/listview_gld2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/text_czdld2"
+                            android:cacheColorHint="@android:color/transparent" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@id/xxxx"
+                    android:layout_width="120.0dip"
+                    android:layout_height="35.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/xxxx_button"
+                    android:text="详细信息  >>"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@id/ycxx"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="60.0dip"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <TextView
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/add_poleroute_info_code" />
+
+                        <EditText
+                            android:id="@id/gldbh"
+                            style="@style/edit_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="产权性质" />
+
+                        <Spinner
+                            android:id="@id/gjgxlx_spinner"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="产权单位" />
+
+                        <Spinner
+                            android:id="@+id/publicorg_spinner"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            style="@style/text_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="数据质量责任人" />
+
+                        <EditText
+                            android:id="@+id/sjzlzrr"
+                            style="@style/edit_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            style="@style/text_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="一线维护人" />
+
+                        <EditText
+                            android:id="@+id/yxwhr"
+                            style="@style/edit_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <TextView
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="共享类型" />
+
+                        <Spinner
+                            android:id="@id/gxlx_spinner"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/formActionArea"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@id/submitbutton"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="48.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="保存"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:cacheColorHint="@android:color/transparent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5.0dip" >
+
+    <ScrollView
+        android:id="@id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"
+        android:padding="5.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/OpticalCable_cable_name" />
+
+                <EditText
+                    android:id="@id/oc_name_edit"
+                    style="@style/edit_3"
+                    android:editable="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*所属维护区域" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@id/oc_maintenance_edit"
+                        style="@style/edit_3"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:editable="false"
+                        android:paddingTop="3.0dip"
+                        android:text="" />
+
+                    <ImageView
+                        android:id="@id/oc_maintenance_select_button"
+                        android:background="@drawable/get"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1.0dip"
+                        android:onClick="maintenance_select_onc"
+                        android:text="获取" />
+                </LinearLayout>
+            </LinearLayout>
+
+            
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*光缆级别" />
+
+                <Spinner
+                    android:id="@id/oc_level_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/OpticalCable_cable_scutcheon" />
+
+                <EditText
+                    android:id="@id/oc_scutcheon_edit"
+                    style="@style/edit_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/OpticalCable_cable_startBureau" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@id/oc_start_edit"
+                        style="@style/edit_3"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:editable="false"
+                        android:paddingTop="3.0dip"
+                        android:text="" />
+
+                    <ImageView
+                        android:id="@id/oc_start_select_button"
+                        android:background="@drawable/get"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1.0dip"
+                        android:onClick="start_select_onc"
+                        android:text="获取" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/OpticalCable_cable_endBureau" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@id/oc_end_edit"
+                        style="@style/edit_3"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4.0"
+                        android:editable="false"
+                        android:paddingTop="3.0dip"
+                        android:text="" />
+
+                    <ImageView
+                        android:id="@id/oc_end_select_button"
+                        android:background="@drawable/get"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1.0dip"
+                        android:onClick="end_select_onc"
+                        android:text="获取" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="数据质量责任人" />
+
+                <EditText
+                    android:id="@+id/sjzlzrr"
+                    style="@style/edit_3"
+                    android:enabled="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="一线维护人" />
+
+                <EditText
+                    android:id="@+id/yxwhr"
+                    style="@style/edit_3"
+                    android:enabled="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*维护状态" />
+
+                <Spinner
+                    android:id="@id/oc_status_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*光缆拓扑结构" />
+
+                <Spinner
+                    android:id="@id/oc_topology_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" />
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        style="@style/formActionArea"
+        android:id="@id/layout_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@id/cs_save_button"
+           style="@style/Widget.AppCompat.Button.Borderless.Colored"
+		    android:textSize="16sp"
+    		android:gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="48dip"
+            android:layout_marginBottom="0.0dip"
+            android:layout_weight="1.0"
+            android:onClick="cs_save"
+            android:text="保存" />
+
+        
+
+        <Button
+            android:id="@id/delete_button"
+              style="@style/Widget.AppCompat.Button.Borderless.Colored"
+		    android:textSize="16sp"
+    		android:gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="48dip"
+            android:layout_marginBottom="0.0dip"
+            android:layout_weight="1.0"
+            android:onClick="cs_delete" 
+            android:text="删除"/>
+    </LinearLayout>
+
+</LinearLayout>

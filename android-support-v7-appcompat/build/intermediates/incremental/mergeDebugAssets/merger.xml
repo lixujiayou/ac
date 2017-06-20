@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/assets"/><source path="/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build-types/debug/assets"/></dataSet></merger>

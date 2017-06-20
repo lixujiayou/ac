@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/zsl_my"
+        android:showAsAction="never"
+        android:title="我的"/>
+    
+    
+    <item
+        android:id="@+id/zsl_report_offline_data"
+        android:showAsAction="never"
+        android:title="提交离线数据"/>
+
+</menu>

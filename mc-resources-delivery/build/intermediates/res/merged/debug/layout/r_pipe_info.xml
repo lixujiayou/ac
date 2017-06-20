@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:cacheColorHint="@android:color/transparent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:padding="5.0dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center|top" >
+
+        <ScrollView
+            android:id="@id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/layout_button"
+            android:layout_alignParentTop="true"
+            android:padding="5.0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*管道名称："
+                    android:textColor="@color/text_color_red" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@id/edit_pipe_gdmc"
+                        style="@style/edit_3"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="3.0dip"
+                        android:text="" />
+
+                    <ImageView
+                        android:background="@drawable/get"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1.0dip"
+                        android:onClick="choosename_onc"
+                        android:text="获取" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*所属维护区域" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@id/maintenance_edit"
+                        style="@style/edit_3"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:editable="false"
+                        android:paddingTop="3.0dip"
+                        android:text="" />
+
+                    <ImageView
+                        android:background="@drawable/get"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1.0dip"
+                        android:onClick="maintenance_select_onc"
+                        android:text="获取" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*管道级别："
+                    android:textColor="@color/text_color_red" />
+
+                <Spinner
+                    android:id="@id/spinner_gdjb"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" />
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="数据质量责任人" />
+
+                <EditText
+                    android:id="@+id/sjzlzrr"
+                    style="@style/edit_3"
+                    android:enabled="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="一线维护人" />
+
+                <EditText
+                    android:id="@+id/yxwhr"
+                    style="@style/edit_3"
+                    android:enabled="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:text="" />
+            </LinearLayout>
+                
+                
+	<LinearLayout
+	    android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*维护方式："
+                    android:textColor="@color/text_color_red" />
+
+                <Spinner
+                    android:id="@id/spinner_whfs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" />
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="维护单位："
+                    android:textColor="@color/text_color_red" />
+
+                <EditText
+                    android:id="@id/edit_pipe_whdw"
+                    style="@style/edit_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:text="" />
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="包机人："
+                    android:textColor="@color/text_color_red" />
+
+                <EditText
+                    android:id="@id/edit_pipe_bjr"
+                    style="@style/edit_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:text="" />
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="第三方维护单位："
+                    android:textColor="@color/text_color_red" />
+
+                <EditText
+                    android:id="@id/edit_pipe_dsfwhdw"
+                    style="@style/edit_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:text="" />
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="所属站点："
+                    android:textColor="@color/text_color_red" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@id/edit_pipe_ssjz"
+                        style="@style/edit_3"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:enabled="true"
+                        android:paddingTop="3.0dip"
+                        android:text="" />
+
+                    <ImageView
+                        android:background="@drawable/get"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1.0dip"
+                        android:onClick="ssjz_onc"
+                        android:text="获取" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="起始设施名称："
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <EditText
+                        android:id="@id/edit_pipe_qsssmc"
+                        style="@style/edit_1"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:text="" />
+
+                    <ImageView
+                        android:id="@id/btn_qsssmc"
+                        android:background="@drawable/get"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1.0dip"
+                        android:text="获取" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="终止设施名称："
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <EditText
+                        android:id="@id/edit_pipe_zzssmc"
+                        style="@style/edit_1"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5.0"
+                        android:enabled="false"
+                        android:text="" />
+
+                    <ImageView
+                        android:id="@id/btn_zzssmc"
+                        android:background="@drawable/get"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1.0dip"
+                        android:text="获取" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="120.0dip"
+                    android:layout_height="35.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/xxxx_button"
+                    android:onClick="xxxx_onc"
+                    android:text="详细信息  >>" />
+
+                <LinearLayout
+                    android:id="@id/show_more"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/text_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="管道别名：" />
+
+                    <EditText
+                        android:id="@id/edit_pipe_gdbm"
+                        style="@style/edit_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3.0dip"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/text_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="管道长度（单位：米）：" />
+
+                    <EditText
+                        android:id="@id/edit_pipe_gdcd"
+                        style="@style/edit_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:numeric="decimal"
+                        android:paddingTop="3.0dip"
+                        android:text="" />
+                </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+        style="@style/formActionArea"
+            android:id="@id/layout_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@id/btn_save"
+                
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+		    android:textSize="16sp"
+    		android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="48dip"
+                android:layout_marginBottom="0.0dip"
+                android:layout_weight="1.0"
+                android:onClick="save_onc"
+                android:text="保存" />
+
+            
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

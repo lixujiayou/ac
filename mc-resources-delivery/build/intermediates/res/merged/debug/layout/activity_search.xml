@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="您可以通过两个方面的查询获取您想要查阅的资料" />
+    <TextView android:textColor="#ffffffff" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+    <TextView android:textSize="18.0dip" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1.关键字" />
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:background="@drawable/home_select_list_style" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="16.0dip" android:textStyle="bold" android:textColor="@android:color/secondary_text_light" android:id="@id/name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="输入要搜索的关键字" android:layout_weight="9.0" />
+        <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/btn_query_style" android:layout_weight="1.0" android:onClick="onc_chaxun" />
+    </LinearLayout>
+    <TextView android:textSize="18.0dip" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="2.选择厂家型号等搜索" />
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:background="@drawable/home_select_list_style" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <EditText android:textSize="16.0dip" android:textStyle="bold" android:textColor="@android:color/secondary_text_light" android:id="@id/changjia" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="请选择厂家" android:layout_weight="9.0" />
+        <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/btn_searching_style" android:layout_weight="1.0" android:onClick="onc_cj" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:background="@drawable/home_select_list_style" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <EditText android:textSize="16.0dip" android:textStyle="bold" android:textColor="@android:color/secondary_text_light" android:id="@id/shebei" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="请选择设备" android:layout_weight="9.0" />
+        <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/btn_searching_style" android:layout_weight="1.0" android:onClick="onc_sb" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:background="@drawable/home_select_list_style" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <EditText android:textSize="16.0dip" android:textStyle="bold" android:textColor="@android:color/secondary_text_light" android:id="@id/xinghao" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="请选择型号" android:layout_weight="9.0" />
+        <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/btn_searching_style" android:layout_weight="1.0" android:onClick="onc_xh" />
+    </LinearLayout>
+    <TextView android:textColor="#ffffffff" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="24.0dip" />
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:background="@drawable/home_select_list_style" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@android:color/secondary_text_light" android:id="@id/xuanze" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="9.0" />
+        <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/btn_query_style" android:layout_weight="1.0" android:onClick="onc_chaxun_1" />
+    </LinearLayout>
+</LinearLayout>

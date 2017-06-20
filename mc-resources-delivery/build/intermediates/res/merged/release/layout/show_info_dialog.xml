@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/background_opreate_div" android:layout_width="271.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.0sp" android:textColor="@color/text_color_main" android:ellipsize="end" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="9.0dip" android:text="text title" android:singleLine="true" />
+    <LinearLayout android:orientation="vertical" android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="9.0dip" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/text_color_main" android:gravity="left" android:id="@id/text_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:text="text body" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="5.0dip">
+        <Button android:id="@id/left_button" android:layout_width="120.0dip" android:layout_height="36.0dip" style="@style/btn_1" />
+        <Button android:id="@id/right_button" android:layout_width="120.0dip" android:layout_height="36.0dip" android:layout_marginLeft="5.0dip" style="@style/btn_1" />
+    </LinearLayout>
+</LinearLayout>

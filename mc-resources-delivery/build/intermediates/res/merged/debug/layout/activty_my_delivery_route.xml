@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:background="@drawable/background_yuan_black"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:hint="请输入关键字"
+            />
+
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="搜索"
+                android:background="@drawable/btn_bg_red"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+<com.inspur.component.swipyrefreshlayout.SwipyRefreshLayout
+        android:id="@+id/swipyrefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:srl_direction="both">
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:cacheColorHint="#00000000"
+        android:divider="#ffcccccc"
+        android:dividerHeight="1px"
+        android:padding="3.0dip" />
+    </com.inspur.component.swipyrefreshlayout.SwipyRefreshLayout>
+
+</LinearLayout>

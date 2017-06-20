@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/logo"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50.0dip"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="22.0dip" />
+
+    <LinearLayout
+        android:id="@id/login_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_text"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:layout_marginTop="20.0dip"
+        android:orientation="vertical" >
+<android.support.design.widget.TextInputLayout
+            android:id="@+id/username_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.inspur.widget.DeletableEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/ic_edit_text_delete"
+                android:ems="12"
+                android:hint="用户名"
+                android:inputType="text"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18sp" />
+        
+        </android.support.design.widget.TextInputLayout>
+
+        
+<android.support.design.widget.TextInputLayout
+            android:id="@+id/pwd_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        
+    <com.inspur.widget.DeletableEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/ic_edit_text_delete"
+                android:ems="12"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18sp" />
+        </android.support.design.widget.TextInputLayout>
+        
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@id/setting_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_info"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="10.0dip"
+        android:visibility="visible" >
+
+        <CheckBox
+            android:id="@id/checkbox_login"
+            android:layout_width="40.0dip"
+            android:layout_height="50.0dip"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4.0dip"
+            android:checked="true"
+            android:onClick="user_pwd_save" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/checkbox_login"
+            android:text="记住密码"
+            android:textColor="@color/text_color_red" 
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@id/btn_login"
+        style="@style/btn_login"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/setting_info"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:layout_marginTop="10.0dip"
+        android:onClick="click_login"
+        android:text="登录"
+        android:textSize="20.0sp" />
+    
+    <ImageView 
+        android:background="@drawable/set_base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="set_onc" />t
+
+</RelativeLayout>

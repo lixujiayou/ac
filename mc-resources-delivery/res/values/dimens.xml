@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16.0dip</dimen>
+    <dimen name="activity_vertical_margin">16.0dip</dimen>
+    <dimen name="expand_tab_item_height">45.0dip</dimen>
+    <dimen name="expand_tab_eara_height">380.0dip</dimen>
+    <dimen name="toolbar_padding_top">0dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    
+    <dimen name="task_list_text_margin_top">8dp</dimen>
+ 
+    <dimen name="task_list_item_padding">16dp</dimen>
+</resources>

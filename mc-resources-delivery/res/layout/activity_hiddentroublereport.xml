@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:cacheColorHint="@android:color/transparent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5.0dip" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"
+        android:padding="5.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="区域" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/qy_edit"
+                        style="@style/edit_3"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:paddingTop="3.0dip"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1.0dip"
+                        android:background="@drawable/get"
+                        android:onClick="qy_select_onc"
+                        android:text="获取" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="上报人" />
+
+
+                    <EditText
+                        android:id="@+id/sbr_edit"
+                        style="@style/edit_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:paddingTop="3.0dip"
+                        android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="经纬度" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@id/jd_edit"
+                            style="@style/edit_3"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:choiceMode="singleChoice"
+                            android:dividerHeight="1.0dip"
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:scrollHorizontally="true"
+                            android:singleLine="false"
+                            android:text="" />
+
+                        <TextView
+                            style="@style/text_2"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.05"
+                            android:gravity="center"
+                            android:text="-" />
+
+                        <EditText
+                            android:id="@id/wd_edit"
+                            style="@style/edit_3"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:choiceMode="singleChoice"
+                            android:dividerHeight="1.0dip"
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:scrollHorizontally="true"
+                            android:singleLine="false"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@id/getjwd_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:background="@drawable/location"
+                        android:onClick="getjwd"
+                        android:text="获取"
+                        android:textColor="@color/btn_color_text"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="隐患对象" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/yhdx_edit"
+                        style="@style/edit_3"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:editable="false"
+                        android:paddingTop="3.0dip"
+                        android:text="" />
+
+                    <ImageView
+                        android:id="@+id/yhdx_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/get"
+                        android:onClick="yhdx_onc"
+                        android:text="获取"
+                        android:textColor="@color/btn_color_text" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="紧急程度" />
+
+                <Spinner
+                    android:id="@+id/jjcd_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="隐患描述" />
+
+                <EditText
+                    android:id="@+id/yhms_edit"
+                    style="@style/edit_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext" 
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="现场处理情况" />
+
+                <EditText
+                    android:id="@+id/xcclqk_edit"
+                    style="@style/edit_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext" 
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="遗留问题" />
+
+                <EditText
+                    android:id="@+id/ylwt_edit"
+                    style="@style/edit_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext" 
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="处理建议" />
+
+                <EditText
+                    android:id="@+id/cljy_edit"
+                    style="@style/edit_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@id/layout_button"
+        style="@style/formActionArea"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@id/take_photo_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="0.0dip"
+            android:layout_height="48.0dip"
+            android:layout_marginBottom="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:onClick="cs_take_photo"
+            android:text="拍照"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@id/cs_save_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="0.0dip"
+            android:layout_height="48.0dip"
+            android:layout_marginBottom="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:onClick="cs_save"
+            android:text="保存"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/submit_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="0dip"
+            android:layout_height="48.0dip"
+            android:layout_marginBottom="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:onClick="cs_submit"
+            android:text="提交"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

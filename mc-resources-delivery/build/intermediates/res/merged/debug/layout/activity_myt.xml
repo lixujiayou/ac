@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="2.0dip" >
+
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/task_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/white"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="2dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/task_list_item_padding" >
+            
+            
+
+            <TextView
+                android:id="@+id/rwbh_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:text="1111"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="?android:attr/textColorPrimary" />
+            <TextView
+                android:id="@+id/rwnr_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/rwbh_text"
+                android:text="22"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="?android:attr/textColorPrimary" />
+
+            <TextView
+                android:id="@+id/fsr_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/rwnr_text"
+                android:layout_marginTop="@dimen/task_list_text_margin_top"
+                android:text="111111"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="?android:attr/textColorSecondary" />
+
+            <TextView
+                android:id="@+id/fssj_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/rwnr_text"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="@dimen/task_list_text_margin_top"
+                android:text="2015-10-10 10:10:10"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="?android:attr/textColorSecondary" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/fssj_text"
+                    android:layout_marginTop="@dimen/task_list_text_margin_top"
+                android:padding="8dp" >
+
+                <TextView
+                    android:id="@+id/back_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom|right"
+                    android:minWidth="48dp"
+                    android:onClick="back_click"
+                    android:text="回单"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="?attr/colorAccent" />
+
+                <TextView
+                    android:id="@+id/sendOther_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="bottom|right"
+                    android:minWidth="48dp"
+                    android:onClick="sendOther_click"
+                    android:text="转派"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="?attr/colorAccent" />
+
+                <TextView
+                    android:id="@+id/insert_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="bottom|right"
+                    android:minWidth="48dp"
+                    android:onClick="insert_click"
+                    android:text="增加"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="?attr/colorAccent" />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <RadioGroup
+            android:id="@id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:baselineAligned="false"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@id/checkBox_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:text="批量选择"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="?android:attr/textColorSecondary"  />
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@id/pl_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="标记为已核查 "
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="?android:attr/textColorSecondary" />
+
+                <com.inspur.resources.base.SwitchButton
+                    android:id="@id/pl_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@android:color/darker_gray"/>
+
+        <com.inspur.resources.base.swipemenulistview.SwipeMenuListView
+            android:id="@id/senduser_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000" />
+    </LinearLayout>
+
+</LinearLayout>

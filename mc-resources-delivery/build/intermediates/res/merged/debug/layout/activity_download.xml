@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/home_select_list_style" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0dip" 
+        android:id="@id/textView" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+         android:text="正在打开文件，请稍等" />
+    <TextView android:gravity="right" 
+        android:id="@id/textView1" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:text="" />
+    <ProgressBar android:id="@id/progressBar1" 
+        android:layout_width="fill_parent"
+         android:layout_height="wrap_content" 
+         style="?android:attr/progressBarStyleHorizontal" />
+</LinearLayout>

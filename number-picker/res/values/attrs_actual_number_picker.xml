@@ -1,0 +1,32 @@
+<resources>
+
+    <declare-styleable name="ActualNumberPicker">
+
+        <attr name="show_bars" format="boolean|reference" />
+        <attr name="bars_count" format="integer|reference" />
+        <attr name="bar_color" format="color|reference" />
+        <attr name="bar_width" format="dimension|reference" />
+        <attr name="selection_color" format="color|reference" />
+        <attr name="draw_over_text" format="boolean|reference" />
+        <attr name="draw_over_controls" format="boolean|reference" />
+
+        <attr name="show_highlight" format="boolean|reference" />
+        <attr name="highlight_color" format="color|reference" />
+
+        <attr name="show_controls" format="boolean|reference" />
+        <attr name="controls_color" format="color|reference" />
+
+        <attr name="show_fast_controls" format="boolean|reference" />
+        <attr name="fast_controls_color" format="color|reference" />
+
+        <attr name="show_text" format="boolean|reference" />
+        <attr name="text_size" format="dimension|reference" />
+        <attr name="text_color" format="color|reference" />
+
+        <attr name="value" format="integer|reference" />
+        <attr name="min_value" format="integer|reference" />
+        <attr name="max_value" format="integer|reference" />
+
+    </declare-styleable>
+
+</resources>

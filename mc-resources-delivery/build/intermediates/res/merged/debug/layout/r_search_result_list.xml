@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    android:background="#ffdddddd"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <Button 
+        android:id="@+id/buOk"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="确定"/>
+<LinearLayout 
+    android:layout_above="@+id/buOk"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/fab_margin"
+        android:paddingRight="@dimen/fab_margin" >
+
+
+        <EditText
+            android:id="@id/mc_edit"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="48.0dip"
+            android:layout_gravity="center"
+            android:paddingRight="40dp"
+            android:hint="站点名称"
+            android:text="" />
+
+        <Button
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="-40dp" 
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/search_btn_selector"
+            android:onClick="chaxun" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:padding="1.0dip"
+        android:paddingBottom="0.0dip" >
+
+        <ListView
+            android:id="@id/result_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1.0dip"
+            android:cacheColorHint="@android:color/transparent"
+            android:choiceMode="singleChoice"
+            android:divider="#ffffffff"
+            android:dividerHeight="2.0dip"
+            android:drawSelectorOnTop="false"
+            android:paddingLeft="1.0dip"
+            android:paddingRight="1.0dip" />
+    </LinearLayout>
+
+</LinearLayout>
+</RelativeLayout>

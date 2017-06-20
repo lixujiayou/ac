@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/chushihua_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="初始化" android:layout_weight="1.0" android:onClick="init_onc" />
+        <Button android:id="@id/bancun_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="保存" android:layout_weight="1.0" android:onClick="save_onc" />
+        <CheckBox android:textColor="#ff000000" android:id="@id/cb_bj" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="可编辑拖动" android:layout_weight="1.0" />
+    </LinearLayout>
+    <AbsoluteLayout android:id="@id/master_mode" android:background="@drawable/equ_model_bg" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.9">
+        <RelativeLayout android:id="@id/equ_div" android:background="#ffdddddd" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="15.0dip">
+            <TextView android:textColor="@color/text_color_main" android:id="@id/last_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/LoginAutoUpdate_last_time" />
+            <TextView android:textColor="@color/text_color_main" android:id="@id/last_time_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:text="" android:layout_toRightOf="@id/last_time" />
+            <TextView android:textColor="@color/text_color_main" android:id="@id/this_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/LoginAutoUpdate_this_time" android:layout_below="@id/last_time" />
+            <TextView android:textColor="@color/text_color_main" android:id="@id/this_time_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="XXXX-XX-XX" android:layout_toRightOf="@id/this_time" android:layout_below="@id/last_time_content" />
+            <TextView android:textColor="@color/text_color_main" android:id="@id/update_size" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/LoginAutoUpdate_size" android:layout_below="@id/this_time" />
+            <TextView android:textColor="@color/text_color_main" android:id="@id/update_size_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="xxM" android:layout_toRightOf="@id/update_size" android:layout_below="@id/this_time_content" />
+            <TextView android:textColor="@color/text_color_main" android:id="@id/update_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/LoginAutoUpdate_content" android:layout_below="@id/update_size" />
+            <ScrollView android:id="@id/update_content_read" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="151.0dip" android:layout_marginLeft="27.0dip" android:layout_below="@id/update_content">
+                <TextView android:textColor="@color/text_color_main" android:id="@id/update_content_content" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginLeft="27.0dip" android:text="1.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX           2.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX           3.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" android:singleLine="false" android:layout_below="@id/update_content" />
+            </ScrollView>
+        </RelativeLayout>
+        <TextView android:textColor="@color/text_color_main" android:id="@id/update_progress_text" android:paddingLeft="15.0dip" android:paddingTop="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/LoginAutoUpdate_update_progress" />
+        <com.inspur.resources.base.MyProgress android:id="@id/update_progress" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:progressDrawable="@drawable/progress_bar_layer" style="?android:attr/progressBarStyleHorizontal" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/up_div" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.1">
+        <Button android:id="@id/button_update" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/LoginAutoUpdate_update" style="@style/btn_1" />
+    </LinearLayout>
+</LinearLayout>

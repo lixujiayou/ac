@@ -1,0 +1,1326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fiberbox_azfs">
+        <item>架空</item>
+        <item>落地</item>
+        <item>墙壁</item>
+    </string-array>
+    <string-array name="fiberbox_type">
+        <item>光终端盒</item>
+        <item>光分纤盒</item>
+    </string-array>
+    
+        <string-array name="data_erro_type">
+        <item>传输网元</item>
+        <item>光缆段</item>
+    </string-array>
+    
+    <string-array name="data_erro_type_2">
+        <item>字段缺失</item>
+        <item>字段不准</item>
+         <item>无效网元需删除</item>
+    </string-array>
+    
+        
+    
+    <string-array name="ledup_type">
+        <item>请选择</item>
+        <item>电杆</item>
+        <item>墙壁</item>
+    </string-array>
+    
+     <string-array name="is_change">
+        <item>否</item>
+        <item>是</item>
+    </string-array>
+    
+     
+    <string-array name="erro_type">
+         <item>请选择</item>
+        <item>尾纤使用或盘放不标准</item>
+        <item>无防雷接地</item>
+        <item>法兰盘角度装反或法兰帽缺失</item>
+    </string-array>
+    
+    <string-array name="changjia_arr">
+         <item>请选择</item>
+        <item>华为</item>
+        <item>中兴</item>
+        <item>烽火</item>
+        <item>朗讯</item>
+    </string-array>
+    
+    <string-array name="shebei_arr">
+        <item>MSTP</item>
+        <item>路由器</item>
+        <item>交换机</item>
+        <item>业务网关</item>
+        <item>安全产品</item>
+        <item>IP RAN</item>
+        <item>PON</item>
+    </string-array>
+    <string-array name="MSTP_arr">
+        <item>OSN 9560</item>
+        <item>OSN 9500</item>
+        <item>OSN 7500</item>
+        <item>OSN 3500</item>
+        <item>OSN 2500</item>
+        <item>OSN 1500</item>
+        <item>OSN 500</item>
+        <item>Metro 1000</item>
+        <item>Metro 100</item>
+    </string-array>
+    <string-array name="luyouqi_arr">
+        <item>NE5000E</item>
+        <item>NE40E</item>
+        <item>NE20E-X</item>
+        <item>SRG33/2300</item>
+    </string-array>
+    <string-array name="jiaohuanji_arr">
+        <item>S9300</item>
+        <item>S5300</item>
+        <item>S3300</item>
+        <item>S2300</item>
+    </string-array>
+    <string-array name="yewuwangguan_arr">
+        <item>ME60-X</item>
+        <item>MA5200G</item>
+    </string-array>
+    <string-array name="anquanchanpin_arr">
+        <item>Eudemon8080E</item>
+        <item>Eudemon8160E</item>
+        <item>Eudemon1000E</item>
+        <item>Eudemon1000</item>
+        <item>Eudemon500</item>
+        <item>Eudemon200</item>
+        <item>SIG</item>
+    </string-array>
+    <string-array name="ipran_arr">
+        <item>CX600-X8</item>
+        <item>CX600-X3</item>
+        <item>ATN 950B</item>
+        <item>ATN 950</item>
+        <item>ATN 910</item>
+        <item>ATN 910I</item>
+    </string-array>
+    <string-array name="PON_arr">
+        <item>PON</item>
+    </string-array>
+    <string-array name="equipkind">
+        <item>未知设备</item>
+        <item>光配线架（ODF）</item>
+        <item>光交接箱</item>
+    </string-array>
+    <string-array name="equipstatus">
+        <item>空闲</item>
+        <item>故障</item>
+        <item>可用</item>
+    </string-array>
+    <string-array name="pointstatus">
+        <item>空闲</item>
+        <item>故障</item>
+        <item>可用</item>
+        <item>占用</item>
+        <item>待核查</item>
+    </string-array>
+    
+    <string-array name="state">
+         <item>请选择</item>
+        <item>通过</item>
+        <item>不通过</item>
+    </string-array>
+    
+    <string-array name="workoldstat">
+        <item>空闲</item>
+        <item>故障</item>
+        <item>待核查</item>
+    </string-array>
+    <string-array name="pointdirection">
+        <item>局端</item>
+        <item>用户端</item>
+    </string-array>
+    <string-array name="equipstatus4query">
+        <item>全部</item>
+        <item>空闲</item>
+        <item>故障</item>
+        <item>可用</item>
+    </string-array>
+    <string-array name="equipkind4query">
+        <item>全部</item>
+        <item>未知设备</item>
+        <item>光配线架（ODF）</item>
+        <item>综合性光配线架（MODF）</item>
+        <item>光交接箱</item>
+        <item>光分路器</item>
+        <item>光分纤盒</item>
+        <item>光缆接头盒（终端盒）</item>
+    </string-array>
+    <string-array name="equipkindAllquery">
+        <item>全部</item>
+        <item>未知设备</item>
+        <item>光配线架（ODF）</item>
+        <item>综合性光配线架（MODF）</item>
+        <item>光交接箱</item>
+        <item>光分路器</item>
+        <item>光分纤盒</item>
+        <item>光缆接头盒（终端盒）</item>
+        <item>ONU</item>
+    </string-array>
+    <string-array name="pointstatus4query">
+        <item>全部</item>
+        <item>空闲</item>
+        <item>故障</item>
+        <item>可用</item>
+        <item>占用</item>
+        <item>待核查</item>
+    </string-array>
+    <string-array name="workorder_tdyy">
+        <item>地址错</item>
+        <item>地址不详</item>
+        <item>暂不装移</item>
+        <item>联系号错</item>
+        <item>联系不上</item>
+        <item>用户不装</item>
+        <item>局向定错</item>
+        <item>营业撤单</item>
+        <item>无局向</item>
+        <item>无路由</item>
+        <item>无端口</item>
+        <item>无时隙</item>
+        <item>无节点机</item>
+        <item>工程未完</item>
+        <item>需做工程</item>
+        <item>无局设备</item>
+        <item>外线不好</item>
+        <item>无终端设备</item>
+        <item>无IP端口</item>
+    </string-array>
+    <string-array name="workorder_tdyy2">
+        <item>地址错</item>
+        <item>地址不详</item>
+        <item>暂不装移</item>
+        <item>联系号错</item>
+        <item>联系不上</item>
+        <item>用户不装</item>
+        <item>局向定错</item>
+        <item>营业撤单</item>
+        <item>无局线</item>
+    </string-array>
+    <string-array name="nowequ">
+        <item>全路由</item>
+        <item>当前设备</item>
+    </string-array>
+    <string-array name="insert_new_equipment">
+        <item>请选择</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="point_ptype">
+        <item>普通端子</item>
+        <item>分光器端子</item>
+        <item>λ端子</item>
+        <item>ONU上连端子</item>
+        <item>ONU网口</item>
+        <item>未知</item>
+    </string-array>
+    <string-array name="point_fen">
+        <item>1:4</item>
+        <item>1:8</item>
+        <item>1:16</item>
+        <item>1:32</item>
+    </string-array>
+    <string-array name="cs_cable_type">
+        <item>未知类型</item>
+        <item>中继</item>
+        <item>主干</item>
+        <item>配线</item>
+        <item>引入</item>
+    </string-array>
+    <string-array name="cs_cable_type1">
+        <item>未知类型</item>
+        <item>主干</item>
+        <item>交配</item>
+        <item>中继</item>
+        <item>直配</item>
+        <item>联络</item>
+    </string-array>
+    <string-array name="start_end_type">
+        <item>未知类型</item>
+        <item>光交接箱</item>
+        <!-- <item>光分纤盒</item> -->
+        <item>光缆接头盒</item>
+        <item>机架</item>
+        <item>机房</item>
+        <!-- <item>室外放置点</item> -->
+        <item>光终端盒</item>
+    </string-array>
+    <string-array name="gld_model">
+        <item>未知型号</item>
+        <item>GYDTA</item>
+        <item>GTXTW</item>
+        <item>GYXTA</item>
+        <item>GJTZA4B1</item>
+        <item>GYTA</item>
+        <item>GYXTW</item>
+        <item>GYTS</item>
+        <item>GYTA53</item>
+    </string-array>
+    <string-array name="laying_way">
+        <item>未知方式</item>
+        <item>管道</item>
+        <item>直埋</item>
+        <item>架空</item>
+        <item>墙壁钉固</item>
+        <item>混合</item>
+    </string-array>
+    <string-array name="make_share_type">
+        <item>自建</item>
+        <item>合建</item>
+        <item>共建</item>
+        <item>租用</item>
+        <item>购买</item>
+        <item>置换</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="make_share_org">
+        <item>中国移动</item>
+        <item>中国联通</item>
+        <item>中国电信</item>
+        <item>中国铁通</item>
+        <item>广电</item>
+        <item>电力</item>
+        <item>业主</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="share_type">
+        <item>无</item>
+        <item>我方共享他方</item>
+        <item>他方共享我方</item>
+    </string-array>
+    <string-array name="share_type1">
+        <item>请选择</item>
+        <item>我方共享他方</item>
+        <item>他方共享我方</item>
+    </string-array>
+    <string-array name="pipe_level">
+        <item>请选择</item>
+        <item>一干</item>
+        <item>二干</item>
+        <item>本地</item>
+    </string-array>
+    <string-array name="pipesegment_type">
+        <item>未知</item>
+        <item>人井管段</item>
+        <item>引上管段</item>
+        <item>引入管段</item>
+        <item>桥梁管段</item>
+        <item>通道</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="pipesegment_sharing_type_enum_id">
+        <item>无</item>
+        <item>我方共享他方</item>
+        <item>他方共享我方</item>
+    </string-array>
+    <string-array name="pipesegment_construction_sharing_enum_id">
+         <item>自建</item>
+         <item>合建</item>
+        <item>共建</item>
+        <item>租用</item>
+        <item>购买</item>
+        <item>置换</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="pipesegment_construction_sharing_enum_id1">
+        <item>自建</item>
+         <item>合建</item>
+        <item>共建</item>
+        <item>租用</item>
+        <item>购买</item>
+        <item>置换</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="pipesegment_pipeline_laying_enum_id">
+        <item>无</item>
+        <item>一字坡</item>
+        <item>人字坡</item>
+    </string-array>
+    <string-array name="well_manhole_type_enum_id">
+        <item>无</item>
+        <item>人孔</item>
+        <item>手孔</item>
+        <item>双人孔</item>
+        <item>三人孔</item>
+        <item>局前井</item>
+        <item>地下室</item>
+    </string-array>
+    <string-array name="add_odm_scmb">
+        <item>单面</item>
+        <item>A面</item>
+        <item>B面</item>
+        <item>第一列</item>
+        <item>第二列</item>
+        <item>A面1列</item>
+        <item>A面2列</item>
+        <item>B面1列</item>
+        <item>B面2列</item>
+    </string-array>
+    <string-array name="add_odm_scmb_only_lie">
+        <item>第一列</item>
+        <item>第二列</item>
+    </string-array>
+    <string-array name="add_odm_scmb_only_mian">
+        <item>A面</item>
+        <item>B面</item>
+    </string-array>
+    <string-array name="well_manhole_shape">
+        <item>局前</item>
+        <item>直通</item>
+        <item>三通</item>
+        <item>四通</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="well_manhole_specification">
+        <item>无</item>
+        <item>特大号</item>
+        <item>大号</item>
+        <item>中号</item>
+        <item>小号</item>
+        <item>手孔</item>
+    </string-array>
+    <string-array name="well_manhole_structure">
+        <item>无</item>
+        <item>砖砌体</item>
+        <item>钢筋混凝土体</item>
+        <item>装配式</item>
+    </string-array>
+    <string-array name="well_road_type_enum_id">
+        <item>无</item>
+        <item>车行道</item>
+        <item>人行道</item>
+    </string-array>
+    <string-array name="well_road_surface_type_enum_id">
+        <item>无</item>
+        <item>柏油马路</item>
+        <item>沙石路面</item>
+        <item>混凝土砌块路面</item>
+        <item>水泥砖铺路面</item>
+        <item>条石路面</item>
+        <item>水泥路面</item>
+        <item>砼路面</item>
+    </string-array>
+    <string-array name="tube_status_enum_id">
+        <item>占用</item>
+        <item>损坏</item>
+        <item>预占</item>
+        <item>未用</item>
+    </string-array>
+    <string-array name="tube_material">
+        <item>未知</item>
+        <item>塑料管</item>
+        <item>陶瓷管</item>
+        <item>水泥管</item>
+        <item>钢管</item>
+    </string-array>
+    <string-array name="tube_color">
+        <item>未知</item>
+        <item>红</item>
+        <item>橙</item>
+        <item>黄</item>
+        <item>绿</item>
+        <item>青</item>
+        <item>蓝</item>
+        <item>紫</item>
+        <item>白</item>
+        <item>黑</item>
+    </string-array>
+    <string-array name="tube_shap">
+        <item>未知</item>
+        <item>圆形</item>
+        <item>方形</item>
+        <item>梅花管形</item>
+    </string-array>
+    <string-array name="resource_life_period_enum_id">
+        <item>未知</item>
+        <item>设计状态</item>
+        <item>工程建设期（入网带业务前）</item>
+        <item>工程可用期（已入网带业务）</item>
+        <item>工程初验后试运行</item>
+        <item>工程终验后在网</item>
+        <item>退网状态</item>
+    </string-array>
+    <string-array name="tube_rent_flag">
+        <item>未知</item>
+        <item>是</item>
+        <item>否</item>
+    </string-array>
+    <string-array name="add_odm_scmb_mian_lie">
+        <item>A面1列</item>
+        <item>A面2列</item>
+        <item>B面1列</item>
+        <item>B面2列</item>
+    </string-array>
+    <string-array name="add_odm_scmb_mian_danmian">
+        <item>单面</item>
+    </string-array>
+    <string-array name="joint_type">
+        <item>直通</item>
+        <item>分歧</item>
+    </string-array>
+    <!-- 承载点类型 -->
+    <string-array name="chengzaidian_type">
+        <item>直通</item>
+        <item>分歧</item>
+    </string-array>
+    <string-array name="point_wh_state">
+        <item>未知状态</item>
+        <item>割接封锁</item>
+        <item>正常</item>
+    </string-array>
+    <string-array name="dglx">
+        <item>请选择</item>
+        <item>七米杆</item>
+        <item>八米杆</item>
+        <item>九米杆</item>
+    </string-array>
+    <string-array name="hc_select_equipkind">
+        <item>光配线架（ODF）</item>
+        <item>光交接箱</item>
+        <item>光分路器</item>
+        <item>光分纤盒</item>
+        <item>光缆接头盒（终端盒）</item>
+        <item>ONU</item>
+    </string-array>
+    <string-array name="hc_show_equipkind">
+        <item>未知设备</item>
+        <item>光配线架（ODF）</item>
+        <item>光交接箱</item>
+        <item>光分路器</item>
+        <item>光分纤盒</item>
+        <item>光缆接头盒（终端盒）</item>
+        <item>ONU</item>
+    </string-array>
+    <string-array name="hc_select_equipkind1">
+        <item>光配线架（ODF）</item>
+        <item>光交接箱</item>
+        <item>光分纤盒</item>
+        <item>光缆接头盒（终端盒）</item>
+    </string-array>
+    <string-array name="hc_show_equipkind1">
+        <item>未知设备</item>
+        <item>光配线架（ODF）</item>
+        <item>光交接箱</item>
+        <item>光分纤盒</item>
+        <item>光缆接头盒（终端盒）</item>
+    </string-array>
+    <string-array name="equ_mkls">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="jing_face_size">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="jing_zikong_size">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="jing_fangwei">
+        <item></item>
+        <item>东</item>
+        <item>南</item>
+        <item>西</item>
+        <item>北</item>
+    </string-array>
+    <string-array name="equ_panel">
+        <item>未知</item>
+        <item>单面</item>
+        <item>双面</item>
+        <item>无</item>
+    </string-array>
+    <string-array name="equ_module_arrange_way">
+        <item>未知排列方式</item>
+        <item>先行后列 从上往下 从左往右</item>
+        <item>先行后列 从上往下 从右往左</item>
+        <item>先行后列 从下往上 从左往右</item>
+        <item>先行后列 从下往上 从右往左</item>
+        <item>先列后行 从上往下 从左往右</item>
+        <item>先列后行 从上往下 从右往左</item>
+        <item>先列后行 从下往上 从左往右</item>
+        <item>先列后行 从下往上 从右往左</item>
+    </string-array>
+    <string-array name="equ_maintenance_mode">
+        <item>未知</item>
+        <item>自维</item>
+        <item>代维</item>
+    </string-array>
+    <string-array name="equ_maintenance_mode1">
+        <item>请选择</item>
+        <item>自维</item>
+        <item>代维</item>
+    </string-array>
+    <string-array name="oc_level">
+        <item>未知级别</item>
+        <item>一级干线</item>
+        <item>二级干线</item>
+        <item>本地中继</item>
+        <item>本地核心</item>
+        <item>本地汇聚</item>
+        <item>本地接入</item>
+    </string-array>
+    <string-array name="oc_topology">
+        <item>请选择</item>
+        <item>线性</item>
+        <item>环形</item>
+        <item>树形</item>
+    </string-array>
+    <string-array name="point_fen_1">
+        <item>未知</item>
+        <item>1:8</item>
+        <item>1:16</item>
+        <item>1:32</item>
+    </string-array>
+    <string-array name="poleroutestatus">
+        <item>请选择</item>
+        <item>空闲</item>
+        <item>在用</item>
+        <item>出租</item>
+    </string-array>
+    <string-array name="dgcz3query">
+        <item>请选择</item>
+        <item>水泥杆</item>
+        <item>素杆</item>
+        <item>铁杆</item>
+        <item>铁塔</item>
+        <item>油杆</item>
+    </string-array>
+    <string-array name="pole_dxcs">
+        <item>请选择</item>
+        <item>7/1.6</item>
+        <item>7/2.0</item>
+        <item>7/2.4</item>
+        <item>7/2.6</item>
+        <item>7/3.0</item>
+        <item>7/3.2</item>
+        <item>Fe4.0</item>
+        <item>自承式</item>
+    </string-array>
+    <string-array name="pole_dggg">
+        <item>请选择</item>
+        <item>2*2+3*3+3*3</item>
+        <item>1800*18</item>
+        <item>800*20</item>
+        <item>800*27</item>
+        <item>800*23</item>
+        <item>800*24</item>
+        <item>800*25</item>
+        <item>800*26</item>
+        <item>700*13</item>
+        <item>700*15</item>
+        <item>600*12</item>
+        <item>600*15</item>
+        <item>大号</item>
+        <item>小号</item>
+        <item>900*15</item>
+        <item>800*13</item>
+        <item>750*15</item>
+        <item>13*750</item>
+        <item>750*13</item>
+        <item>800*15</item>
+        <item>1000*15</item>
+        <item>1000*18</item>
+        <item>1200*20</item>
+    </string-array>
+    <string-array name="pole_wblx">
+        <item>请选择</item>
+        <item>硬件维修</item>
+        <item>紧急备件支持</item>
+        <item>软件补丁版本支持</item>
+        <item>技术支持服务（电话咨询、电话支持、远程支持、现场支持、网络预警、重要通信保障）</item>
+        <item>无</item>
+    </string-array>
+    <string-array name="jfgs">
+        <item>请选择</item>
+        <item>自建</item>
+        <item>合作</item>
+        <item>客户</item>
+        <item>租用</item>
+    </string-array>
+    <string-array name="shifou">
+        <item>请选择</item>
+        <item>是</item>
+        <item>否</item>
+    </string-array>
+    <string-array name="jfdl">
+        <item>请选择</item>
+        <item>A类</item>
+        <item>B类</item>
+        <item>C类</item>
+    </string-array>
+    <string-array name="jfxl">
+        <item>请选择</item>
+        <item>长途传输机房</item>
+        <item>长途交换机房</item>
+        <item>长途IP机房</item>
+        <item>长途数据机房</item>
+        <item>长途专业综合机房</item>
+        <item>移动核心机房</item>
+        <item>本地核心交换机房</item>
+        <item>本地核心数据机房</item>
+        <item>本地核心专业综合机房</item>
+        <item>城域IP网核心机房</item>
+        <item>电力室</item>
+        <item>高级、低级信令转接点机房</item>
+        <item>IDC机房</item>
+        <item>本地城域网传输核心、汇聚、边缘层机房</item>
+        <item>本地城域网IP网汇聚层机房</item>
+        <item>本地交换端局机房</item>
+        <item>本地数据端局机房</item>
+        <item>本地专业综合机房</item>
+        <item>中继机房</item>
+        <item>移动基站机房</item>
+        <item>小灵通基站机房</item>
+        <item>交换模块局机房</item>
+        <item>PSTN接入网机房</item>
+        <item>综合接入网机房</item>
+        <item>其他接入网机房</item>
+        <item>用户机房</item>
+        <item>海外POP点</item>
+        <item>卫星站</item>
+        <item>国际传输维护中心</item>
+        <item>国际交换维护中心</item>
+    </string-array>
+    <string-array name="jfxl_a">
+        <item>请选择</item>
+        <item>长途传输机房</item>
+        <item>长途交换机房</item>
+        <item>长途IP机房</item>
+        <item>长途数据机房</item>
+        <item>长途专业综合机房</item>
+        <item>移动核心机房</item>
+        <item>本地核心交换机房</item>
+        <item>本地核心数据机房</item>
+        <item>本地核心专业综合机房</item>
+        <item>城域IP网核心机房</item>
+        <item>电力室</item>
+        <item>高级、低级信令转接点机房</item>
+        <item>IDC机房</item>
+        <item>国际传输维护中心</item>
+        <item>国际交换维护中心</item>
+    </string-array>
+    <string-array name="jfxl_b">
+        <item>请选择</item>
+        <item>本地城域网传输核心、汇聚、边缘层机房</item>
+        <item>本地城域网IP网汇聚层机房</item>
+        <item>本地交换端局机房</item>
+        <item>本地数据端局机房</item>
+        <item>本地专业综合机房</item>
+    </string-array>
+    <string-array name="jfxl_c">
+        <item>请选择</item>
+        <item>中继机房</item>
+        <item>移动基站机房</item>
+        <item>小灵通基站机房</item>
+        <item>交换模块局机房</item>
+        <item>PSTN接入网机房</item>
+        <item>综合接入网机房</item>
+        <item>其他接入网机房</item>
+        <item>用户机房</item>
+        <item>海外POP点</item>
+        <item>卫星站</item>
+    </string-array>
+    <string-array name="hwpopdtgywlx">
+        <item>请选择</item>
+        <item>海事卫星电话</item>
+        <item>大洋通</item>
+        <item>国际基础设施</item>
+        <item>国际运营商设备托管</item>
+        <item>卫星电路</item>
+    </string-array>
+    <string-array name="zxfs">
+        <item>请选择</item>
+        <item>上走线</item>
+        <item>下走线</item>
+        <item>混合走线</item>
+    </string-array>
+    <string-array name="dsczxj">
+        <item>请选择</item>
+        <item>单层</item>
+        <item>双层</item>
+        <item>多层</item>
+    </string-array>
+    <string-array name="youwu">
+        <item>请选择</item>
+        <item>有</item>
+        <item>无</item>
+    </string-array>
+    <string-array name="fangwuleix">
+        <item>请选择</item>
+        <item>砖混</item>
+        <item>彩钢板</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="zhandianlx">
+        <item>接入站点</item>
+        <item>核心站点</item>
+        <item>骨干站点</item>
+        <item>汇聚站点</item>
+        <item>用户站点</item>
+        <item>其他站点</item>
+    </string-array>
+    <string-array name="zdwangluolx">
+        <item>本地接入</item>
+        <item>省际</item>
+        <item>省内</item>
+        <item>省内+本地</item>
+        <item>本地骨干</item>
+        <item>本地汇聚</item>
+    </string-array>
+    <string-array name="jzdengj">
+        <item>请选择</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+    </string-array>
+    <string-array name="zdfanweil">
+        <item>请选择</item>
+        <item>城市</item>
+        <item>乡村</item>
+    </string-array>
+    <string-array name="add_type1">
+        <item>站点</item>
+        <item>机房</item>
+        <item>odf</item>
+        <item>电源</item>
+        <item>井</item>
+        <item>电杆</item>
+        <item>occ</item>
+    </string-array>
+    <string-array name="weihuzt">
+        <item>请选择</item>
+        <item>正常</item>
+        <item>故障</item>
+        <item>停用</item>
+    </string-array>
+    <string-array name="maker">
+        <item>请选择</item>
+        <item>IBM</item>
+        <item>JUNIPER</item>
+        <item>ORACLE(SUN)</item>
+        <item>阿朗</item>
+        <item>爱立信</item>
+        <item>上海贝尔</item>
+        <item>烽火</item>
+        <item>华为</item>
+        <item>惠普</item>
+        <item>诺西</item>
+        <item>思科</item>
+        <item>中兴</item>
+        <item>3COM</item>
+        <item>APC</item>
+        <item>DB2</item>
+        <item>DELL</item>
+        <item>D-LINK</item>
+        <item>EMC</item>
+        <item>GNB</item>
+        <item>Microsoft</item>
+        <item>NETAPP</item>
+        <item>Oracle</item>
+        <item>PCCW</item>
+        <item>Quantum（昆腾）</item>
+        <item>Symantec</item>
+        <item>TP-LINK</item>
+        <item>艾克赛</item>
+        <item>艾默生</item>
+        <item>东方国信</item>
+        <item>东软</item>
+        <item>华日</item>
+        <item>佳力图</item>
+        <item>力博特</item>
+        <item>联想</item>
+        <item>梅兰日兰</item>
+        <item>神州数码</item>
+        <item>双登</item>
+        <item>泰岳</item>
+        <item>拓维</item>
+        <item>西门子</item>
+        <item>亚联</item>
+        <item>Jeep</item>
+        <item>LG</item>
+        <item>TCL</item>
+        <item>爱普生</item>
+        <item>奥林巴斯</item>
+        <item>宝马</item>
+        <item>奔驰</item>
+        <item>本田</item>
+        <item>标志</item>
+        <item>博世</item>
+        <item>大众</item>
+        <item>东南</item>
+        <item>东芝</item>
+        <item>丰田</item>
+        <item>福特</item>
+        <item>海尔</item>
+        <item>海信</item>
+        <item>佳能</item>
+        <item>金龙</item>
+        <item>康佳</item>
+        <item>理光</item>
+        <item>铃木</item>
+        <item>明基</item>
+        <item>尼康</item>
+        <item>日产</item>
+        <item>日立</item>
+        <item>三星</item>
+        <item>索尼</item>
+        <item>通用</item>
+        <item>同方</item>
+        <item>沃尔沃</item>
+        <item>五菱</item>
+        <item>夏普</item>
+        <item>现代</item>
+        <item>长安</item>
+        <item>长城</item>
+        <item>长虹</item>
+        <item>紫光</item>
+        <item>小生产厂商</item>
+    </string-array>
+    <string-array name="menfx">
+        <item>未选择</item>
+        <item>东</item>
+        <item>南</item>
+        <item>西</item>
+        <item>北</item>
+    </string-array>
+    <string-array name="access_type">
+        <item>请选择</item>
+        <item>FTTH接入</item>
+        <item>PON+LAN接入</item>
+        <item>PON+DSL接入</item>
+        <item>传统DSL接入</item>
+        <item>FTTH与传统DSL双线接入</item>
+        <item>PON+LAN与传统DSL双线接入</item>
+        <item>FTTH与传统LAN双线接入</item>
+        <item>其他接入方式</item>
+    </string-array>
+    <string-array name="other_operators">
+        <item>请选择</item>
+        <item>电信</item>
+        <item>移动</item>
+    </string-array>
+    <string-array name="on_build_type">
+        <item>请选择</item>
+        <item>我方扩容改造</item>
+        <item>非我网接入社区</item>
+    </string-array>
+    <string-array name="add_type">
+        <item>站点</item>
+        <item>机房</item>
+        <item>井</item>
+        <item>电杆</item>
+    </string-array>
+    <string-array name="henan_shi">
+        <item>济南市</item>
+        <item>青岛市</item>
+        <item>淄博市</item>
+        <item>枣庄市</item>
+        <item>东营市</item>
+        <item>潍坊市</item>
+        <item>烟台市</item>
+        <item>威海市</item>
+        <item>济宁市</item>
+        <item>泰安市</item>
+        <item>日照市</item>
+        <item>莱芜市</item>
+        <item>临沂市</item>
+        <item>德州市</item>
+        <item>聊城市</item>
+        <item>滨州市</item>
+        <item>菏泽市</item>
+        <item>xx市</item>
+    </string-array>
+    <string-array name="zhengzhou">
+        <item>市中区</item>
+        <item>历下区</item>
+        <item>天桥区</item>
+        <item>槐荫区</item>
+        <item>历城区</item>
+        <item>长清区</item>
+        <item>章丘市</item>
+        <item>平阴县</item>
+        <item>济阳县</item>
+        <item>商河县</item>
+    </string-array>
+    <string-array name="kaifeng">
+        <item>市南区</item>
+        <item>市北区</item>
+        <item>城阳区</item>
+        <item>四方区</item>
+        <item>李沧区</item>
+        <item>黄岛区</item>
+        <item>崂山区</item>
+        <item>胶南市</item>
+        <item>胶州市</item>
+        <item>平度市</item>
+        <item>莱西市</item>
+		<item>即墨市</item>
+    </string-array>
+    <string-array name="luoyang">
+        <item>西工区</item>
+        <item>瀍河回族区</item>
+        <item>老城区</item>
+        <item>洛阳市高新区</item>
+        <item>涧西区</item>
+        <item>吉利区</item>
+        <item>洛龙区</item>
+        <item>孟津县</item>
+        <item>新安县</item>
+        <item>栾川县</item>
+        <item>嵩县</item>
+        <item>汝阳县</item>
+        <item>宜阳县</item>
+        <item>洛宁县</item>
+        <item>伊川县</item>
+        <item>偃师市</item>
+        <item>洛阳市本部</item>
+    </string-array>
+    <string-array name="pingdingshan">
+        <item>新华区</item>
+        <item>卫东区</item>
+        <item>石龙区</item>
+        <item>湛河区</item>
+        <item>宝丰县</item>
+        <item>叶县</item>
+        <item>鲁山县</item>
+        <item>郏县</item>
+        <item>舞钢市</item>
+        <item>汝州市</item>
+        <item>平顶山市本部</item>
+    </string-array>
+    <string-array name="anyang">
+        <item>安阳市本部</item>
+        <item>文峰区</item>
+        <item>北关区</item>
+        <item>殷都区</item>
+        <item>龙安区</item>
+        <item>安阳县</item>
+        <item>汤阴县</item>
+        <item>滑县</item>
+        <item>内黄县</item>
+        <item>林州市</item>
+    </string-array>
+    <string-array name="hegang">
+        <item>鹤壁市本部</item>
+        <item>鹤山区</item>
+        <item>山城区</item>
+        <item>淇滨区</item>
+        <item>浚县</item>
+        <item>淇县</item>
+    </string-array>
+    <string-array name="xinxiang">
+        <item>凤泉区</item>
+        <item>牧野区</item>
+        <item>新乡县</item>
+        <item>获嘉县</item>
+        <item>原阳县</item>
+        <item>延津县</item>
+        <item>封丘县</item>
+        <item>长垣县</item>
+        <item>卫辉市</item>
+        <item>辉县市</item>
+        <item>卫滨区</item>
+        <item>红旗区</item>
+        <item>新乡市本部</item>
+    </string-array>
+    <string-array name="jiaozuo">
+        <item>马村区</item>
+        <item>山阳区</item>
+        <item>修武县</item>
+        <item>博爱县</item>
+        <item>武陟县</item>
+        <item>温县</item>
+        <item>沁阳市</item>
+        <item>孟州市</item>
+        <item>焦作市本部</item>
+        <item>解放区</item>
+        <item>中站区</item>
+    </string-array>
+    <string-array name="zhumadian">
+        <item>驻马店市本部</item>
+        <item>驿城区</item>
+        <item>西平县</item>
+        <item>上蔡县</item>
+        <item>平舆县</item>
+        <item>正阳县</item>
+        <item>确山县</item>
+        <item>泌阳县</item>
+        <item>汝南县</item>
+        <item>遂平县</item>
+        <item>新蔡县</item>
+        <item>北开发区</item>
+    </string-array>
+    <string-array name="zhoukou">
+        <item>周口市本部</item>
+        <item>川汇区</item>
+        <item>扶沟县</item>
+        <item>西华县</item>
+        <item>商水县</item>
+        <item>沈丘县</item>
+        <item>郸城县</item>
+        <item>淮阳县</item>
+        <item>太康县</item>
+        <item>鹿邑县</item>
+        <item>项城市</item>
+    </string-array>
+    <string-array name="xinyang">
+        <item>平桥区</item>
+        <item>息县</item>
+        <item>信阳市本部</item>
+        <item>浉河区</item>
+        <item>罗山县</item>
+        <item>光山县</item>
+        <item>新县</item>
+        <item>商城县</item>
+        <item>固始县</item>
+        <item>潢川县</item>
+        <item>淮滨县</item>
+    </string-array>
+    <string-array name="shangqiu">
+        <item>永城市</item>
+        <item>夏邑县</item>
+        <item>虞城县</item>
+        <item>商丘市本部</item>
+        <item>梁园区</item>
+        <item>睢阳区</item>
+        <item>民权县</item>
+        <item>睢县</item>
+        <item>宁陵县</item>
+        <item>柘城县</item>
+    </string-array>
+    <string-array name="nanyang">
+        <item>方城县</item>
+        <item>南召县</item>
+        <item>卧龙区</item>
+        <item>南阳市本部</item>
+        <item>宛城区</item>
+        <item>南阳市高新区</item>
+        <item>官庄工区</item>
+        <item>鸭河工区</item>
+        <item>邓州市</item>
+        <item>桐柏县</item>
+        <item>西峡县</item>
+        <item>镇平县</item>
+        <item>内乡县</item>
+        <item>淅川县</item>
+        <item>社旗县</item>
+        <item>唐河县</item>
+        <item>新野县</item>
+    </string-array>
+    <string-array name="sanmenxia">
+        <item>三门峡市本部</item>
+        <item>湖滨区</item>
+        <item>渑池县</item>
+        <item>陕县</item>
+        <item>卢氏县</item>
+        <item>义马市</item>
+        <item>灵宝市</item>
+    </string-array>
+    <string-array name="xuchang">
+        <item>魏都区</item>
+        <item>许昌县</item>
+        <item>鄢陵县</item>
+        <item>襄城县</item>
+        <item>禹州市</item>
+        <item>长葛市</item>
+        <item>东城区</item>
+        <item>许昌市本部</item>
+    </string-array>
+    <string-array name="luohe">
+        <item>漯河市本部</item>
+        <item>源汇区</item>
+        <item>郾城区</item>
+        <item>召陵区</item>
+        <item>舞阳县</item>
+        <item>临颍县</item>
+    </string-array>
+    <string-array name="puyang">
+        <item>濮阳县</item>
+        <item>台前县</item>
+        <item>濮阳市本部</item>
+        <item>华龙区</item>
+        <item>清丰县</item>
+        <item>南乐县</item>
+        <item>范县</item>
+    </string-array>
+    <string-array name="chengdianjiezhi">
+        <item>未选择</item>
+        <item>三角架</item>
+        <item>卡钉</item>
+        <item>铁件</item>
+    </string-array>
+    <string-array name="chengdiantype">
+        <item>未选择</item>
+        <item>终端撑点</item>
+        <item>分叉撑点</item>
+        <item>拐点撑点</item>
+    </string-array>
+    <string-array name="resource_susSegCazhi">
+        <item>未选择</item>
+        <item>钢绞线</item>
+        <item>钢心铝绞线</item>
+        <item>铁线</item>
+    </string-array>
+    <string-array name="joint_addrtype">
+        <item>未选择</item>
+        <item>人手井</item>
+        <item>电杆</item>
+        <item>标石</item>
+    </string-array>
+    <string-array name="susseg_qztype">
+        <item>未选择</item>
+        <item>电杆</item>
+        <item>撑点</item>
+    </string-array>
+    <string-array name="jflx">
+        <item>交换机房</item>
+        <item>数据机房</item>
+        <item>动力机房</item>
+        <item>传输机房</item>
+        <item>无线机房</item>
+        <item>用户机房</item>
+        <item>综合机房</item>
+        <item>其他机房</item>
+    </string-array>
+    <string-array name="ywjb">
+        <item>国际</item>
+        <item>省际</item>
+        <item>省内</item>
+        <item>本地骨干</item>
+        <item>本地汇聚</item>
+        <item>本地接入</item>
+        <item>其他</item>
+        <item>省内+本地</item>
+    </string-array>
+    <string-array name="jjlx">
+        <item>ODF架</item>
+        <item>设备机架</item>
+        <item>综合机柜</item>
+        <item>DDF架</item>
+    </string-array>
+    <string-array name="mianshu">
+        <item>单面</item>
+        <item>双面</item>
+    </string-array>
+    <string-array name="opticalterminal_attach_type">
+        <item>无</item>
+        <item>光交</item>
+        <item>机房</item>
+    </string-array>
+    <string-array name="jinjichengdu">
+        <item>紧急</item>
+        <item>一般</item>
+    </string-array>
+    
+     <string-array name="trouble_b">
+        <item>管道</item>
+        <item>杆路</item>
+        <item>光交</item>
+        <item>光缆</item>
+    </string-array>
+    
+      <string-array name="trouble_b_1">
+        <item>管孔不通</item>
+        <item>井工艺不达标</item>
+        <item>无井编号</item>
+        <item>无管孔堵头</item>
+        <item>管道和境内环境不达标</item>
+    </string-array>
+    
+        <string-array name="trouble_b_2">
+        <item>电杆埋深不足</item>
+        <item>电杆垂直度隐患</item>
+        <item>角杆或终端不合格</item>
+        <item>吊线高度不合格</item>
+        <item>拉线数量不合格</item>
+        <item>拉线警示及三线交越不合格</item>
+        <item>无杆号</item>
+        <item>挂钩缺失</item>
+        <item>电杆或铁件老化需更换</item>
+    </string-array>
+    
+          <string-array name="trouble_b_3">
+        <item>尾纤使用或盘放不标准</item>
+        <item>无防雷接地</item>
+        <item>法兰盘角度装反或法兰帽缺失</item>
+    </string-array>
+    
+           <string-array name="trouble_b_4">
+        <item>光缆盘留不足</item>
+        <item>光缆接头盒位置不合格</item>
+        <item>光缆引上及出土不合规</item>
+         <item>光缆无吊牌</item>
+    </string-array>
+      
+    <string-array name="luyouzhuangtai">
+        <item>正确</item>
+        <item>系统需新增</item>
+        <item>系统需删除</item>
+        <item>系统需修改</item>
+    </string-array>
+    
+    <string-array name="isy">
+            <item>请选择</item>
+        <item>是</item>
+        <item>否</item>
+    </string-array>
+    
+    <string-array name="jiaogezhuangtai">
+        <item>通过</item>
+        <item>不通过</item>
+        <item>未交割</item>
+    </string-array>
+    <string-array name="ziyuanleixing">
+        <item>站点</item>
+        <item>资源点</item>
+        <item>电杆</item>
+        <item>管井</item>
+        <item>标石</item>
+        <item>撑点</item>
+    </string-array>
+    
+    
+    
+</resources>

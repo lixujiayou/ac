@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//src/com/inspur/StringUtils.java=UTF-8
+encoding//src/com/inspur/common/CallServer.java=UTF-8
+encoding//src/com/inspur/common/Gps.java=UTF-8
+encoding//src/com/inspur/common/PositionUtil.java=UTF-8
+encoding//src/com/inspur/common/XY.java=UTF-8
+encoding//src/com/inspur/resources/base/swipemenulistview/SwipeMenuListView.java=UTF-8
+encoding//src/com/inspur/resources/gpsservice/UtilTool.java=UTF-8
+encoding//src/com/inspur/resources/view/delivery/transroute/bean/ErrorInfoGdgzBean.java=UTF-8
+encoding//src/com/inspur/resources/view/delivery/transroute/bean/ErrorInfoZzBean.java=UTF-8
+encoding//src/com/inspur/resources/view/point/PointMainActivity.java=UTF-8
+encoding//src/com/inspur/update/DownloadService.java=UTF-8
+encoding/<project>=GBK

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="105.0dip" android:layout_margin="5.0dip">
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="105.0dip" android:layout_weight="1.0" android:onClick="jckj_onc">
+                    <Button android:layout_gravity="center" android:background="@drawable/jckj_new" android:padding="35.0dip" android:layout_width="65.0dip" android:layout_height="65.0dip" android:onClick="jckj_onc" />
+                    <TextView android:textSize="14.0dip" android:gravity="center_horizontal" android:layout_gravity="center" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="基础空间资源" android:onClick="jckj_onc" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="105.0dip" android:layout_weight="1.0" android:onClick="guanxian_onc">
+                    <Button android:layout_gravity="center" android:background="@drawable/guanxian_new" android:padding="35.0dip" android:layout_width="65.0dip" android:layout_height="65.0dip" android:onClick="guanxian_onc" />
+                    <TextView android:textSize="14.0dip" android:gravity="center_horizontal" android:layout_gravity="center" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="管线资源" android:onClick="guanxian_onc" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="105.0dip" android:layout_weight="1.0" android:onClick="jfhjdl_onc">
+                    <Button android:layout_gravity="center" android:background="@drawable/jfhjdl_new" android:padding="35.0dip" android:layout_width="65.0dip" android:layout_height="65.0dip" android:onClick="jfhjdl_onc" />
+                    <TextView android:textSize="14.0dip" android:gravity="center_horizontal" android:layout_gravity="center" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="机房环境动力资源" android:onClick="jfhjdl_onc" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="105.0dip" android:layout_marginTop="5.0dip">
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="105.0dip" android:layout_weight="1.0" android:onClick="mahao_click">
+                    <Button android:layout_gravity="center" android:background="@drawable/mahao_new" android:padding="35.0dip" android:layout_width="65.0dip" android:layout_height="65.0dip" android:onClick="mahao_click" />
+                    <TextView android:textSize="14.0dip" android:gravity="center_horizontal" android:layout_gravity="center" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="码号资源" android:onClick="mahao_click" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="105.0dip" android:layout_weight="1.0" android:onClick="web_click">
+                    <Button android:layout_gravity="center" android:background="@drawable/web_new" android:padding="35.0dip" android:layout_width="65.0dip" android:layout_height="65.0dip" android:onClick="web_click" />
+                    <TextView android:textSize="14.0dip" android:gravity="center_horizontal" android:layout_gravity="center" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="网络资源" android:onClick="web_click" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="105.0dip" android:layout_weight="1.0" android:onClick="yewu_click">
+                    <Button android:layout_gravity="center" android:background="@drawable/yewu_new" android:padding="35.0dip" android:layout_width="65.0dip" android:layout_height="65.0dip" android:onClick="yewu_click" />
+                    <TextView android:textSize="14.0dip" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/text_diaoxianduan" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="业务资源" android:onClick="yewu_click" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="105.0dip" android:layout_marginTop="5.0dip">
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="105.0dip" android:layout_weight="1.0" android:onClick="shequ_onc">
+                    <Button android:layout_gravity="center" android:background="@drawable/shequ_new" android:padding="35.0dip" android:layout_width="65.0dip" android:layout_height="65.0dip" android:onClick="shequ_onc" />
+                    <TextView android:textSize="14.0dip" android:gravity="center_horizontal" android:layout_gravity="center" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="社区资源" android:onClick="shequ_onc" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="105.0dip" android:layout_weight="1.0" android:onClick="yingji_onc">
+                    <Button android:layout_gravity="center" android:background="@drawable/yingji_new" android:padding="35.0dip" android:layout_width="65.0dip" android:layout_height="65.0dip" android:onClick="yingji_onc" />
+                    <TextView android:textSize="14.0dip" android:gravity="center_horizontal" android:layout_gravity="center" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="应急通信资源" android:onClick="yingji_onc" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="105.0dip" android:layout_weight="1.0" android:onClick="more_click">
+                    <Button android:layout_gravity="center" android:background="@drawable/more_new" android:padding="35.0dip" android:layout_width="65.0dip" android:layout_height="65.0dip" android:onClick="more_click" />
+                    <TextView android:textSize="14.0dip" android:gravity="center_horizontal" android:layout_gravity="center" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="更多" android:onClick="more_click" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

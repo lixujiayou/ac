@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <style name="NewAppTheme" parent="Theme.AppCompat.Light.NoActionBar"></style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="cmBlueTheme" parent="NewAppTheme">
+        <item name="colorPrimary">@color/cmBlue_primary</item>
+        <item name="colorPrimaryDark">@color/cmBlue_primary_dark</item>
+        <item name="colorAccent">@color/cmBlue_accent</item>
+    </style>
+    
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="windowTitleBackgroundStyle">
+        <item name="android:background">@drawable/title</item>
+    </style>
+    <style name="titlebarstyle" parent="@style/AppBaseTheme">
+        <item name="android:windowBackground">@color/transparent_background1</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowTitleSize">40.0dip</item>
+        <item name="android:windowTitleBackgroundStyle">@style/windowTitleBackgroundStyle</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    
+    <style name="text_1">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="text_2">
+        <item name="android:textSize">24.0dip</item>
+        <item name="android:textColor">#ffcc0000</item>
+    </style>
+    <style name="text_3">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ffcc0000</item>
+    </style>
+    <style name="edit_2">
+        <item name="android:textSize">24.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="btn_login">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_login_selector</item>
+    </style>
+    <style name="btn_save">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_save_selector</item>
+    </style>
+    <style name="btn_cancel">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_cancel_selector</item>
+    </style>
+    <style name="btn_1">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/n_btn_selector</item>
+    </style>
+    <style name="edit_3">
+        <item name="android:textSize">18dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:paddingLeft">5.0dip</item>
+    </style>
+    <style name="edit_1">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="list_item1">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+    <style name="list_item">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>
+    
+    <style name="formActionArea">
+        <item name="android:background">?android:attr/colorBackground</item>
+    </style>
+</resources>

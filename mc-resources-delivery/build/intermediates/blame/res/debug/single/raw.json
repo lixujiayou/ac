@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/raw/city.s3db",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/raw/city.s3db"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/raw/osmium.ogg",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/raw/osmium.ogg"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/raw/beep.ogg",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/raw/beep.ogg"
+    }
+]

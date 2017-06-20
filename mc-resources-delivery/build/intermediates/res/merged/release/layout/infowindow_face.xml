@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="160.0dip" android:layout_height="140.0dip">
+        <Button android:gravity="center" android:background="@drawable/xiaojiantou" android:layout_width="40.0dip" android:layout_height="40.0dip" android:text="" android:layout_centerInParent="true" />
+        <Button android:textSize="14.0dip" android:textColor="@color/text_color_main" android:gravity="center" android:id="@id/btn_7" android:tag="西" android:layout_width="50.0dip" android:layout_height="50.0dip" android:text="西" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+        <Button android:textSize="14.0dip" android:textColor="@color/text_color_main" android:gravity="center" android:id="@id/btn_3" android:tag="东" android:layout_width="50.0dip" android:layout_height="50.0dip" android:text="东" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        <Button android:textSize="14.0dip" android:textColor="@color/text_color_main" android:gravity="center" android:id="@id/btn_1" android:tag="北" android:layout_width="50.0dip" android:layout_height="50.0dip" android:text="北" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+        <Button android:textSize="14.0dip" android:textColor="@color/text_color_main" android:gravity="center" android:id="@id/btn_5" android:tag="南" android:layout_width="50.0dip" android:layout_height="50.0dip" android:text="南" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+        <Button android:textSize="14.0dip" android:textColor="@color/text_color_main" android:gravity="center" android:id="@id/btn_8" android:tag="西北" android:layout_width="50.0dip" android:layout_height="50.0dip" android:text="西北" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <Button android:textSize="14.0dip" android:textColor="@color/text_color_main" android:gravity="center" android:id="@id/btn_2" android:tag="东北" android:layout_width="50.0dip" android:layout_height="50.0dip" android:text="东北" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <Button android:textSize="14.0dip" android:textColor="@color/text_color_main" android:gravity="center" android:id="@id/btn_6" android:tag="西南" android:layout_width="50.0dip" android:layout_height="50.0dip" android:text="西南" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        <Button android:textSize="14.0dip" android:textColor="@color/text_color_main" android:gravity="center" android:id="@id/btn_4" android:tag="东南" android:layout_width="50.0dip" android:layout_height="50.0dip" android:text="东南" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

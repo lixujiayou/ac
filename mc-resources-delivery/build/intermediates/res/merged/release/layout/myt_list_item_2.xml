@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@id/name_text"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="?android:attr/textColorPrimary"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1.0dip"
+            android:text="1111111111111111111111" />
+
+        <TextView
+            android:id="@id/name_time"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="?android:attr/textColorSecondary"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1.0dip"
+            android:text="2222222222222222222222"
+            android:textSize="14.0dip" />
+    </LinearLayout>
+
+
+        <com.inspur.resources.base.SwitchButton
+            android:id="@id/hc_button"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+</LinearLayout>

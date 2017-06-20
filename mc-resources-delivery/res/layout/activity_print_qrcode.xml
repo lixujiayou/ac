@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/et_input" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10">
+        <requestFocus />
+    </EditText>
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+        <Button android:id="@id/bt_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="打印卡片" style="@style/btn_1" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

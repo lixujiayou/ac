@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="5.0dip"
+    android:paddingLeft="3.0dip"
+    android:paddingTop="5.0dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/ganluduan_base" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@id/routetext01"
+                style="@style/list_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1.0dip"
+                android:textSize="20.0dip" />
+
+            <TextView
+                android:id="@id/routetext03"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1.0dip"
+                android:textColor="#ff888888"
+                android:textSize="16.0dip" />
+
+            <TextView
+                android:id="@id/routetext04"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1.0dip"
+                android:textColor="#ff888888"
+                android:textSize="16.0dip" />
+
+            <TextView
+                android:id="@id/routetext05"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1.0dip"
+                android:textColor="#ff888888"
+                android:textSize="16.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

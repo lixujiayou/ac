@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <EditText android:id="@id/search_edit" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="" android:hint="输入省市名称" android:layout_weight="0.9" />
+        <Button android:background="@drawable/search_btn_selector" android:layout_width="40.0dip" android:layout_height="40.0dip" android:onClick="chaxun_onc" />
+    </LinearLayout>
+    <HorizontalScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioGroup android:orientation="horizontal" android:id="@id/radioGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <RelativeLayout android:id="@id/r_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.baidu.mapapi.map.MapView android:id="@id/mapview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/search_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_alignParentRight="true">
+            <Button android:id="@id/search" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="资源查看" android:onClick="search" style="@style/btn_1" />
+            <TextView android:textSize="14.0dip" android:id="@id/number_text" android:background="#a5ffffff" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

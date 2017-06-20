@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="5.0dip" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5.0dip"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="@string/equinfo_main_equType" />
+
+                <Spinner
+                    android:id="@id/spinner_etype"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/equinfo_main_equName"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <EditText
+                    android:id="@id/edit_text_ename"
+                    style="@style/edit_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="120.0dip"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
+
+           
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_yuan_red"
+                android:orientation="vertical"
+                android:padding="3.0dip"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="资产标签号"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <EditText
+                    android:id="@id/eidt_zcbqh"
+                    style="@style/edit_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="120.0dip"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5.0dip" >
+
+                    <Button
+                        style="@style/btn_1"
+                        android:layout_width="0.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:onClick="saoyisao_onc"
+                        android:text="扫一扫"
+                        android:textSize="16.0dip" />
+
+                    <Button
+                        style="@style/btn_1"
+                        android:layout_width="0.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:onClick="chaxun_onc"
+                        android:text="查询"
+                        android:textSize="16.0dip" />
+
+                    <Button
+                        style="@style/btn_1"
+                        android:layout_width="0.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:onClick="chakan_onc"
+                        android:text="查看"
+                        android:textSize="16.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="厂家"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/edit_text_changja"
+                    style="@style/edit_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="120.0dip"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="机架类型"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                 <Spinner
+                    android:id="@+id/spinner_jijialx"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+             <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="机架行号"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/edit_text_jjhh"
+                    style="@style/edit_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="120.0dip"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
+             <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="机架列号"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/edit_text_jjlh"
+                    style="@style/edit_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="120.0dip"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="数据质量责任人" />
+
+                <EditText
+                    android:id="@+id/sjzlzrr"
+                    style="@style/edit_3"
+                    android:enabled="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="一线维护人" />
+
+                <EditText
+                    android:id="@+id/yxwhr"
+                    style="@style/edit_3"
+                    android:enabled="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/equinfo_main_station"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@id/edit_text_station"
+                        style="@style/edit_3"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.0"
+                        android:enabled="false"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <Button
+                        android:id="@id/button_get_station"
+                        style="@style/btn_1"
+                        android:layout_width="0.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="@string/equinfo_main_station_get"
+                        android:textSize="16.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5.0dip"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/equinfo_main_equLongitudeAndLatitude"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <Button
+                    android:id="@id/button_getlocation"
+                    style="@style/btn_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip"
+                    android:gravity="center"
+                    android:text="@string/equinfo_main_obtainEquLocation"
+                    android:textSize="16.0dip"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@id/location"
+                    style="@style/btn_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:gravity="center"
+                    android:text="@string/equinfo_main_EquLocation"
+                    android:textSize="16.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5.0dip"
+                android:visibility="gone" >
+
+                <EditText
+                    android:id="@id/edit_text_lon"
+                    style="@style/edit_1"
+                    android:layout_width="135.0dip"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:gravity="right"
+                    android:minWidth="100.0dip"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="5.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/text_color_init" />
+
+                <EditText
+                    android:id="@id/edit_text_lat"
+                    style="@style/edit_1"
+                    android:layout_width="135.0dip"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:gravity="right"
+                    android:minWidth="100.0dip"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+             <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/equinfo_main_equCode"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <EditText
+                    android:id="@id/edit_text_ecode"
+                    style="@style/edit_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="120.0dip"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/equinfo_main_equState"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <Spinner
+                    android:id="@id/spinner_estat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/equinfo_main_equAdd"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <EditText
+                    android:id="@id/edit_text_eadress"
+                    style="@style/edit_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="120.0dip"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/equinfo_main_note"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <EditText
+                    android:id="@id/edit_text_note"
+                    style="@style/edit_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="120.0dip"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/equinfo_main_ChangedBy"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <EditText
+                    android:id="@id/edit_text_mp"
+                    style="@style/edit_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:minWidth="120.0dip"
+                    android:singleLine="true"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/equinfo_main_mTime"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <EditText
+                    android:id="@id/edit_text_mtime"
+                    style="@style/edit_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:minWidth="120.0dip"
+                    android:singleLine="true"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        style="@style/formActionArea"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+		    android:textSize="16sp"
+    		android:gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="48.0dip"
+            android:layout_weight="1.0"
+            android:onClick="get_model_onc"
+            android:text="面板图"
+            android:textAppearance="?android:textAppearanceMedium" />
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+		    android:textSize="16sp"
+    		android:gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="48.0dip"
+            android:layout_weight="1.0"
+            android:onClick="photo_onc"
+            android:text="拍照"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+		    android:textSize="16sp"
+    		android:gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="48.0dip"
+            android:layout_weight="1.0"
+            android:onClick="save_onc"
+            android:text="@string/equinfo_main_save"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        
+
+        <Button
+          style="@style/Widget.AppCompat.Button.Borderless.Colored"
+		    android:textSize="16sp"
+    		android:gravity="center"
+            android:id="@id/delete_button"
+            android:layout_width="0dip"
+            android:layout_height="48.0dip"
+            android:layout_weight="1.0"
+            android:layout_marginBottom="0.0dip"
+            android:onClick="cs_delete"
+            android:text="删除"
+            android:textAppearance="?android:textAppearanceMedium" />
+    </LinearLayout>
+
+</LinearLayout>

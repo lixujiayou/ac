@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:cacheColorHint="@android:color/transparent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5.0dip" >
+
+
+ 				
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"
+        android:padding="5.0dip" 
+      
+        >
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical"
+		    >
+         <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" 
+
+                >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="地市" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/company_edit"
+                        style="@style/edit_3"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="3.0dip"
+                         android:enabled="false"
+                        android:text="" />
+     <ImageView
+         android:id="@+id/iv_city_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1.0dip"
+                        android:background="@drawable/get"
+                        android:onClick="qy_select_onc"
+                        android:text="获取" />
+                
+                </LinearLayout>
+            </LinearLayout>
+             <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" 
+                >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="区县" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/qy_edit"
+                        style="@style/edit_3"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:paddingTop="3.0dip"
+                      
+                        android:text="" />
+  <ImageView
+      android:id="@+id/iv_city_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1.0dip"
+                        android:background="@drawable/get"
+                        android:onClick="qy_select_onc"
+                        android:text="获取" />
+               
+                </LinearLayout>
+              
+                
+            </LinearLayout>
+            
+             
+             
+             <LinearLayout
+            android:id="@+id/ll_gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:visibility="gone" 
+            >
+               <LinearLayout 
+                android:id="@+id/ll_gone_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+              	android:visibility="gone"
+                >        
+       
+       <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="数据不准确资源类别" />
+
+                <Spinner
+                    android:id="@+id/date_erro_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" />
+            </LinearLayout>
+            
+         <LinearLayout
+             android:id="@+id/ll_wang_gone_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="数据不准确网元名称" />
+
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                <TextView
+                    android:id="@+id/tv_wangyuan"
+                    style="@style/edit_3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext" 
+                    android:text="" 
+                    android:textColor="#666666"
+                    />
+                	<ImageView
+                	    android:id="@+id/iv_wangyuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1.0dip"
+                        android:background="@drawable/get"
+                      
+                        android:text="获取" />
+                </LinearLayout>
+            </LinearLayout>
+            
+         <LinearLayout
+              android:id="@+id/ll_wang_gone_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" 
+                android:visibility="gone"
+                >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="数据不准确段落名称" />
+                
+                  <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                <TextView
+                    android:id="@+id/tv_xianlu"
+                    style="@style/edit_3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext" 
+                    android:text="" 
+                    android:textColor="#666666"
+                    />
+                	<ImageView
+                	    android:id="@+id/iv_guang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1.0dip"
+                        android:background="@drawable/get"
+                     
+                        android:text="获取" />
+                </LinearLayout>
+            </LinearLayout>
+       
+         
+           <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="数据不准确归类" />
+
+                <Spinner
+                    android:id="@+id/date_errot_ype_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" />
+            </LinearLayout>
+            
+           
+         
+ </LinearLayout>
+ 
+               
+            <LinearLayout 
+                android:id="@+id/ll_gone_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+               	android:visibility="gone"
+                >
+ 
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="隐患位置描述" />
+
+
+                    <EditText
+                        android:id="@+id/sbr_edit"
+                        style="@style/edit_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3.0dip"
+                        android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="经纬度" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@id/jd_edit"
+                            style="@style/edit_3"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:choiceMode="singleChoice"
+                            android:dividerHeight="1.0dip"
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:scrollHorizontally="true"
+                            android:singleLine="false"
+                            android:text="" />
+
+                        <TextView
+                            style="@style/text_2"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.05"
+                            android:gravity="center"
+                            android:text="-" />
+
+                        <EditText
+                            android:id="@id/wd_edit"
+                            style="@style/edit_3"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:choiceMode="singleChoice"
+                            android:dividerHeight="1.0dip"
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:scrollHorizontally="true"
+                            android:singleLine="false"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@id/getjwd_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:background="@drawable/location"
+                        android:onClick="getjwd"
+                        android:text="获取"
+                        android:textColor="@color/btn_color_text"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" 
+                   android:visibility="gone"
+                >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="隐患对象" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" 
+                 
+                    >
+
+                    <EditText
+                        android:id="@+id/yhdx_edit"
+                        style="@style/edit_3"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:editable="false"
+                        android:paddingTop="3.0dip"
+                        android:text="" />
+
+                    <ImageView
+                        android:id="@+id/yhdx_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/get"
+                        android:onClick="yhdx_onc"
+                        android:text="获取"
+                        android:textColor="@color/btn_color_text" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="问题大类" />
+
+                <Spinner
+                    android:id="@+id/jjcd_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" />
+            </LinearLayout>
+
+              <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="问题小类" />
+
+                <Spinner
+                    android:id="@+id/jjcd_spinner_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" />
+
+            </LinearLayout>
+            
+              <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="隐患描述" />
+
+                <EditText
+                    android:id="@+id/yhms_edit"
+                    style="@style/edit_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext" 
+                    android:text="" />
+            </LinearLayout>
+              
+            
+            
+              </LinearLayout>
+              
+            
+            
+            
+            
+            
+             
+        </LinearLayout>
+        
+             
+             <LinearLayout 
+                 android:id="@+id/ll_gone_6"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical"
+                 android:visibility="visible"
+                 >
+                 
+                 
+                   <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="起点资源" />
+
+                
+                  <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                <TextView
+                    android:id="@+id/tv_jing_start"
+                    style="@style/edit_3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext" 
+                    android:text="" 
+                    android:textColor="#666666"
+                    />
+                	<ImageView
+                	    android:id="@+id/iv_jing_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1.0dip"
+                        android:background="@drawable/get"
+                     
+                        android:text="获取" />
+                </LinearLayout>
+            </LinearLayout>
+                 <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="起点资源经纬度" />
+
+                
+                 
+                <TextView
+                    android:id="@+id/tv_start_location"
+                    style="@style/edit_3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext" 
+                    android:text="" 
+                    android:textColor="#666666"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+                	
+               
+            </LinearLayout>
+            
+                  <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" 
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="终点资源" />
+
+                
+                  <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                <TextView
+                    android:id="@+id/tv_jing_end"
+                    style="@style/edit_3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext" 
+                    android:text="" 
+                    android:textColor="#666666"
+                    />
+                	<ImageView
+                	    android:id="@+id/iv_jing_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1.0dip"
+                        android:background="@drawable/get"
+                     
+                        android:text="获取" />
+                </LinearLayout>
+            </LinearLayout>
+                 <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="终点资源经纬度" />
+
+                
+                 
+                <TextView
+                 	 android:id="@+id/tv_end_location"
+                    style="@style/edit_3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext" 
+                    android:text="" 
+                    android:textColor="#666666"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+                	
+               
+            </LinearLayout>
+                  <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" 
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="故障长度(米)" />
+
+                <EditText
+                    android:id="@+id/lenge_edit"
+                    style="@style/edit_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext" 
+                    android:inputType="number"
+                    android:text="" />
+            </LinearLayout>
+            
+                  
+                  <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" 
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="系统计算长度(米)" />
+
+                <EditText
+                    android:id="@+id/sys_lenge_edit"
+                    style="@style/edit_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext" 
+                    android:enabled="false"
+                    android:text="" />
+            </LinearLayout>
+            
+                  
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上报账号" />
+
+                
+                 
+                <TextView
+                    android:id="@+id/login_name_edit"
+                    style="@style/edit_3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext" 
+                    android:text="" 
+                    android:textColor="#666666"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+                	
+               
+            </LinearLayout>
+             </LinearLayout>
+             
+              <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    android:id="@+id/tv_change_1"
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="是否整改" />
+
+                <Spinner
+                    android:id="@+id/ischange_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" />
+            </LinearLayout>
+            
+            
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                      android:id="@+id/tv_change_2"
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="整改日期" />
+                
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    >
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/edit_3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext" 
+                    android:text="" 
+                    android:textColor="#666666"
+                    />
+                
+                    <ImageView
+                        android:id="@+id/time_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/get"
+                        android:onClick="yhdx_onc"
+                        android:text="获取"
+                        android:textColor="@color/btn_color_text" />
+                    </LinearLayout>
+            </LinearLayout>
+           
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@id/layout_button"
+        style="@style/formActionArea"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@id/take_photo_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="0.0dip"
+            android:layout_height="48.0dip"
+            android:layout_marginBottom="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:onClick="cs_take_photo"
+            android:text="拍照"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@id/cs_save_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="0.0dip"
+            android:layout_height="48.0dip"
+            android:layout_marginBottom="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:onClick="cs_save"
+            android:text="保存"
+            android:textSize="16sp" 
+        
+            />
+
+        <Button
+            android:id="@+id/submit_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="0dip"
+            android:layout_height="48.0dip"
+            android:layout_marginBottom="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:onClick="cs_submit"
+            android:text="提交"
+            android:textSize="16sp" 
+                android:visibility="gone"
+            />
+    </LinearLayout>
+
+</LinearLayout>

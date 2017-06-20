@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:layout_width="90.0dip"
+            android:layout_height="90.0dip"
+            android:background="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="设备知识库"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="120.0dip"
+            android:background="@drawable/home_select_list_style"
+            android:onClick="onc_qr" >
+
+            <ImageView
+                android:id="@id/home_img_looks"
+                android:layout_width="110.0dip"
+                android:layout_height="110.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dip"
+                android:background="@drawable/qr"
+                android:onClick="onc_qr" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25.0dip"
+                android:layout_toRightOf="@id/home_img_looks"
+                android:onClick="onc_qr"
+                android:orientation="vertical"
+                android:paddingTop="10.0dip" >
+
+                <TextView
+                    android:id="@id/addr_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onc_qr"
+                    android:text="扫一扫"
+                    android:textColor="@android:color/secondary_text_light"
+                    android:textSize="23.0dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@id/addr_lonorlat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onc_qr"
+                    android:padding="4.0dip"
+                    android:text="通过扫描设备上的二维码或者扫描资产卡片的方式获取该设备的使用教程"
+                    android:textColor="@android:color/secondary_text_light"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="120.0dip"
+            android:background="@drawable/home_select_list_style"
+            android:onClick="onc_search" >
+
+            <ImageView
+                android:id="@id/home_img_looks_2"
+                android:layout_width="110.0dip"
+                android:layout_height="110.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dip"
+                android:background="#ffffffff"
+                android:onClick="onc_search"
+                android:src="@drawable/sc" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25.0dip"
+                android:layout_toRightOf="@id/home_img_looks_2"
+                android:onClick="onc_search"
+                android:orientation="vertical"
+                android:paddingTop="10.0dip" >
+
+                <TextView
+                    android:id="@id/addr_name_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onc_search"
+                    android:text="查  询"
+                    android:textColor="@android:color/secondary_text_light"
+                    android:textSize="23.0dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@id/addr_lonorlat_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onc_search"
+                    android:padding="4.0dip"
+                    android:text="如果您不在现场也可以通过选择厂家、型号的方式查询教程"
+                    android:textColor="@android:color/secondary_text_light"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

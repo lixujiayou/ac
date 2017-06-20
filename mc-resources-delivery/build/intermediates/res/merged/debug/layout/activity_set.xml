@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10.0dip"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/layout_bt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:onClick="chooseBt"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@id/btname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginTop="2.0dip"
+            android:gravity="center"
+            android:onClick="chooseBt"
+            android:text="连接蓝牙：    未选择"
+            android:textSize="16.0dip" />
+
+        <Button
+            android:layout_width="10.0dip"
+            android:layout_height="10.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/arrow"
+            android:onClick="chooseBt" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/layout_offlinemap"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:onClick="offlinemap_onc"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginTop="2.0dip"
+            android:gravity="center"
+            android:onClick="offlinemap_onc"
+            android:text="离线地图下载"
+            android:textSize="16.0dip" />
+
+        <Button
+            android:layout_width="10.0dip"
+            android:layout_height="10.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/arrow"
+            android:onClick="offlinemap_onc" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/bth_about"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:onClick="about_onc" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginTop="3.0dip"
+            android:onClick="about_onc"
+            android:text="关  于"
+            android:textColorLink="#ff0066cc"
+            android:textSize="16.0dip" />
+
+        <ImageView
+            android:layout_width="10.0dip"
+            android:layout_height="10.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/arrow"
+            android:onClick="about_onc" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_margin="10.0dip"
+        android:background="#ffaa0000"
+        android:text="" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:onClick="update" >
+
+        <TextView
+            android:id="@id/ban"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:onClick="update"
+            android:text="版本号"
+            android:textColorLink="#ff0066cc"
+            android:textSize="16.0dip" />
+
+        <TextView
+            android:id="@id/banbennum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25.0dip"
+            android:layout_toRightOf="@id/ban"
+            android:onClick="update"
+            android:text="v1"
+            android:textColor="#ff888888"
+            android:textSize="16.0dip" />
+
+        <ImageView
+            android:layout_width="10.0dip"
+            android:layout_height="10.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/arrow" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_margin="10.0dip"
+        android:background="#ffaa0000"
+        android:text="" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:onClick="xgmm_onc" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginTop="3.0dip"
+            android:onClick="xgmm_onc"
+            android:text="修改密码"
+            android:textColorLink="#ff0066cc"
+            android:textSize="16.0dip" />
+
+        <ImageView
+            android:layout_width="10.0dip"
+            android:layout_height="10.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/arrow"
+            android:onClick="xgmm_onc" />
+    </RelativeLayout>
+
+</LinearLayout>

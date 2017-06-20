@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/recyclerview/build/intermediates/bundles/default/libs/android-support-v7-recyclerview.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="cbbb221f48aa693ee156797fb0f05810dce35108">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/android-support-v7-recyclerview_02880da37ef39ece2cff0ca12b43a633a10e171a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/gsonxxx.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8130867fdb57461d90165b0362721a1a64c2765a">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/2/gsonxxx_41519b1c92bc494e5d5a2bcd6c67a06b4d1c428c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/httpclient_.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9003011c1b6d28a7331f04251a25e7ccf63c98f8">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/2/httpclient__c744143c8fd623b1f2e8e884383e9951bfdef30a/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/baidumapapi_map_v4_2_1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="afab7b92220f1f16dc732fd9f037079662771ee2">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/baidumapapi_map_v4_2_1_0d0598cd5199f83e41e43b6904d53fd1475f36e3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/libs/android-support-v7-appcompat.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9616e435047415d6354f1fac8d12e085285b3acb">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/android-support-v7-appcompat_3ce19e1467bbde0eb9708c61648481f5efff1f2e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/httpcore-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="50d62373255daf8fa4f21ce381683ed64a3a95b8">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/httpcore-4.0_2bcdebaa9754d8e9339cc18e50bf0604846a6d27.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/fastjson.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="633eb1efa20cc14cd1d36c90f67b3215c2e01636">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/2/fastjson_b0e78be64c3e10787921fb732940bda2a551d925/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="20e8598c9fd1bf388791e891d194ca77d92dcaa2">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/classes_acb6386bb8eb4452ffce9bc0e9c83bae8d1b2cee.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/nohttp1.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6ae2467b795c2dab188293ed6b659407d523d060">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/2/nohttp1.0.0_fd35ce2dbc98beb575a4e8cd8c508bc479b8be0b/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/picasso-2.5.2_ef1f0689fb202f73f9c6ffab35bf72ba25862d22.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/trinea-android-common.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="1dea8f79df3f8e7fefa405c363a53c118b3283b5">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/trinea-android-common_f514f2d544747b0739d8ad1c70d9932e5da36a58.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/locSDK_6.13.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2cdb37444b41b42e1ce5a8a27e5d3c22e1c57479">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/2/locSDK_6.13_3866a603d438d70873225f2535f38a0f6c433da0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lixu/AndroidStudioProjects/ac/cardview/build/intermediates/bundles/default/libs/android-support-v7-cardview.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7513daf945c1712af51172fc83d9c5adb70483f2">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/8/android-support-v7-cardview_ff8673f2226e71153f7c635b97d0853076fd208f/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/design/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3221244051613d78ebc463de554068c21af3b988">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/classes_14796a0d78c6cc430d2ddb34c237455f4e11c940.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/platform2.0v2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="52b192b2c4fd1a1d073caf312cdb5567a8cc35f9">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/2/platform2.0v2_6d69ad4558cfa28a9fd0882eedfa4ba20bab3685/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/baidumapapi_base_v4_2_1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="34606314aa56b20b5dab09fdd6fd19fa8d28c5d6">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/2/baidumapapi_base_v4_2_1_09d48a78b7a92585142a317e8898c76b38a9f6a7/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/androideventbus-1.0.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0b6c3d52cf75efce3140c7621edd49bc8b513138">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/androideventbus-1.0.5_ae402649ed80d02ad960bbf730036145dcf57331.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lixu/AndroidStudioProjects/ac/design/build/intermediates/bundles/default/libs/android-support-design.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d44e4087aa720f824feda97e2b91191ac15f73f9">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/8/android-support-design_5ee0119b6f519473613b81e820fc972e06ae6b18/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/lifecyle.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e15533fed02569b5c28d96d2fc64acd09907f5cd">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/2/lifecyle_b340e5dee672e6f2f0d73795ce19e24ae5765190/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/cardview/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3540bec203a2c137e9286ab62f13e2561caad502">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/classes_4785b1ce42b08938c15da783af5aad8a73ef5e26.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/bundles/default/libs/universal-image-loader-1.9.3-with-sources.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6986dec9fc940599f6557c73866d04fe329e2e92">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.3-with-sources_e591d56778970ab553ebf81858fa20daab471d16.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/baidumapapi_search_v4_2_1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="26cefef48db6e39aba392ed93b54eab184e3aaa9">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/2/baidumapapi_search_v4_2_1_77c4614f086a58cac81c5896ee02bf8ccdc033ae/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/core.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="327bddfe22740db0419bd719a0f950b6ad2b3c3f">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/2/core_055c54225533680d80124704a9763925b8f83335/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/httpmime-4.1.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c78eaaea68d0f36f73b646f08cdb34f1a784239b">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/2/httpmime-4.1.2_503d628ed830d71426a5ce9e00553dd4e301d946/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/baidumapapi_util_v4_2_1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="507a595b3260fbd0bbe860b69844784e7ffc0aa6">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/baidumapapi_util_v4_2_1_3b31036096129706fdc463f068f78d4ec3f808d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="27484771121fc01002bf1005eef5a6e27840a6c7">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/classes_121909e6079ffccc468f3bd2c1bd86d61671dcb0.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/libs/android-support-v4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="da351fadee6981cb47e9ee685f70924283214fda">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/8/android-support-v4_2dd8f64b10fc3906107d979b126c5b26c6d9fd36/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a90524b4b573a90b2ccfde672cf94fa5b3cb3f56">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/classes_d07782ffe892538a7f48c3e07d60cc8c9162fff0.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lixu/AndroidStudioProjects/ac/recyclerview/build/intermediates/bundles/default/libs/android-support-v7-recyclerview.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="cbbb221f48aa693ee156797fb0f05810dce35108">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/8/android-support-v7-recyclerview_02880da37ef39ece2cff0ca12b43a633a10e171a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_045566b22e8e12cc97a536891656b488f389fe1c/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/locSDK_6.13.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2cdb37444b41b42e1ce5a8a27e5d3c22e1c57479">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/locSDK_6.13_3866a603d438d70873225f2535f38a0f6c433da0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/httpclient_.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9003011c1b6d28a7331f04251a25e7ccf63c98f8">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/httpclient__c744143c8fd623b1f2e8e884383e9951bfdef30a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/httpcore-4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="50d62373255daf8fa4f21ce381683ed64a3a95b8">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/2/httpcore-4.0_2bcdebaa9754d8e9339cc18e50bf0604846a6d27/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/libs/android-support-v7-appcompat.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9616e435047415d6354f1fac8d12e085285b3acb">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/8/android-support-v7-appcompat_3ce19e1467bbde0eb9708c61648481f5efff1f2e/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/Swipyrefreshlayout/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a73af768e5c6b4643027067dbae34fd7be90409d">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/classes_e08187bd6248c52760e071cb3c0e195b4f8f2fb5.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/bundles/default/libs/universal-image-loader-1.9.3-with-sources.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6986dec9fc940599f6557c73866d04fe329e2e92">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/8/universal-image-loader-1.9.3-with-sources_e591d56778970ab553ebf81858fa20daab471d16/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/trinea-android-common.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="1dea8f79df3f8e7fefa405c363a53c118b3283b5">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/2/trinea-android-common_f514f2d544747b0739d8ad1c70d9932e5da36a58/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/baidumapapi_map_v4_2_1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="afab7b92220f1f16dc732fd9f037079662771ee2">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/2/baidumapapi_map_v4_2_1_0d0598cd5199f83e41e43b6904d53fd1475f36e3/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/nohttp1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6ae2467b795c2dab188293ed6b659407d523d060">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/nohttp1.0.0_fd35ce2dbc98beb575a4e8cd8c508bc479b8be0b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/fastjson.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="633eb1efa20cc14cd1d36c90f67b3215c2e01636">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/fastjson_b0e78be64c3e10787921fb732940bda2a551d925.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/2/picasso-2.5.2_ef1f0689fb202f73f9c6ffab35bf72ba25862d22/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/baidumapapi_base_v4_2_1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="34606314aa56b20b5dab09fdd6fd19fa8d28c5d6">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/baidumapapi_base_v4_2_1_09d48a78b7a92585142a317e8898c76b38a9f6a7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/cardview/build/intermediates/bundles/default/libs/android-support-v7-cardview.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7513daf945c1712af51172fc83d9c5adb70483f2">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/android-support-v7-cardview_ff8673f2226e71153f7c635b97d0853076fd208f.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/androideventbus-1.0.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0b6c3d52cf75efce3140c7621edd49bc8b513138">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/2/androideventbus-1.0.5_ae402649ed80d02ad960bbf730036145dcf57331/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/recyclerview/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="1c9615d4ff350b4d362cd2140ec7e540b0e757ba">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/classes_ef921022b11d68b19dbc02c0c0572401281236dd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/gsonxxx.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8130867fdb57461d90165b0362721a1a64c2765a">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/gsonxxx_41519b1c92bc494e5d5a2bcd6c67a06b4d1c428c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/platform2.0v2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="52b192b2c4fd1a1d073caf312cdb5567a8cc35f9">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/platform2.0v2_6d69ad4558cfa28a9fd0882eedfa4ba20bab3685.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/libs/android-support-v4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="da351fadee6981cb47e9ee685f70924283214fda">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/android-support-v4_2dd8f64b10fc3906107d979b126c5b26c6d9fd36.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/lifecyle.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e15533fed02569b5c28d96d2fc64acd09907f5cd">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/lifecyle_b340e5dee672e6f2f0d73795ce19e24ae5765190.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/design/build/intermediates/bundles/default/libs/android-support-design.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d44e4087aa720f824feda97e2b91191ac15f73f9">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/android-support-design_5ee0119b6f519473613b81e820fc972e06ae6b18.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/baidumapapi_search_v4_2_1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="26cefef48db6e39aba392ed93b54eab184e3aaa9">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/baidumapapi_search_v4_2_1_77c4614f086a58cac81c5896ee02bf8ccdc033ae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/core.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="327bddfe22740db0419bd719a0f950b6ad2b3c3f">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/core_055c54225533680d80124704a9763925b8f83335.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/httpmime-4.1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c78eaaea68d0f36f73b646f08cdb34f1a784239b">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/pre-dexed/debug/httpmime-4.1.2_503d628ed830d71426a5ce9e00553dd4e301d946.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="dfcc4f1e30d7a9aac0816cbbc350e79698e9e520">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_abb36b9430c2b478da022aa357f527d85634389a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/libs/baidumapapi_util_v4_2_1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="507a595b3260fbd0bbe860b69844784e7ffc0aa6">
+        <dex dex="/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/2/baidumapapi_util_v4_2_1_3b31036096129706fdc463f068f78d4ec3f808d2/classes.dex" />
+    </item>
+
+</items>

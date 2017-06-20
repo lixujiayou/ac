@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/mipmap-xxxhdpi/ic_launcher.png",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/mipmap-xxxhdpi/location_marker.png",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/mipmap-xxxhdpi/location_marker.png"
+    }
+]

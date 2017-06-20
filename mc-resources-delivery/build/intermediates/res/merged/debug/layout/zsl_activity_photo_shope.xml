@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <GridView
+        android:id="@id/photo_GridView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/layout_button"
+        android:columnWidth="100.0dip"
+        android:gravity="center"
+        android:horizontalSpacing="5.0dip"
+        android:numColumns="auto_fit"
+        android:padding="5.0dip"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5.0dip" />
+
+    <LinearLayout
+        android:id="@id/layout_button"
+        style="@style/formActionArea"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="0.0dip"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:onClick="photoSelect"
+            android:text="拍照"
+            android:textSize="16sp" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="0.0dip"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:onClick="submit"
+            android:text="上传"
+            android:textSize="16sp" 
+            android:visibility="gone"
+            />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="0.0dip"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:onClick="save"
+            android:text="保存"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

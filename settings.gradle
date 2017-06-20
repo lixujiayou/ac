@@ -1,0 +1,8 @@
+include ':Swipyrefreshlayout'
+include ':photo'
+include ':recyclerview'
+include ':design'
+include ':mc-resources-delivery'
+include ':number-picker'
+include ':android-support-v7-appcompat'
+include ':cardview'

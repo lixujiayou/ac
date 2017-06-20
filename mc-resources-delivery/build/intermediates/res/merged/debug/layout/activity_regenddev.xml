@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_color" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="18.0dip" android:textColor="@color/text_color_red" android:id="@id/textView_t2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/RegActivity_cpgs1" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="18.0dip" android:textColor="@color/text_color_red" android:id="@id/textView_t1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/RegActivity_cp" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="18.0dip" android:textColor="@color/text_color_red" android:id="@id/textView_t3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/RegActivity_bb" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="18.0dip" android:textColor="@color/text_color_red" android:id="@id/textView_t4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/RegActivity_zdxlh" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="18.0dip" android:textColor="@color/text_color_red" android:id="@id/textView_buletoothNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    <LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="18.0dip" android:textColor="@color/text_color_red" android:id="@id/textView_t5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/RegActivity_str_zcm" />
+        <EditText android:id="@id/editText_regcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/button_ok" android:layout_width="144.0dip" android:layout_height="50.0dip" android:layout_marginLeft="5.0dip" android:text="@string/RegActivity_zc" style="@style/btn_1" />
+    </LinearLayout>
+</LinearLayout>

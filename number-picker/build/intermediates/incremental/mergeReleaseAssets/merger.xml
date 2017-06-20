@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/lixu/AndroidStudioProjects/ac/number-picker/assets"/><source path="/Users/lixu/AndroidStudioProjects/ac/number-picker/build/generated/assets/shaders/release"/></dataSet><dataSet config="release"><source path="/Users/lixu/AndroidStudioProjects/ac/number-picker/build-types/release/assets"/></dataSet></merger>

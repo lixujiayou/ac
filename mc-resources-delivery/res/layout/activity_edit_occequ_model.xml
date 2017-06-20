@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:focusable="false"
+    android:orientation="vertical"
+    android:padding="10.0dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_device_div"
+        android:orientation="vertical"
+        android:padding="5.0dip" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5.0dip"
+            android:paddingTop="15.0dip"
+            android:text="子框设置"
+            android:textSize="20.0dip" />
+
+        
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="#ff000000"
+            android:padding="5.0dip"
+            android:paddingTop="15.0dip" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:padding="5.0dip"
+            android:paddingTop="15.0dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="子框方向"
+                android:textSize="20.0dip" />
+
+            <RadioGroup
+                android:id="@id/radioGroup_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="type"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@id/hengxiang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="横向"
+                    android:textColorLink="#ff0066cc"
+                    android:textSize="20.0dip" />
+
+                <RadioButton
+                    android:id="@id/shuxiang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="竖向"
+                    android:textColorLink="#ff0066cc"
+                    android:textSize="20.0dip" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="#ffffffff" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_device_div"
+        android:orientation="vertical"
+        android:padding="5.0dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:padding="5.0dip"
+            android:paddingTop="5.0dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="子框内盘数"
+                android:textSize="20.0dip" />
+
+            <Spinner
+                android:id="@id/spinner2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="#ff000000" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:padding="5.0dip"
+            android:paddingTop="5.0dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="盘内端子数"
+                android:textSize="20.0dip" />
+
+            <RadioGroup
+                android:id="@id/radioGroup_4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="type"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@id/pndzs_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8个"
+                    android:textColorLink="#ff0066cc"
+                    android:textSize="20.0dip" />
+
+                <RadioButton
+                    android:id="@id/pndzs_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12个"
+                    android:textColorLink="#ff0066cc"
+                    android:textSize="20.0dip" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="#ff000000" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:padding="5.0dip"
+            android:paddingTop="5.0dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="盘顺序"
+                android:textSize="20.0dip" />
+
+            <RadioGroup
+                android:id="@id/radioGroup_5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="type"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@id/psx_zx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="正序"
+                    android:textColorLink="#ff0066cc"
+                    android:textSize="20.0dip" />
+
+                <RadioButton
+                    android:id="@id/psx_dx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="倒序"
+                    android:textColorLink="#ff0066cc"
+                    android:textSize="20.0dip" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="#ff000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5.0dip"
+        android:paddingTop="5.0dip" >
+
+        <Button
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:onClick="save_onc"
+            android:text="修改"
+            android:textSize="20.0dip" />
+
+        <Button
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:onClick="cancel_onc"
+            android:text="取消"
+            android:textSize="20.0dip" />
+    </LinearLayout>
+
+</LinearLayout>

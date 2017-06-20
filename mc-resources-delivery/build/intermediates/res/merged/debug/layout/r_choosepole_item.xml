@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:id="@id/tablelayout_1" android:background="#ffc8e2ff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:stretchColumns="*">
+        <TableRow android:background="#ffc8e2ff" android:layout_margin="0.5dip">
+            <TextView android:id="@id/choosepole_item01" android:layout_width="100.0dip" android:layout_margin="1.0dip" style="@style/list_item" />
+            <TextView android:id="@id/choosepole_item02" android:layout_width="100.0dip" android:layout_margin="1.0dip" style="@style/list_item" />
+            <TextView android:id="@id/choosepole_item03" android:layout_width="180.0dip" android:layout_margin="1.0dip" style="@style/list_item" />
+            <TextView android:id="@id/choosepole_item04" android:layout_width="100.0dip" android:layout_margin="1.0dip" style="@style/list_item" />
+            <Button android:textSize="24.0dip" android:textColor="@color/blue" android:id="@id/choosepole_item_button" android:background="#ffe0f1ff" android:visibility="gone" android:layout_width="100.0dip" android:layout_margin="1.0dip" android:text="选择" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

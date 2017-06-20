@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="0.5"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/main_face"
+        android:drawablePadding="10dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="50.0dip"
+        android:text="易采,便利的移动化资源采集体验"
+        android:textColor="@color/white"
+        android:textSize="16.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="105.0dip"
+            android:layout_marginTop="15.0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="105.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:onClick="qingcha_onc"
+                android:orientation="vertical" >
+
+
+                     <Button
+                    android:id="@id/button_qingcha"
+                    android:layout_width="65.0dip"
+                    android:layout_height="65.0dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/qingcha_base"
+                    android:onClick="qingcha_onc"
+                    android:padding="35.0dip"
+                         android:visibility="gone"
+                         />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:drawableTop="@drawable/qingcha_base_selector"
+                    android:gravity="center_horizontal"
+                    android:onClick="qingcha_onc"
+                    android:text="资源清查"
+                    android:textColor="#74859E"
+                    android:textSize="14.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="105.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:onClick="hecha_onc"
+                android:orientation="vertical" >
+
+                <!--
+                     <Button
+                    android:id="@id/button_hecha"
+                    android:layout_width="65.0dip"
+                    android:layout_height="65.0dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/hecha_base"
+                    android:onClick="hecha_onc"
+                    android:padding="35.0dip" />
+                -->
+
+                <TextView
+                    android:id="@id/hecha_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:drawableTop="@drawable/hecha_base_selector"
+                    android:gravity="center_horizontal"
+                    android:onClick="hecha_onc"
+                    android:text="资源核查"
+                    android:textColor="#74859E"
+                    android:textSize="14.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="105.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:onClick="count_onc"
+                android:orientation="vertical" >
+
+                <!--
+                     <Button
+                    android:id="@id/button_count"
+                    android:layout_width="65.0dip"
+                    android:layout_height="65.0dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/tongji_base"
+                    android:onClick="count_onc"
+                    android:padding="35.0dip" />
+                -->
+
+                <TextView
+                    android:id="@id/count_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:drawableTop="@drawable/tongji_base_selector"
+                    android:gravity="center_horizontal"
+                    android:onClick="count_onc"
+                    android:text="统计"
+                    android:textColor="#74859E"
+                    android:textSize="14.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="105.0dip"
+            android:layout_marginTop="15.0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="105.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:onClick="gis_onc"
+                android:orientation="vertical" >
+
+                <!--
+                     <Button
+                    android:id="@id/button_gis"
+                    android:layout_width="65.0dip"
+                    android:layout_height="65.0dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/gis_base"
+                    android:onClick="gis_onc"
+                    android:padding="35.0dip" />
+                -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:drawableTop="@drawable/gis_base_selector"
+                    android:gravity="center_horizontal"
+                    android:onClick="gis_onc"
+                    android:text="gis定位"
+                    android:textColor="#74859E"
+                    android:textSize="14.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="105.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:onClick="e_onc"
+                android:orientation="vertical" >
+
+                <!--
+                     <Button
+                    android:id="@id/button_e"
+                    android:layout_width="65.0dip"
+                    android:layout_height="65.0dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/e_base"
+                    android:onClick="e_onc"
+                    android:padding="35.0dip" />
+                -->
+
+                <TextView
+                    android:id="@id/e_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:drawableTop="@drawable/e_base_selector"
+                    android:gravity="center_horizontal"
+                    android:onClick="e_onc"
+                    android:text="设备知识库"
+                    android:textColor="#74859E"
+                    android:textSize="14.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="105.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:onClick="e_onc"
+                android:orientation="vertical" >
+
+                <!--
+            <ImageButton
+            android:layout_width="65.0dip"
+            android:layout_height="65.0dip"
+            android:layout_gravity="center"
+            android:padding="35.0dip"
+            android:background="@drawable/round_notepad"
+            android:onClick="image_btn_click" />
+                -->
+
+                <TextView
+                    android:id="@id/tips_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:drawableTop="@drawable/round_notepad_selector"
+                    android:gravity="center_horizontal"
+                    android:onClick="image_btn_click"
+                    android:text="设置"
+                    android:textColor="#74859E"
+                    android:textSize="14.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

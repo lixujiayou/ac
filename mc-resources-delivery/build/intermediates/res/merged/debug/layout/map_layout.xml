@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@id/maplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@id/self"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/getNow"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:onClick="shoudongdingwei"
+            android:src="@drawable/zsl_fujin_blue"
+            android:text="手动\n定位"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@id/getNow"
+            style="@style/btn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/white"
+            android:onClick="clearOverlay"
+            android:src="@drawable/zsl_gps"
+            android:text="当前位置"
+            android:textSize="14sp" />
+    </RelativeLayout>

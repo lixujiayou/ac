@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:cacheColorHint="@android:color/transparent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5.0dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center" >
+
+        <ScrollView
+            android:id="@id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/layout_button"
+            android:padding="5.0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*接头盒名称总和：" />
+
+                    <TextView
+                        android:id="@id/edit_jointnamesub"
+                        style="@style/text_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3.0dip"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*接头盒名称：" />
+
+                    <EditText
+                        android:id="@id/edit_jointname"
+                        style="@style/edit_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3.0dip"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*序号：" />
+
+                    <EditText
+                        android:id="@id/edit_jointno"
+                        style="@style/edit_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:numeric="decimal"
+                        android:paddingTop="3.0dip"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*接头盒类型：" />
+
+                    <Spinner
+                        android:id="@id/type_spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip" />
+                </LinearLayout>
+
+                
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*所属光缆：" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@id/edit_cablename"
+                            style="@style/edit_3"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+
+                        <ImageView
+                            android:background="@drawable/get"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1.0dip"
+                            android:onClick="cable_onc"
+                            android:text="获取" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*接头位置类型：" />
+
+                    <Spinner
+                        android:id="@id/addrtype_spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip"
+                        android:clickable="false" />
+                </LinearLayout>
+                
+                 <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="接头位置：" />
+
+                        <EditText
+                            android:id="@id/edit_addr"
+                            style="@style/edit_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+                    </LinearLayout>
+                    
+                 <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="数据质量责任人" />
+
+                <EditText
+                    android:id="@+id/sjzlzrr"
+                    style="@style/edit_3"
+                    android:enabled="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="一线维护人" />
+
+                <EditText
+                    android:id="@+id/yxwhr"
+                    style="@style/edit_3"
+                    android:enabled="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:text="" />
+            </LinearLayout>
+                
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@id/xxxx"
+                    android:layout_width="120.0dip"
+                    android:layout_height="35.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/xxxx_button"
+                    android:text="详细信息  >>" />
+
+                <LinearLayout
+                    android:id="@id/show_more"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*规格型号" />
+
+                    <EditText
+                        android:id="@id/ggxh_edit"
+                        style="@style/edit_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3.0dip"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*设备厂家：" />
+
+                    <Spinner
+                        android:id="@id/changjia_spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*小生产厂商：" />
+
+                    <EditText
+                        android:id="@id/edit_changshang"
+                        style="@style/edit_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3.0dip"
+                        android:text="" />
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="资产标签号：" />
+
+                        <EditText
+                            android:id="@id/edit_bqh"
+                            style="@style/edit_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+                    </LinearLayout>
+
+                   
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="填充方式：" />
+
+                        <EditText
+                            android:id="@id/edit_tcfs"
+                            style="@style/edit_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="维护状态" />
+
+                        <Spinner
+                            android:id="@id/whzt_spinner"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="割接标记" />
+
+                        <Spinner
+                            android:id="@id/gjbj_spinner"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="资源生命周期" />
+
+                        <Spinner
+                            android:id="@id/ziyuansmzq_spinner"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="生命周期时间" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <EditText
+                                android:id="@id/edit_shengmzhouqishijian"
+                                style="@style/edit_3"
+                                android:layout_width="0.0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:editable="false"
+                                android:paddingTop="3.0dip"
+                                android:text="" />
+
+                            <ImageView
+                                android:id="@id/shengmzhouqishijian_button"
+                                android:background="@drawable/get"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="获取" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="是否授权管理" />
+
+                        <Spinner
+                            android:id="@id/spinner_sfsqguanli"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="授权管理单位" />
+
+                        <EditText
+                            android:id="@id/edit_sqgldw"
+                            style="@style/edit_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="设计用途" />
+
+                        <EditText
+                            android:id="@id/edit_sjyt"
+                            style="@style/edit_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="备注" />
+
+                        <EditText
+                            android:id="@id/edit_note"
+                            style="@style/edit_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+        style="@style/formActionArea"
+            android:id="@id/layout_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@id/btn_save"
+                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
+		    android:textSize="16sp"
+    		android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="48dip"
+                android:layout_marginBottom="0.0dip"
+                android:layout_weight="1.0"
+                android:text="保存" />
+
+
+            <Button
+                android:id="@id/delete_button"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+		    android:textSize="16sp"
+    		android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="48dip"
+                android:layout_marginBottom="0.0dip"
+                android:onClick="cs_delete" 
+                android:layout_weight="1.0"
+                android:text="删除"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff0ffff" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="200.0dip">
+        <LinearLayout android:orientation="vertical" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="人/手井名称：" android:layout_weight="4.0" style="@style/text_1" />
+                <Button android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="拍照" android:layout_weight="1.0" android:onClick="photo_btn" />
+            </LinearLayout>
+            <TextView android:id="@id/well_total_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" style="@style/text_1" />
+            <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/edit_well_rjmc" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_weight="4.0" style="@style/edit_1" />
+                <Button android:id="@id/btn_rjmc" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="获取" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="井方位：" style="@style/text_1" />
+                <Spinner android:id="@id/well_fw_spinner" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="序号：" android:layout_weight="1.0" style="@style/text_1" />
+                <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2.0">
+                    <EditText android:id="@id/edit_well_name_xh" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:numeric="integer" android:layout_weight="2.0" style="@style/edit_1" />
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="扩充后缀：" android:layout_weight="1.0" style="@style/text_1" />
+                <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2.0">
+                    <EditText android:id="@id/edit_well_name_kchz" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:numeric="integer" android:layout_weight="2.0" style="@style/edit_1" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="井地址：" style="@style/text_1" />
+            <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/edit_well_jdz" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_weight="4.0" style="@style/edit_1" />
+                <Button android:id="@id/btn_address" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="获取" android:layout_weight="1.0" />
+            </LinearLayout>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="井经纬度：" style="@style/text_1" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/edit_well_jjd" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="2.0" style="@style/edit_1" />
+                <TextView android:layout_width="10.0dip" android:layout_height="wrap_content" android:text="  / " style="@style/text_1" />
+                <EditText android:id="@id/edit_well_jwd" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="2.0" style="@style/edit_1" />
+                <Button android:id="@id/button_getjwd" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="获取" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:background="#ff000000" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <LinearLayout android:gravity="center" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="200.0dip" android:layout_height="200.0dip">
+            <Button android:gravity="center" android:background="@drawable/xiaojiantou" android:layout_width="55.0dip" android:layout_height="55.0dip" android:text="" android:layout_centerInParent="true" />
+            <Button android:gravity="center" android:id="@id/btn_7" android:tag="西" android:layout_width="55.0dip" android:layout_height="55.0dip" android:text="西" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+            <Button android:gravity="center" android:id="@id/btn_3" android:tag="东" android:layout_width="55.0dip" android:layout_height="55.0dip" android:text="东" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+            <Button android:gravity="center" android:id="@id/btn_1" android:tag="北" android:layout_width="55.0dip" android:layout_height="55.0dip" android:text="北" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+            <Button android:gravity="center" android:id="@id/btn_5" android:tag="南" android:layout_width="55.0dip" android:layout_height="55.0dip" android:text="南" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+            <Button android:gravity="center" android:id="@id/btn_8" android:tag="西北" android:layout_width="55.0dip" android:layout_height="55.0dip" android:text="西北" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <Button android:gravity="center" android:id="@id/btn_2" android:tag="东北" android:layout_width="55.0dip" android:layout_height="55.0dip" android:text="东北" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            <Button android:gravity="center" android:id="@id/btn_6" android:tag="西南" android:layout_width="55.0dip" android:layout_height="55.0dip" android:text="西南" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+            <Button android:gravity="center" android:id="@id/btn_4" android:tag="东南" android:layout_width="55.0dip" android:layout_height="55.0dip" android:text="东南" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:id="@id/layout_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+        <Button android:id="@id/btn_save" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:text="保存" android:layout_weight="1.0" />
+        <Button android:id="@id/btn_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:text="取消" android:layout_weight="1.0" />
+    </LinearLayout>
+    <Button android:layout_gravity="right" android:id="@id/delete_button" android:background="@drawable/delete" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginBottom="0.0dip" android:onClick="cs_delete" />
+</LinearLayout>

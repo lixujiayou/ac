@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:cacheColorHint="@android:color/transparent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5.0dip" >
+
+   
+
+        <ScrollView
+            android:id="@id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/layout_button"
+             >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*人/手井名称：" />
+
+                    <TextView
+                        android:id="@id/well_total_text"
+                        style="@style/text_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@id/edit_well_rjmc"
+                            style="@style/edit_3"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+
+                        <ImageView
+                            android:background="@drawable/get"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1.0dip"
+                            android:onClick="rjmc_onc"
+                            android:text="获取" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/text_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="方位：" />
+
+                    <Spinner
+                        android:id="@id/well_fw_spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip" />
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*序号：" />
+
+                    <EditText
+                        android:id="@id/edit_well_name_xh"
+                        style="@style/edit_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:numeric="integer"
+                        android:paddingTop="3.0dip"
+                        android:text="" />
+
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*所属维护区域" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@id/suoshuwhqu_edit"
+                            style="@style/edit_3"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:enabled="false"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+
+                        <ImageView
+                            android:background="@drawable/get"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1.0dip"
+                            android:onClick="maintenance_select_onc"
+                            android:text="获取" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*井型号：" />
+
+                    <Spinner
+                        android:id="@id/spinner_well_jxz"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*井经纬度：" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@id/edit_well_jjd"
+                            style="@style/edit_3"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4.0"
+                            
+                            android:editable="false"
+                            android:paddingTop="3.0dip"
+                            android:text=""
+                            android:textSize="18.0dip" />
+
+                        <TextView
+                            style="@style/text_2"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="  - " />
+
+                        <EditText
+                            android:id="@id/edit_well_jwd"
+                            style="@style/edit_3"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4.0"
+                            
+                            android:editable="false"
+                            android:paddingTop="3.0dip"
+                            android:text=""
+                            android:textSize="18.0dip" />
+
+                        <ImageView
+                            android:id="@id/btn_1"
+                            android:background="@drawable/location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1.0dip"
+                            android:onClick="getjwd_onc"
+                            android:text="@string/add_equipment_info_get" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*产权性质：" />
+
+                    <Spinner
+                        android:id="@id/spinner_well_gjgxlx"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="产权单位：" />
+
+                    <Spinner
+                        android:id="@+id/spinner_well_gjgxf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip" />
+                    
+                    <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="数据质量责任人" />
+
+                <EditText
+                    android:id="@+id/sjzlzrr"
+                    style="@style/edit_3"
+                    android:enabled="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="一线维护人" />
+
+                <EditText
+                    android:id="@+id/yxwhr"
+                    style="@style/edit_3"
+                    android:enabled="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:text="" />
+            </LinearLayout>
+                    
+                    
+                    <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="所属站点：" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@id/edit_well_ssjz"
+                            style="@style/edit_3"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5.0"
+                            
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+
+                        <ImageView
+                            android:background="@drawable/get"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1.0dip"
+                            android:onClick="ssjz_onc"
+                            android:text="获取" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <Button
+                        android:layout_width="120.0dip"
+                        android:layout_height="35.0dip"
+                        android:layout_marginBottom="10.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:background="@drawable/xxxx_button"
+                        android:onClick="xxxx_onc"
+                        android:text="详细信息  >>" />
+                    <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*井类型：" />
+
+                    <Spinner
+                        android:id="@id/spinner_well_jlx"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip" />
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@id/show_more"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+                        
+                        <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="井地址：" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@id/edit_well_jdz"
+                            style="@style/edit_3"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5.0"
+                            
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+
+                        <ImageView
+                            android:background="@drawable/get"
+                            android:id="@id/btn_address"
+                            style="@style/btn_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1.0dip"
+                            android:onClick="address_onc"
+                            android:text="获取" />
+                    </LinearLayout>
+                </LinearLayout>
+                </LinearLayout>
+<TextView
+                        style="@style/text_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="扩充后缀：" />
+
+                    <EditText
+                        android:id="@id/edit_well_name_kchz"
+                        style="@style/edit_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:numeric="integer"
+                        android:paddingTop="3.0dip"
+                        android:text="" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="共享类型：" />
+
+                    <Spinner
+                        android:id="@id/spinner_well_gxlx"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*是否租用：" />
+
+                    <Spinner
+                        android:id="@id/spinner_well_sfzy"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip" />
+                </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="5.0dip" >
+
+                            <TextView
+                                style="@style/text_1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="别名：" />
+
+                            <EditText
+                                android:id="@id/edit_well_bm"
+                                style="@style/edit_3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                
+                                android:paddingTop="3.0dip"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="5.0dip" >
+
+                            <TextView
+                                style="@style/text_1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="盖顶高程(单位：米)：" />
+
+                            <EditText
+                                android:id="@id/edit_well_gdgc"
+                                style="@style/edit_3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                
+                                android:numeric="decimal"
+                                android:paddingTop="3.0dip"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="5.0dip" >
+
+                            <TextView
+                                style="@style/text_1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="井坑底高程(单位：米)：" />
+
+                            <EditText
+                                android:id="@id/edit_well_jkdgc"
+                                style="@style/edit_3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                
+                                android:numeric="decimal"
+                                android:paddingTop="3.0dip"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="5.0dip" >
+
+                            <TextView
+                                style="@style/text_1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="井深(单位：米)：" />
+
+                            <EditText
+                                android:id="@id/edit_well_js"
+                                style="@style/edit_3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                
+                                android:numeric="decimal"
+                                android:paddingTop="3.0dip"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="5.0dip" >
+
+                            <TextView
+                                style="@style/text_1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="井长(单位：米)：" />
+
+                            <EditText
+                                android:id="@id/edit_well_jc"
+                                style="@style/edit_3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                
+                                android:numeric="decimal"
+                                android:paddingTop="3.0dip"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="5.0dip" >
+
+                            <TextView
+                                style="@style/text_1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="井宽(单位：米)：" />
+
+                            <EditText
+                                android:id="@id/edit_well_jk"
+                                style="@style/edit_3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                
+                                android:numeric="decimal"
+                                android:paddingTop="3.0dip"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="5.0dip" >
+
+                            <TextView
+                                style="@style/text_1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="井规格：" />
+
+                            <Spinner
+                                android:id="@id/spinner_well_jgg"
+                                android:layout_width="fill_parent"
+                                android:layout_height="40.0dip" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="5.0dip" >
+
+                            <TextView
+                                style="@style/text_1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="井结构：" />
+
+                            <Spinner
+                                android:id="@id/spinner_well_jjg"
+                                android:layout_width="fill_parent"
+                                android:layout_height="40.0dip" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="5.0dip" >
+
+                            <TextView
+                                style="@style/text_1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="道路类型：" />
+
+                            <Spinner
+                                android:id="@id/spinner_well_dllx"
+                                android:layout_width="fill_parent"
+                                android:layout_height="40.0dip" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="5.0dip" >
+
+                            <TextView
+                                style="@style/text_1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="路面类型：" />
+
+                            <Spinner
+                                android:id="@id/spinner_well_lmlx"
+                                android:layout_width="fill_parent"
+                                android:layout_height="40.0dip" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="5.0dip" >
+
+                            <TextView
+                                style="@style/text_1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="井盖材质：" />
+
+                            <EditText
+                                android:id="@id/edit_well_jgcz"
+                                style="@style/edit_3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                
+                                android:paddingTop="3.0dip"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="5.0dip" >
+
+                            <TextView
+                                style="@style/text_1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="井盖形状：" />
+
+                            <EditText
+                                android:id="@id/edit_well_jgxz"
+                                style="@style/edit_3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                
+                                android:paddingTop="3.0dip"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="5.0dip" >
+
+                            <TextView
+                                style="@style/text_1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="井盖数量：" />
+
+                            <EditText
+                                android:id="@id/edit_well_jgsl"
+                                style="@style/edit_3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                
+                                android:numeric="integer"
+                                android:paddingTop="3.0dip"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="5.0dip" >
+
+                            <TextView
+                                style="@style/text_1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="井壁厚度(单位：米)：" />
+
+                            <EditText
+                                android:id="@id/edit_well_jbhd"
+                                style="@style/edit_3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                
+                                android:numeric="decimal"
+                                android:paddingTop="3.0dip"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="5.0dip" >
+
+                            <TextView
+                                style="@style/text_1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="底基厚度(单位：米)：" />
+
+                            <EditText
+                                android:id="@id/edit_well_djhd"
+                                style="@style/edit_3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                
+                                android:numeric="decimal"
+                                android:paddingTop="3.0dip"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="5.0dip" >
+
+                            <TextView
+                                style="@style/text_1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="维护方式：" />
+
+                            <Spinner
+                                android:id="@id/spinner_well_whfs"
+                                android:layout_width="fill_parent"
+                                android:layout_height="40.0dip" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="5.0dip" >
+
+                            <TextView
+                                style="@style/text_1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="数据质量责任人：" />
+
+                            <EditText
+                                android:id="@id/edit_well_whdw"
+                                style="@style/edit_3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                
+                                android:paddingTop="3.0dip"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="5.0dip" >
+
+                            <TextView
+                                style="@style/text_1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="一线维护人：" />
+
+                            <EditText
+                                android:id="@id/edit_well_dsfwhdw"
+                                style="@style/edit_3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                
+                                android:paddingTop="3.0dip"
+                                android:text="" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+        style="@style/formActionArea"
+            android:id="@id/layout_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+            <Button
+               style="@style/Widget.AppCompat.Button.Borderless.Colored"
+		    android:textSize="16sp"
+    		android:gravity="center"
+                android:layout_width="0.0dip"
+                android:layout_height="48dip"
+                android:layout_marginBottom="0.0dip"
+                android:layout_weight="1.0"
+                android:onClick="mian_onc"
+                android:text="面/孔" />
+            <Button
+                android:id="@id/take_photo_button"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+		    android:textSize="16sp"
+    		android:gravity="center"
+                android:layout_width="0.0dip"
+                android:layout_height="48.0dip"
+                android:layout_marginBottom="0.0dip"
+                android:layout_weight="1.0"
+                android:onClick="cs_take_photo"
+                android:text="拍照" />
+            
+            <Button
+               style="@style/Widget.AppCompat.Button.Borderless.Colored"
+		    android:textSize="16sp"
+    		android:gravity="center"
+                android:layout_width="0.0dip"
+                android:layout_height="48.0dip"
+                android:layout_marginBottom="0.0dip"
+                android:layout_weight="1.0"
+                android:onClick="save_onc"
+                android:text="保存" />
+
+
+            <Button
+                android:id="@id/delete_button"
+                android:layout_width="0dip"
+                android:layout_height="48.0dip"
+                android:layout_weight="1.0"
+                android:layout_marginBottom="0.0dip"
+                android:text="删除"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+		    android:textSize="16sp"
+    		android:gravity="center"
+                android:onClick="cs_delete" />
+            </LinearLayout>
+    </RelativeLayout>

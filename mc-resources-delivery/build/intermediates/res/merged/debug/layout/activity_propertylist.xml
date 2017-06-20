@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/fab_margin"
+        android:paddingRight="@dimen/fab_margin" >
+
+        <EditText
+            android:id="@id/zcbqh_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:hint="资产标签号"
+            android:text="" />
+    
+
+
+
+        <EditText
+            android:id="@id/zcname_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:layout_below="@id/zcbqh_edit"
+            android:hint="资产名称"
+            android:text="" />
+
+        <Button
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="-40dp"
+            android:layout_below="@id/zcbqh_edit"
+            android:layout_toRightOf="@id/zcname_edit"
+            android:background="@drawable/search_btn_selector"
+            android:onClick="chaxun" />
+    </RelativeLayout>
+
+
+            <ListView
+                android:id="@id/listView3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+        android:layout_below="@id/search_layout"
+                android:cacheColorHint="#00000000"
+                android:divider="#ffcccccc"
+                android:dividerHeight="6.0dip"
+                android:padding="3.0dip" />
+    
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:clickable="true"
+        android:src="@drawable/ic_add_white_24dp"
+        app:borderWidth="0dp" />
+
+
+</RelativeLayout>

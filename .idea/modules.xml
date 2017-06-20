@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Swipyrefreshlayout/Swipyrefreshlayout.iml" filepath="$PROJECT_DIR$/Swipyrefreshlayout/Swipyrefreshlayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ac.iml" filepath="$PROJECT_DIR$/ac.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-support-v7-appcompat/android-support-v7-appcompat.iml" filepath="$PROJECT_DIR$/android-support-v7-appcompat/android-support-v7-appcompat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cardview/cardview.iml" filepath="$PROJECT_DIR$/cardview/cardview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design/design.iml" filepath="$PROJECT_DIR$/design/design.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mc-resources-delivery/mc-resources-delivery.iml" filepath="$PROJECT_DIR$/mc-resources-delivery/mc-resources-delivery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/number-picker/number-picker.iml" filepath="$PROJECT_DIR$/number-picker/number-picker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photo/photo.iml" filepath="$PROJECT_DIR$/photo/photo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recyclerview/recyclerview.iml" filepath="$PROJECT_DIR$/recyclerview/recyclerview.iml" />
+    </modules>
+  </component>
+</project>

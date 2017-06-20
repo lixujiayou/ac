@@ -1,0 +1,6 @@
+int attr srl_direction 0x7f010000
+int id both 0x7f020000
+int id bottom 0x7f020001
+int id top 0x7f020002
+int[] styleable SwipyRefreshLayout { 0x7f010000 }
+int styleable SwipyRefreshLayout_srl_direction 0

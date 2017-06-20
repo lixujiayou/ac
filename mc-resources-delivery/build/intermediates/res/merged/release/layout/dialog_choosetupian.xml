@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:gravity="center" android:id="@id/btn_1" android:background="@drawable/guankong_dan" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+    <Button android:gravity="center" android:id="@id/btn_2" android:background="@drawable/mukong1" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+    <Button android:gravity="center" android:id="@id/btn_3" android:background="@drawable/mukong2" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+    <Button android:gravity="center" android:id="@id/btn_4" android:background="@drawable/mukong3" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+    <Button android:gravity="center" android:id="@id/btn_5" android:background="@drawable/mukong4" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+    <Button android:gravity="center" android:id="@id/btn_6" android:background="@drawable/mukong5" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+    <Button android:gravity="center" android:id="@id/btn_7" android:background="@drawable/mukong6" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+    <Button android:gravity="center" android:id="@id/btn_8" android:background="@drawable/mukong7" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+</LinearLayout>

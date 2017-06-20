@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/titlelayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.1">
+        <Button android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="当前位置" android:layout_weight="1.0" android:onClick="now_onc" style="@style/btn_1" />
+        <Button android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="手动定位" android:layout_weight="1.0" android:onClick="self_onc" style="@style/btn_1" />
+        <Button android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="附近资源" android:layout_weight="1.0" android:onClick="near_onc" style="@style/btn_1" />
+        <Button android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="关联吊线段" android:layout_weight="1.0" android:onClick="gldxd_onc" style="@style/btn_1" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/dxdlayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="起始设施：" android:layout_weight="2.0" />
+            <EditText android:enabled="false" android:id="@id/edit_sus_qsss" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="6.0" style="@style/edit_1" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="终止设施：" android:layout_weight="2.0" />
+            <EditText android:enabled="false" android:id="@id/edit_sus_zzss" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="6.0" style="@style/edit_1" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/commitlayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/commit" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="保存" android:layout_weight="1.0" android:onClick="save_onc" style="@style/btn_1" />
+            <Button android:id="@id/xzlm" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="取消" android:layout_weight="1.0" android:onClick="cancel_onc" style="@style/btn_1" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/maplayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.8">
+        <com.baidu.mapapi.map.MapView android:id="@id/bmapView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottomlayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.1">
+        <Button android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="添加撑点" android:layout_weight="1.0" android:onClick="addsup_onc" style="@style/btn_1" />
+        <Button android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="添加电杆" android:layout_weight="1.0" android:onClick="addpole_onc" style="@style/btn_1" />
+    </LinearLayout>
+</LinearLayout>

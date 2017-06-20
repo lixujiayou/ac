@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color"
+    android:cacheColorHint="@android:color/transparent"
+    android:orientation="vertical"
+    android:paddingTop="10.0dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:padding="5.0dip" >
+
+        <LinearLayout
+            android:id="@id/search_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 设备名称 -->
+
+            <TextView
+                android:id="@id/name_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="设备名称"
+                android:textColor="#7f7f7f"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <EditText
+                    android:id="@id/name_edit"
+                    style="@style/edit_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/zsl_shebei_mingcheng"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+            <!-- end 设备名称 -->
+
+
+            <!-- 厂家 -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="厂家"
+                android:textColor="#7f7f7f"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/zsl_edit_chang_jia"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+            <!-- end 厂家 -->
+
+
+            <!-- 机架类型 -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="机架类型"
+                android:textColor="#7f7f7f"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/zsl_jijia_leixing"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- end 机架类型 -->
+
+
+            <!-- 机架行号 -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="机架行号"
+                android:textColor="#7f7f7f"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/zsl_edit_jijia_hanghao"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+            <!-- end 机架行号 -->
+
+
+            <!-- 机架列号 -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="机架列号"
+                android:textColor="#7f7f7f"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/zsl_edit_jijia_liehao"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+            <!-- end 机架列号 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:paddingTop="5.0dip" >
+
+                <Button
+                    style="@style/btn_1"
+                    android:layout_width="0.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_marginBottom="0.0dip"
+                    android:layout_weight="1.0"
+                    android:onClick="cs_save"
+                    android:text="确定" />
+
+                <Button
+                    style="@style/btn_1"
+                    android:layout_width="0.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_marginBottom="0.0dip"
+                    android:layout_weight="1.0"
+                    android:onClick="cs_cancel"
+                    android:text="取消" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

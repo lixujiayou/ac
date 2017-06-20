@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/release/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/design/build/intermediates/bundles/default/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/release/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/design/build/intermediates/bundles/default/res/anim-v21/design_bottom_sheet_slide_out.xml"
+    }
+]

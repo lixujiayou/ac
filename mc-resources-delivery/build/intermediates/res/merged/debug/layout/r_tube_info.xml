@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:cacheColorHint="@android:color/transparent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:padding="5.0dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center|top" >
+
+        <ScrollView
+            android:id="@id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_above="@id/layout_button"
+            android:gravity="center|top"
+            android:padding="5.0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*管孔名称：" />
+
+                <EditText
+                    android:id="@id/edit_tube_gkmc"
+                    style="@style/edit_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*管孔编号：" />
+
+                <EditText
+                    android:id="@id/edit_tube_gkbh"
+                    style="@style/edit_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="RFID标签号：" />
+
+                <EditText
+                    android:id="@id/edit_rfid"
+                    style="@style/edit_1"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*所属管道段：" />
+
+                <EditText
+                    android:id="@id/edit_ssgdd"
+                    style="@style/edit_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:text="" />
+
+                <TextView
+                    android:id="@id/text_ssfkbs"
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*所属父管孔标识：" />
+
+                <EditText
+                    android:id="@id/edit_ssfkbs"
+                    style="@style/edit_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:text="" />
+
+                <TextView
+                    android:id="@id/text_zkplfs"
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*子管孔排列方式：" />
+
+                <EditText
+                    android:id="@id/edit_zkplfs"
+                    style="@style/edit_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@id/text_zksl"
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*子管孔数目：" />
+
+                <Spinner
+                    android:id="@id/spinner_tube_zksl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" />
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*管孔状态：" />
+
+                <Spinner
+                    android:id="@id/spinner_tube_gkzt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" />
+                
+                <RelativeLayout
+                    android:id="@id/layout_czdld"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/ic_more_item_default"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10.0dip" >
+			<TextView
+                    android:id="@id/text_czdld"
+                    style="@style/text_1"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="承载的缆段：" />
+                   
+
+                    <ImageView
+                        android:id="@id/add1"
+                        android:background="@drawable/add"
+                        android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="gl_onc"
+                        android:text="添加" />
+                    <View 
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@id/text_czdld"
+                    android:background="@android:color/black"/>
+                <com.inspur.common.ListViewForScrollView
+                        android:id="@id/listview_gld"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@id/line"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:cacheColorHint="@android:color/transparent" />
+ </RelativeLayout>
+                
+
+                <TextView
+                    style="@style/text_3"
+                    android:id="@+id/text_cqxz"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*产权性质：" />
+
+                <Spinner
+                    android:id="@id/spinner_pipesegment_gjgxlx"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" />
+
+                <TextView
+                    style="@style/text_3"
+                    android:id="@+id/text_cqdw"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="产权单位：" />
+
+                <Spinner
+                    android:id="@+id/spinner_pipesegment_gjgxf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" />
+                
+
+
+                <Button
+                    android:visibility="gone"
+                    style="@style/btn_1"
+                    android:layout_width="120.0dip"
+                    android:layout_height="35.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:onClick="xxxx_onc"
+                    android:text="详细信息  >>" />
+                
+
+                <LinearLayout
+                    android:id="@id/show_more"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+                
+                    <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="承租方：" />
+
+                <EditText
+                    android:id="@id/edit_tube_zydw"
+                    style="@style/edit_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="共享类型：" />
+
+                <Spinner
+                    android:id="@id/spinner_pipesegment_gxlx"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" />
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*是否租用：" />
+
+                <Spinner
+                    android:id="@id/spinner_tube_sfzy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" />
+
+                
+<RelativeLayout
+                    android:id="@id/layout_czdld2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/ic_more_item_default"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10.0dip" >
+                <TextView
+                    android:id="@id/text_czdld2"
+                    style="@style/text_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="承载的缆段(备用)：" />
+
+                <ImageView
+                        android:id="@id/add2"
+                        android:background="@drawable/add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:onClick="by_gl_onc"
+                        android:text="添加" />
+                <View 
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@id/text_czdld2"
+                    android:background="@android:color/black"/>
+
+                    <com.inspur.common.ListViewForScrollView
+                        android:id="@id/listview_gld2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="200.0dip"
+                        android:layout_below="@id/line2"
+                        android:cacheColorHint="@android:color/transparent" />
+
+                    
+                </RelativeLayout>
+
+                    <TextView
+                        style="@style/text_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="管孔直径（单位：厘米）：" />
+
+                    <EditText
+                        android:id="@id/edit_tube_gkzj"
+                        style="@style/edit_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:numeric="decimal"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/text_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="管孔颜色：" />
+
+                    <Spinner
+                        android:id="@id/spinner_tube_gkys"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip" />
+
+                    <TextView
+                        style="@style/text_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="管孔材质：" />
+
+                    <Spinner
+                        android:id="@id/spinner_tube_gkcz"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip" />
+
+                    <TextView
+                        style="@style/text_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="管孔形状：" />
+
+                    <Spinner
+                        android:id="@id/spinner_tube_gkxz"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@id/layout_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@id/layout_zikong"
+                android:layout_width="190.0dip"
+                android:layout_height="185.0dip"
+                android:layout_marginBottom="30.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/guankong_dan"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="4.2" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.0dip"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@id/btn_7"
+                        android:layout_width="45.0dip"
+                        android:layout_height="45.0dip"
+                        android:layout_marginBottom="0.0dip"
+                        android:background="@drawable/zikong"
+                        android:text="7"
+                        android:textColor="@color/text_color_init"
+                        android:textSize="16.0dip"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@id/btn_5"
+                        android:layout_width="45.0dip"
+                        android:layout_height="45.0dip"
+                        android:layout_marginBottom="0.0dip"
+                        android:background="@drawable/zikong"
+                        android:text="5"
+                        android:textColor="@color/text_color_init"
+                        android:textSize="16.0dip"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.0dip"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.2" >
+
+                    <Button
+                        android:id="@id/btn_1"
+                        android:layout_width="45.0dip"
+                        android:layout_height="45.0dip"
+                        android:background="@drawable/zikong"
+                        android:text="1"
+                        android:textColor="@color/text_color_init"
+                        android:textSize="16.0dip"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@id/btn_4"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/zikong"
+                        android:text="4"
+                        android:textColor="@color/text_color_init"
+                        android:textSize="16.0dip"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@id/btn_2"
+                        android:layout_width="45.0dip"
+                        android:layout_height="45.0dip"
+                        android:background="@drawable/zikong"
+                        android:text="2"
+                        android:textColor="@color/text_color_init"
+                        android:textSize="16.0dip"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.0dip"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@id/btn_6"
+                        android:layout_width="45.0dip"
+                        android:layout_height="45.0dip"
+                        android:layout_marginBottom="0.0dip"
+                        android:background="@drawable/zikong"
+                        android:text="6"
+                        android:textColor="@color/text_color_init"
+                        android:textSize="16.0dip"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@id/btn_3"
+                        android:layout_width="45.0dip"
+                        android:layout_height="45.0dip"
+                        android:layout_marginBottom="0.0dip"
+                        android:background="@drawable/zikong"
+                        android:text="3"
+                        android:textColor="@color/text_color_init"
+                        android:textSize="16.0dip"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+        style="@style/formActionArea"
+        android:id="@id/layout_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:orientation="horizontal" >
+				<Button
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+		    android:textSize="16sp"
+    		android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48.0dip"
+                    android:layout_marginBottom="0.0dip"
+                    android:onClick="save_onc"
+                    android:text="保存" />
+				</LinearLayout>
+            
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

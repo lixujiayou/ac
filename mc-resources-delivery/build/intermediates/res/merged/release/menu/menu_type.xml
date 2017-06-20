@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/action_location"
+        android:icon="@drawable/search_1"
+        android:orderInCategory="1"
+        android:title="搜索"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/jiaoge_1"
+        android:showAsAction="never"
+        android:title="通过"/>
+    
+    
+    <item
+        android:id="@+id/jiaoge_2"
+        android:showAsAction="never"
+        android:title="未通过"/>
+    
+        <item
+        android:id="@+id/jiaoge_no"
+        android:showAsAction="never"
+        android:title="未交割"/>
+</menu>

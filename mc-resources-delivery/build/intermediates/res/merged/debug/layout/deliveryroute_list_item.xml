@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:padding="5.0dip" >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_info"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/iv_info"
+        android:text=""
+        android:textColor="#ff000000"
+        android:textSize="20.0dip" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/iv_info"
+        android:layout_toRightOf="@+id/time"
+        android:layout_below="@+id/name"
+        android:text=""
+        android:textColor="#ff888888"
+        android:textSize="16.0dip" />
+     <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/name"
+        android:text=""
+        android:textColor="#ff888888"
+        android:textSize="16.0dip" />
+     
+     <ImageView
+        android:id="@+id/iv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/aa_icon_detail_normal"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:textColor="#ff888888"
+        android:textSize="16.0dip" />
+
+</RelativeLayout>

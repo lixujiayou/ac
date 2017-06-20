@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/bluedefault" android:background="@drawable/choose_eara_item_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip">
+        <TextView android:textSize="18.0dip" android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="默认连接的蓝牙设备：" />
+        <TextView android:textSize="18.0dip" android:gravity="left" android:id="@id/bluename" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="14.0dip" android:gravity="left" android:id="@id/blueaddr" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textSize="14.0dip" android:gravity="right" android:id="@id/mt" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/iv_test" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/button_scan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_scan" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="20.0dip">
+            <TextView android:layout_width="0.0dip" android:layout_height="20.0dip" android:text="@string/str_device" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/layoutscan" android:layout_width="0.0dip" android:layout_height="20.0dip" android:layout_weight="1.0">
+                <TextView android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="@string/str_scaning" />
+                <ProgressBar android:id="@id/progressBar2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall" />
+            </LinearLayout>
+        </LinearLayout>
+        <ListView android:id="@id/listView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@android:color/transparent">
+        <LinearLayout android:gravity="center|right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5">
+            <TextView android:textSize="17.0sp" android:textColor="#ff4682b4" android:id="@id/pointinfo_activity_text_xgr" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="17.0sp" android:textColor="#ff4682b4" android:id="@id/pointinfo_activity_text_xgsj" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:background="#ff4682b4" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/pointinfo_activity_layout_jbxx" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@android:color/transparent">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/containerBody" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:cacheColorHint="@android:color/transparent" android:layout_weight="1.0">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/text_color_init" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pointinfo_activity_text_dzbm" />
+                    <TextView android:textSize="17.0sp" android:textColor="#ff4682b4" android:id="@id/pointinfo_activity_text_dzbm" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@android:color/transparent" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/containerBody1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@android:color/transparent" android:layout_weight="1.0">
+                        <TextView android:textSize="17.0sp" android:textColor="@color/text_color_init" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pointinfo_activity_text_dzzt" />
+                        <TextView android:textSize="17.0sp" android:textColor="#ff4682b4" android:id="@id/pointinfo_activity_text_dzzt" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <Spinner android:id="@id/pointinfo_activity_spinner_dzzt" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@android:color/transparent" android:layout_weight="1.0">
+                        <TextView android:textSize="17.0sp" android:textColor="@color/text_color_init" android:id="@id/text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pointinfo_activity_text_ywbh" />
+                        <TextView android:textSize="17.0sp" android:textColor="#ff4682b4" android:id="@id/pointinfo_activity_text_ywbh" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <EditText android:textSize="17.0sp" android:textColor="#ff4682b4" android:id="@id/pointinfo_activity_edit_ywbh" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@android:color/transparent" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@android:color/transparent" android:layout_weight="1.0">
+                        <TextView android:textSize="17.0sp" android:textColor="@color/text_color_init" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pointinfo_activity_text_dzfx" />
+                        <TextView android:textSize="17.0sp" android:textColor="#ff4682b4" android:id="@id/pointinfo_activity_text_dzfx" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <Spinner android:id="@id/pointinfo_activity_spinner_dzfx" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@android:color/transparent" android:layout_weight="1.0">
+                        <TextView android:textSize="17.0sp" android:textColor="@color/text_color_init" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pointinfo_activity_text_ywlx" />
+                        <TextView android:textSize="17.0sp" android:textColor="#ff4682b4" android:id="@id/pointinfo_activity_text_ywlx" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <EditText android:textSize="17.0sp" android:textColor="#ff4682b4" android:id="@id/pointinfo_activity_edit_ywlx" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@android:color/transparent" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@android:color/transparent" android:layout_weight="1.0">
+                        <TextView android:textSize="17.0sp" android:textColor="@color/text_color_init" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pointinfo_activity_text_dzlx" />
+                        <TextView android:textSize="17.0sp" android:textColor="#ff4682b4" android:id="@id/pointinfo_activity_text_dzlx" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <Spinner android:id="@id/pointinfo_activity_spinner_dzlx" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@android:color/transparent" android:layout_weight="1.0">
+                        <TextView android:textSize="17.0sp" android:textColor="@color/text_color_init" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pointinfo_activity_text_czyw" />
+                        <TextView android:textSize="17.0sp" android:textColor="#ff4682b4" android:id="@id/pointinfo_activity_text_czyw" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <EditText android:textSize="17.0sp" android:textColor="#ff4682b4" android:id="@id/pointinfo_activity_edit_czyw" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:background="#ff4682b4" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/text_color_init" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pointinfo_activity_text_bz" />
+                    <TextView android:textSize="17.0sp" android:textColor="#ff4682b4" android:id="@id/pointinfo_activity_text_bz" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <EditText android:textSize="17.0sp" android:textColor="#ff4682b4" android:id="@id/pointinfo_activity_edit_bz" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:background="#ff4682b4" android:layout_width="2.0dip" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:cacheColorHint="@android:color/transparent">
+            <Button android:id="@id/point_activity_bt_jb_change" android:layout_width="90.0dip" android:layout_height="45.0dip" android:text="@string/pointinfo_activity_bt_xg" style="@style/btn_1" />
+            <Button android:enabled="true" android:id="@id/point_activity_bt_jb_ok" android:layout_width="90.0dip" android:layout_height="45.0dip" android:text="@string/pointinfo_activity_bt_bc" style="@style/btn_1" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="0.5"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/main_face"
+        android:drawablePadding="10dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="50.0dip"
+        android:text="省时、省力，助力资源交割"
+        android:textColor="@color/white"
+        android:textSize="16.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="105.0dip"
+            android:layout_marginTop="15.0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="105.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:onClick="chuanshu_onc"
+                android:orientation="vertical" >
+
+              
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:drawableTop="@drawable/qingcha_base_selector"
+                    android:gravity="center_horizontal"
+                    android:onClick="chuanshu_onc"
+                    android:text="传输线路"
+                    android:textColor="#74859E"
+                    android:textSize="14.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="105.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:onClick="jizhanjishebei_onc"
+                android:orientation="vertical" >
+
+                
+
+                <TextView
+                    android:id="@id/hecha_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:drawableTop="@drawable/hecha_base_selector"
+                    android:gravity="center_horizontal"
+                    android:onClick="jizhanjishebei_onc"
+                    android:text="光交接箱"
+                    android:textColor="#74859E"
+                    android:textSize="14.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="105.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:onClick="layuanzhan_onc"
+                android:orientation="vertical" >
+
+                
+
+                <TextView
+                    android:id="@id/count_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:drawableTop="@drawable/tongji_base_selector"
+                    android:gravity="center_horizontal"
+                    android:onClick="layuanzhan_onc"
+                    android:text="离线"
+                    android:textColor="#74859E"
+                    android:textSize="14.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="105.0dip"
+            android:layout_marginTop="15.0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="105.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:onClick="zhifangzhan_onc"
+                android:orientation="vertical" >
+
+               
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:drawableTop="@drawable/gis_base_selector"
+                    android:gravity="center_horizontal"
+                    android:onClick="zhifangzhan_onc"
+                    android:text="直放站"
+                    android:textColor="#74859E"
+                    android:textSize="14.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="105.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:onClick="redian_onc"
+                android:orientation="vertical" >
+
+                
+
+                <TextView
+                    android:id="@id/e_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:drawableTop="@drawable/e_base_selector"
+                    android:gravity="center_horizontal"
+                    android:onClick="redian_onc"
+                    android:text="热点"
+                    android:textColor="#74859E"
+                    android:textSize="14.0dip" />
+            </LinearLayout>
+
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

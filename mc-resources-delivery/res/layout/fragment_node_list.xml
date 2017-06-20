@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="5.0dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:baselineAligned="false"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="horizontal"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip" >
+
+        <CheckBox
+            android:id="@id/checkBox_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:text="批量选择" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+			<TextView
+                android:id="@id/pl_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标记为已核查 " />
+            <com.inspur.resources.base.SwitchButton
+                android:id="@id/pl_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center" />
+
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.inspur.resources.base.swipemenulistview.SwipeMenuListView
+        android:id="@id/senduser_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000" />
+
+</LinearLayout>

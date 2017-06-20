@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10.0dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg"
+        android:orientation="horizontal" >
+
+        <com.inspur.component.wheel.WheelView
+            android:id="@+id/id_province"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </com.inspur.component.wheel.WheelView>
+
+        <com.inspur.component.wheel.WheelView
+            android:id="@+id/id_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </com.inspur.component.wheel.WheelView>
+
+        <com.inspur.component.wheel.WheelView
+            android:id="@+id/id_area"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </com.inspur.component.wheel.WheelView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@id/type_button_submit"
+            style="@style/btn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:layout_weight="1"
+            android:onClick="submit"
+            android:text="确定" />
+
+        <Button
+            android:id="@id/type_button_back"
+            style="@style/btn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:layout_weight="1"
+            android:onClick="back"
+            android:text="取消" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ActualNumberPicker"><attr format="boolean|reference" name="show_bars"/><attr format="integer|reference" name="bars_count"/><attr format="color|reference" name="bar_color"/><attr format="dimension|reference" name="bar_width"/><attr format="color|reference" name="selection_color"/><attr format="boolean|reference" name="draw_over_text"/><attr format="boolean|reference" name="draw_over_controls"/><attr format="boolean|reference" name="show_highlight"/><attr format="color|reference" name="highlight_color"/><attr format="boolean|reference" name="show_controls"/><attr format="color|reference" name="controls_color"/><attr format="boolean|reference" name="show_fast_controls"/><attr format="color|reference" name="fast_controls_color"/><attr format="boolean|reference" name="show_text"/><attr format="dimension|reference" name="text_size"/><attr format="color|reference" name="text_color"/><attr format="integer|reference" name="value"/><attr format="integer|reference" name="min_value"/><attr format="integer|reference" name="max_value"/></declare-styleable>
+    <dimen name="control_size">56dp</dimen>
+    <dimen name="default_font_size">14sp</dimen>
+    <dimen name="min_bar_width">0.8dp</dimen>
+    <dimen name="min_height">32dp</dimen>
+    <string name="app_name">Actual Number Picker</string>
+    <style name="AppTheme" parent="@android:style/Theme.Light"/>
+</resources>

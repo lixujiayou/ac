@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:layout_margin="5.0dip"
+    android:background="#ffffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:weightSum="12.0" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@id/img"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:background="@drawable/xiaojiantou" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_toRightOf="@id/img"
+            android:gravity="center"
+            android:text="黑框为设备"
+            android:textSize="12.0dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_toRightOf="@id/img"
+            android:gravity="center"
+            android:text="黑框为设备，红框为电源"
+            android:textSize="12.0dip"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@id/jf_bj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="可编辑拖动"
+            android:textColor="#ff000000" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20.0dip"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@id/men1_1"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bianxian" />
+
+        <ImageView
+            android:id="@id/men1_2"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bianxian" />
+
+        <ImageView
+            android:id="@id/men1_3"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bianxian" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="9.0"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="20.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@id/men2_1"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/bianxian_2" />
+
+            <ImageView
+                android:id="@id/men2_2"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/bianxian_2" />
+
+            <ImageView
+                android:id="@id/men2_3"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/bianxian_2" />
+        </LinearLayout>
+
+        <AbsoluteLayout
+            android:id="@id/jifang_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:background="@drawable/wangge"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="20.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@id/men4_1"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/bianxian_4" />
+
+            <ImageView
+                android:id="@id/men4_2"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/bianxian_4" />
+
+            <ImageView
+                android:id="@id/men4_3"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/bianxian_4" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@id/men3_1"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bianxian_3" />
+
+        <ImageView
+            android:id="@id/men3_2"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bianxian_3" />
+
+        <ImageView
+            android:id="@id/men3_3"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bianxian_3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/layout_button"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="2.0"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@id/cs_addequ_button"
+            style="@style/btn_1"
+            android:layout_width="0.0dip"
+            android:layout_height="55.0dip"
+            android:layout_marginBottom="0.0dip"
+            android:layout_weight="1.0"
+            android:onClick="addequ"
+            android:text="添加设备"
+            android:textColor="@color/btn_color_text" />
+
+        <Button
+            android:id="@id/cs_adddianyuan_button"
+            style="@style/btn_1"
+            android:layout_width="0.0dip"
+            android:layout_height="55.0dip"
+            android:layout_marginBottom="0.0dip"
+            android:layout_weight="1.0"
+            android:onClick="adddianyuan"
+            android:text="添加电源"
+            android:textColor="@color/btn_color_text"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/background_color" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/text_color_main" android:layout_gravity="center|left|top" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请选择添加资源类型" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/text_color_init" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="资源类型" />
+        <Spinner android:textAppearance="?android:textAppearanceMedium" android:id="@id/type_select_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/type_button_submit" android:layout_width="100.0dip" android:layout_height="50.0dip" android:text="确定" android:layout_weight="0.3" android:onClick="submit" style="@style/btn_1" />
+        <Button android:id="@id/type_button_back" android:layout_width="100.0dip" android:layout_height="50.0dip" android:text="取消" android:layout_weight="0.3" android:onClick="back" style="@style/btn_1" />
+    </LinearLayout>
+</LinearLayout>

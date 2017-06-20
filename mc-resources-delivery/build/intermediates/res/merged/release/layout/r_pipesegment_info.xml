@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:cacheColorHint="@android:color/transparent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5.0dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center" >
+
+        <ScrollView
+            android:id="@id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/layout_button"
+            android:padding="5.0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*管道名称：" />
+
+                    <TextView
+                        android:id="@id/text_pipe_gdmc"
+                        style="@style/edit_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35.0dip"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*管道段名称：" />
+
+                    <EditText
+                        android:id="@id/edit_pipesegment_gdmc"
+                        style="@style/edit_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3.0dip"
+                        android:text="" />
+                </LinearLayout>
+
+                
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*所属维护区域" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@id/oc_maintenance_edit"
+                            style="@style/edit_3"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4.0"
+                            android:editable="false"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+
+                        <ImageView
+                            android:id="@id/oc_maintenance_select_button"
+                            android:background="@drawable/get"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1.0dip"
+                            android:onClick="maintenance_select_onc"
+                            android:text="获取" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*管道段长度（单位：米）：" />
+
+                    <EditText
+                        android:id="@id/edit_pipesegment_gddcd"
+                        style="@style/edit_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:numeric="decimal"
+                        android:paddingTop="3.0dip"
+                        android:text="" />
+                </LinearLayout>
+
+                
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*起始设施：" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@id/edit_pipesegment_qsss"
+                            style="@style/edit_3"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5.0"
+                            android:enabled="false"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+
+                        <Button
+                            android:id="@id/btn_start"
+                            android:layout_width="0.0dip"
+                            android:layout_height="35.0dip"
+                            android:layout_marginLeft="1.0dip"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/n_btn_selector"
+                            android:text="选择"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*终止设施：" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@id/edit_pipesegment_zzss"
+                            style="@style/edit_3"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5.0"
+                            android:enabled="false"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+
+                        <Button
+                            android:id="@id/btn_end"
+                            android:layout_width="0.0dip"
+                            android:layout_height="35.0dip"
+                            android:layout_marginLeft="1.0dip"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/n_btn_selector"
+                            android:text="选择"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*管孔数目：" />
+
+                    <EditText
+                        android:id="@id/edit_pipesegment_gksm"
+                        style="@style/edit_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:numeric="integer"
+                        android:paddingTop="3.0dip"
+                        android:text="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*产权性质：" />
+
+                    <Spinner
+                        android:id="@id/spinner_pipesegment_gjgxlx"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="产权单位：" />
+
+                    <EditText
+                        android:id="@id/edit_pipesegment_gjgxf"
+                        style="@style/edit_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3.0dip" />
+                </LinearLayout>
+                
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="数据质量责任人" />
+
+                <EditText
+                    android:id="@+id/sjzlzrr"
+                    style="@style/edit_3"
+                    android:enabled="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    style="@style/text_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="一线维护人" />
+
+                <EditText
+                    android:id="@+id/yxwhr"
+                    style="@style/edit_3"
+                    android:enabled="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3.0dip"
+                    android:text="" />
+            </LinearLayout>
+
+                
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*管道段编号：" />
+
+                    <EditText
+                        android:id="@id/edit_pipe_gdbh"
+                        style="@style/edit_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3.0dip"
+                        android:text="" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*管道段类型：" />
+
+                    <Spinner
+                        android:id="@id/spinner_pipesegment_gdlx"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="共享类型：" />
+
+                    <Spinner
+                        android:id="@id/spinner_pipesegment_gxlx"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        style="@style/text_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*是否租用：" />
+
+                    <Spinner
+                        android:id="@id/spinner_pipesegment_sfzy"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@id/xxxx"
+                    android:layout_width="120.0dip"
+                    android:layout_height="35.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/xxxx_button"
+                    android:text="详细信息  >>" />
+
+                <LinearLayout
+                    android:id="@id/show_more"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="道路名称：" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <EditText
+                                android:id="@id/edit_pipesegment_dlmc"
+                                style="@style/edit_3"
+                                android:layout_width="0.0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingTop="3.0dip"
+                                android:text="" />
+
+                            <ImageView
+                                android:id="@id/btn_djmc"
+                                android:background="@drawable/get"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1.0dip"
+                                android:text="获取" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="深埋（单位：米）：" />
+
+                        <EditText
+                            android:id="@id/edit_pipesegment_sm"
+                            style="@style/edit_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:numeric="decimal"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="起始管群顶高程（单位：米）：" />
+
+                        <EditText
+                            android:id="@id/edit_pipesegment_qsgddgc"
+                            style="@style/edit_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:numeric="decimal"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="起始管道沟底高程（单位：米）：" />
+
+                        <EditText
+                            android:id="@id/edit_pipesegment_qsgdgdgc"
+                            style="@style/edit_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:numeric="decimal"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="终止管群顶高程（单位：米）：" />
+
+                        <EditText
+                            android:id="@id/edit_pipesegment_zzgddgc"
+                            style="@style/edit_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:numeric="decimal"
+                            android:paddingTop="3.0dip"
+                            android:text="0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="终止管道沟底高程（单位：米）：" />
+
+                        <EditText
+                            android:id="@id/edit_pipesegment_zzgdgdgc"
+                            style="@style/edit_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:numeric="decimal"
+                            android:paddingTop="3.0dip"
+                            android:text="0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="管道铺设工艺：" />
+
+                        <Spinner
+                            android:id="@id/spinner_pipesegment_gdpsgy"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="共建/共享管孔数量：" />
+
+                        <EditText
+                            android:id="@id/edit_pipesegment_gjgxgksm"
+                            style="@style/edit_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:numeric="integer"
+                            android:paddingTop="3.0dip"
+                            android:text="0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="租用单位：" />
+
+                        <EditText
+                            android:id="@id/edit_pipesegment_zydw"
+                            style="@style/edit_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="2.0dip"
+                        android:background="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            android:id="@id/yinshang_text"
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="引上/引入点名称：" />
+
+                        <EditText
+                            android:id="@id/edit_ledup_ysdmc"
+                            style="@style/edit_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            android:id="@id/yinshang_text1"
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="引上/引入点编号：" />
+
+                        <EditText
+                            android:id="@id/edit_ledup_ysdbh"
+                            style="@style/edit_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            android:id="@id/yinshang_text2"
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="引上/引入管数目：" />
+
+                        <EditText
+                            android:id="@id/edit_ledup_ysgsm"
+                            style="@style/edit_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:numeric="integer"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            android:id="@id/yinshang_text3"
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="已用引上/引入管数目：" />
+
+                        <EditText
+                            android:id="@id/edit_ledup_yyysgsm"
+                            style="@style/edit_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:numeric="integer"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5.0dip" >
+
+                        <TextView
+                            android:id="@id/yinshang_text4"
+                            style="@style/text_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="预留引上/引入管数目：" />
+
+                        <EditText
+                            android:id="@id/edit_ledup_ylysgsm"
+                            style="@style/edit_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:numeric="integer"
+                            android:paddingTop="3.0dip"
+                            android:text="" />
+                    </LinearLayout>
+                </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+        style="@style/formActionArea"
+            android:id="@id/layout_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@id/btn_save"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+		    android:textSize="16sp"
+    		android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="48dip"
+                android:layout_marginBottom="0.0dip"
+                android:layout_weight="1.0"
+                android:text="保存" />
+
+            
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
