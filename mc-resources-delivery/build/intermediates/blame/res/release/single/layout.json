@@ -48,12 +48,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/layout/abc_expanded_menu_layout.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/layout/abc_list_menu_item_checkbox.xml"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/layout/activity_r_polelist.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/activity_r_polelist.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/layout/poleline_location_activity.xml",
@@ -68,12 +68,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/activity_v_list.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/layout/simp_r_fiberboxlist_item.xml",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/simp_r_fiberboxlist_item.xml"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/layout/abc_action_mode_close_item_material.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/layout/simp_r_fiberboxlist_item.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/simp_r_fiberboxlist_item.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/layout/show_photo.xml",
@@ -208,6 +208,10 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/dialog_region_wheel.xml"
     },
     {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/layout/activity_my_query.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/activity_my_query.xml"
+    },
+    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/layout/activity_jifangmodel_add.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/activity_jifangmodel_add.xml"
     },
@@ -228,12 +232,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/r_well_face.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/layout/myt_list_item_2.xml",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/myt_list_item_2.xml"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/layout/activity_offline_delivery.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/activity_offline_delivery.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/layout/myt_list_item_2.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/myt_list_item_2.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/layout/simp_r_welllist.xml",

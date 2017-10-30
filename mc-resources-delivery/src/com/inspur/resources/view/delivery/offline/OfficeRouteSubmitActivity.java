@@ -83,6 +83,7 @@ public class OfficeRouteSubmitActivity extends BaseActivity {
 	private Button cs_save_button,submit_button,take_photo_button,refresh_button;
 
 	private int routeID = 0;
+	private int officeRouteId = 0;
 	@Override
 	protected void onCreate(Bundle bundle) {
 		super.onCreate(bundle);
@@ -94,6 +95,8 @@ public class OfficeRouteSubmitActivity extends BaseActivity {
 
 		initUI();
 		initData(routeInfoBean = (RouteInfoBean) intent.getSerializableExtra(INTENT_DATA_FLAG));
+
+		officeRouteId = routeInfoBean.getRouteID();
 
 		if( !canEdit ){
 			lyzt_spinner.setEnabled(false);
@@ -187,6 +190,7 @@ public class OfficeRouteSubmitActivity extends BaseActivity {
 	// 保存本地
 	public void cs_save(View v) {
 		if(CacheHelper.getInstance(this).saveObject(editInfo(routeInfoBean), ZSLConst.PREFIX_OF_OFFLINE_ROUTE+routeInfoBean.getRouteID())){
+
 			Toast.makeText(OfficeRouteSubmitActivity.this, "保存成功", Toast.LENGTH_SHORT).show();
 			setResult(RESULT_OK);
 			finish();
@@ -493,10 +497,10 @@ public class OfficeRouteSubmitActivity extends BaseActivity {
 
 				Message message = Message.obtain();
 				try {
-
 					final JSONObject jsonObject = new JSONObject(httpGetData.toString());
 					final String string = jsonObject.getString("info");
 					if (jsonObject.getString("result").equals("0")) {
+
 						message.what = 99;
 						routeID = StringUtils.getInt(string);
 						handler.sendMessage(message);
@@ -683,6 +687,7 @@ public class OfficeRouteSubmitActivity extends BaseActivity {
 		}
 
 		try{
+			Toast.makeText(OfficeRouteSubmitActivity.this,"轨迹点个数"+routeInfoBean.getLocusPoints().size(),Toast.LENGTH_SHORT).show();
 				/*Log.d("lixu", "轨迹点查询=="+routeInfoBean.getLocusPoints().size());
 				Log.d("lixu", "起点查询=="+routeInfoBean.getStartPosition().getResourceName());
 				Log.d("lixu", "终点查询=="+routeInfoBean.getEndPosition().getResourceName());
@@ -728,6 +733,8 @@ public class OfficeRouteSubmitActivity extends BaseActivity {
 					final JSONObject jsonObject = new JSONObject(httpGetData.toString());
 					final String string = jsonObject.getString("info");
 					if (jsonObject.getString("result").equals("0")) {
+						CacheHelper.getInstance(OfficeRouteSubmitActivity.this).deleteObject(ZSLConst.PREFIX_OF_OFFLINE_ROUTE+officeRouteId);
+
 						message.what = 4;
 						message.obj = string;
 						mResult = string;

@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_checkbox_pressed.png",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/bundles/default/res/drawable-hdpi-v4/ic_checkbox_pressed.png"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_menu_share_mtrl_alpha.png",
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable-hdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_checkbox_pressed.png",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/bundles/default/res/drawable-hdpi-v4/ic_checkbox_pressed.png"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
@@ -40,12 +40,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable-hdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/debug/drawable-hdpi-v4/bg_grey_dark.png",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/bundles/default/res/drawable-hdpi-v4/bg_grey_dark.png"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png",
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/debug/drawable-hdpi-v4/bg_grey_dark.png",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/bundles/default/res/drawable-hdpi-v4/bg_grey_dark.png"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png",
@@ -56,12 +56,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable-hdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/debug/drawable-hdpi-v4/bg_title.png",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/bundles/default/res/drawable-hdpi-v4/bg_title.png"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_pressed_holo_light.9.png",
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable-hdpi-v4/abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/debug/drawable-hdpi-v4/bg_title.png",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/bundles/default/res/drawable-hdpi-v4/bg_title.png"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/debug/drawable-hdpi-v4/bg_dark_translucent.png",

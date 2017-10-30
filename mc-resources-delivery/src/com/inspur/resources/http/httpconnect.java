@@ -58,7 +58,7 @@ public class httpconnect
             Log.d("lixu", "查询==CODE"+execute.getStatusLine().getStatusCode());
             if (execute == null || execute.getStatusLine().getStatusCode() != 200) {
 
-                return "{\"result\":\"1\",\"info\":\"亲，网络不给力请求超时了。\"}";
+                return "{\"result\":\"1\",\"info\":\"亲，网络不给力请求超时了。"+execute.getStatusLine().getStatusCode()+"\"}";
             }
 
             final String string = EntityUtils.toString(execute.getEntity(), "UTF-8");

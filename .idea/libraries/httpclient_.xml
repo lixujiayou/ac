@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="httpclient_">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/mc-resources-delivery/libs/httpclient_.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

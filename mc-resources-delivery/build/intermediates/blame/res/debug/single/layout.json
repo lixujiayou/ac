@@ -8,12 +8,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/list_item.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/tongji.xml",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/tongji.xml"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/activity_joint_list.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/activity_joint_list.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/tongji.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/tongji.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/activity_photopreview.xml",
@@ -72,24 +72,24 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/base_title.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/activity_opticalterminalinfo_main.xml",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/activity_opticalterminalinfo_main.xml"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/activity_opticalterminalinfo_main.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/activity_opticalterminalinfo_main.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/activity_r_support_list.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/activity_r_support_list.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/equ_change_item2.xml",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/equ_change_item2.xml"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/design/build/intermediates/bundles/default/res/layout/design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/equ_change_item2.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/equ_change_item2.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/infowindow_face.xml",
@@ -104,12 +104,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/layout/abc_action_bar_up_container.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/activity_guangjiao_submit.xml",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/activity_guangjiao_submit.xml"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/buried_location_activity.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/buried_location_activity.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/activity_guangjiao_submit.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/activity_guangjiao_submit.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/sl_activity_transmission_line2.xml",
@@ -172,12 +172,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/send_other_user_item.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/activity_location_submit.xml",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/activity_location_submit.xml"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/r_support_info.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/r_support_info.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/activity_location_submit.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/activity_location_submit.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
@@ -196,12 +196,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/activity_switching_power_info.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/activity_r_addpoleline.xml",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/activity_r_addpoleline.xml"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/activity_r_addpoleline.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/activity_r_addpoleline.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/show_photo.xml",
@@ -232,12 +232,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/activity_environmental_forces_main.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/activity_r_stone_list.xml",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/activity_r_stone_list.xml"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/n_alertdialog.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/n_alertdialog.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/activity_r_stone_list.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/activity_r_stone_list.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/activity_station_info.xml",
@@ -256,12 +256,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/design/build/intermediates/bundles/default/res/layout/design_layout_snackbar.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/activity_logo.xml",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/activity_logo.xml"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/simp_r_polelist_item.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/simp_r_polelist_item.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/activity_logo.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/activity_logo.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/choose_item.xml",
@@ -280,12 +280,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/r_suspensionseg_info.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/myt_list_item_2.xml",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/myt_list_item_2.xml"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/activity_suspension_info.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/activity_suspension_info.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/myt_list_item_2.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/myt_list_item_2.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
@@ -354,6 +354,10 @@
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/activity_my_query.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/layout/activity_my_query.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",

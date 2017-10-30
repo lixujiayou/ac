@@ -4,12 +4,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable/abc_btn_radio_material.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/res/merged/release/drawable/wheel_bg.xml",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/photo/res/drawable/wheel_bg.xml"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/res/merged/release/drawable/abc_cab_background_internal_bg.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/res/merged/release/drawable/wheel_bg.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/photo/res/drawable/wheel_bg.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/res/merged/release/drawable/abc_edit_text_material.xml",

@@ -47,7 +47,7 @@ import android.widget.Toast;
 
 public class OfflineSearchActivity extends BaseActivity {
 	private SQLiteDatabase wangDB;
-	private File wangFile = new File(MainOfflineActivity.FILE_PATH+MainOfflineActivity.FILE_NAME_WANG); //数据库文件
+	private File wangFile = new File(MainOfflineActivity.FILE_PATH+MainOfflineActivity.FILE_NAME_line); //数据库文件
 
 
 	private Spinner zylx_spinner;
@@ -110,8 +110,6 @@ public class OfflineSearchActivity extends BaseActivity {
 
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-
 				Intent data = new Intent();
 				data.putExtra("name", deliveryResourceList.get(position));
 				data.putExtra("type", mType);

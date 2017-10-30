@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/release/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/release/drawable-mdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png",
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable-mdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/release/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/release/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png",

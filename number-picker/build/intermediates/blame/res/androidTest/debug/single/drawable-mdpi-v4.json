@@ -28,12 +28,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable-mdpi-v4/abc_switch_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/abc_ic_menu_cut_mtrl_alpha.png",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable-mdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/abc_scrubber_track_mtrl_alpha.9.png",
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable-mdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable-mdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/abc_ic_clear_mtrl_alpha.png",

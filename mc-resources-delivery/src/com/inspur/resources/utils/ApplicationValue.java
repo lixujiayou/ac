@@ -116,16 +116,17 @@ public class ApplicationValue
     static {
         ApplicationValue.MY_BLUETOOTH_MAC = null;
 
-       // ApplicationValue.url = "http://218.207.69.235:7014/InventoryManager/";//原IP
+
 
         //ApplicationValue.url = "http://10.72.56.239:8080/InventoryManager/";//济南测试
-       // ApplicationValue.url = "http://10.110.2.84:8070/InventoryManager/";//济南外网
+     //   ApplicationValue.url = "http://10.110.2.84:8070/InventoryManager/";//济南外网
     //    ApplicationValue.url = "http://10.18.11.99:8080/InventoryManager/";//
-        ApplicationValue.url = "http://218.207.69.235:7014/Inventory/";//河北测试
+        ApplicationValue.url = "http://218.207.69.235:7014/InventoryManager/";//原IP
+      //  ApplicationValue.url = "http://10.18.11.152:8080/InventoryManager/";//杨鹏哥电脑
 
 
         ApplicationValue.login_set_username_pwd_save = false;
-//        ApplicationValue.UID = null;
+//      ApplicationValue.UID = null;
         ApplicationValue.mUser = null;
         ApplicationValue.mPassword = null;
         ApplicationValue.newVisionInfoBean = null;

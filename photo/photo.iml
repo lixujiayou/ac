@@ -20,7 +20,7 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7" inherit-compiler-output="false">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
     <output url="file://$MODULE_DIR$/build/intermediates/classes/debug" />
     <output-test url="file://$MODULE_DIR$/build/intermediates/classes/test/debug" />
     <exclude-output />
@@ -90,15 +90,10 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 25 Platform (1)" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="universal-image-loader-1.9.3-with-sources" level="project" />
+    <orderEntry type="library" exported="" name="__local_jars__:/Users/lixu/AndroidStudioProjects/ac/photo/libs/universal-image-loader-1.9.3-with-sources.jar:unspecified@jar" level="project" />
     <orderEntry type="module" module-name="android-support-v7-appcompat" exported="" />
     <orderEntry type="module" module-name="design" exported="" />
     <orderEntry type="module" module-name="cardview" exported="" />
     <orderEntry type="module" module-name="recyclerview" exported="" />
-    <orderEntry type="library" exported="" name="android-support-v4" level="project" />
-    <orderEntry type="library" exported="" name="android-support-v7-appcompat" level="project" />
-    <orderEntry type="library" exported="" name="android-support-design" level="project" />
-    <orderEntry type="library" exported="" name="android-support-v7-cardview" level="project" />
-    <orderEntry type="library" exported="" name="android-support-v7-recyclerview" level="project" />
   </component>
 </module>

@@ -243,10 +243,6 @@ public class ZSLGuangLine extends BaseActivity implements OnMarkerClickListener,
 			System.out.println("restoreState");
 		}
 
-
-
-
-
 		UiSettings mapS = mBaiduMap.getUiSettings();
 		mapS.setZoomGesturesEnabled(true);//是否启用缩放手势
 		mapS.setScrollGesturesEnabled(true);//是否启用平移手势
@@ -388,6 +384,9 @@ public class ZSLGuangLine extends BaseActivity implements OnMarkerClickListener,
 
 				new GuangResourceLineSearchTask(ZSLGuangLine.this,
 						new LatLng(ZSLConst.curLocation.getLatitude(), ZSLConst.curLocation.getLongitude())).execute("");
+		//		114.52 38.05
+//				new GuangResourceLineSearchTask(ZSLGuangLine.this,
+//						new LatLng(38.05, 114.52)).execute("");
 
 
 			}
@@ -1534,17 +1533,17 @@ public class ZSLGuangLine extends BaseActivity implements OnMarkerClickListener,
 	private BitmapDescriptor getResourceTypeIco(String type){
 		if("不通过".equals(type)){
 			if(bdgenerator==null){
-				bdgenerator = BitmapDescriptorFactory.fromResource(R.drawable.icon_gcoding_generator);
+				bdgenerator = BitmapDescriptorFactory.fromResource(R.drawable.icon_guang_no);
 			}
 			return bdgenerator;
 		}else if("通过".equals(type)){
 			if(bdpole==null){
-				bdpole = BitmapDescriptorFactory.fromResource(R.drawable.icon_gcoding_pole);
+				bdpole = BitmapDescriptorFactory.fromResource(R.drawable.icon_guang_y);
 			}
 			return bdpole;
 		}else{
 			if(bdwell==null){
-				bdwell = BitmapDescriptorFactory.fromResource(R.drawable.icon_gcoding_well);
+				bdwell = BitmapDescriptorFactory.fromResource(R.drawable.icon_guang_wait);
 			}
 			return bdwell;
 		}

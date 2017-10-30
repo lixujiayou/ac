@@ -245,11 +245,7 @@ public class MyOfflineRouteListActivity extends BaseActivity implements OnMarker
 					displayErrorResourcesOnMap(curRouteInfoBean.getErrors());
 				}
 
-//				//管道故障点
-//				if(curRouteInfoBean.getErrors() != null && curRouteInfoBean.getErrors().size() > 0){
-//					displayGdLineOnMap(curRouteInfoBean.getErrors());
-//				}
-//
+
 				if(curRouteInfoBean.getStartPosition() != null){
 					displayLineOnMap(curRouteInfoBean.getStartPosition(),curRouteInfoBean.getEndPosition(),curRouteInfoBean.getLocusPoints(), curRouteInfoBean.getDeliveryState());
 				}

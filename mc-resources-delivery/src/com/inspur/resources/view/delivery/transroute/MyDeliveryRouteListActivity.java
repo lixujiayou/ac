@@ -109,9 +109,6 @@ public class MyDeliveryRouteListActivity extends BaseActivity implements OnMarke
 					List<RouteInfoBean> list  = new ArrayList<RouteInfoBean>();
 					try{
 
-				/*list = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss Z").create()
-						.fromJson(msg.obj.toString(), new TypeToken<List<RouteInfoBean>>() {
-				}.getType());*/
 
 						Log.i("lixu", "-----"+msg.obj.toString());
 
@@ -535,6 +532,7 @@ public class MyDeliveryRouteListActivity extends BaseActivity implements OnMarke
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);
 		if(requestCode == 21){
+
 			mapview.getMap().clear();
 			getData(LOAD_DATA,curPage,mStatus);
 
@@ -558,10 +556,46 @@ public class MyDeliveryRouteListActivity extends BaseActivity implements OnMarke
 						}
 					}
 				}
+			}else if(resultCode == 66){
+				if(data == null){
+					return;
+				}
+				mapview.getMap().clear();
+				curRouteInfoBean = (RouteInfoBean) data.getSerializableExtra("bean");
+				// 在地图展示轨迹和隐患点、起始点、终点
+				if(curRouteInfoBean.getStartPosition() != null){
+					displayResourcesOnMap(curRouteInfoBean.getStartPosition(), curRouteInfoBean.getEndPosition());
+
+				}
+				if (curRouteInfoBean.getErrors() != null && curRouteInfoBean.getErrors().size() > 0) {
+					displayErrorResourcesOnMap(curRouteInfoBean.getErrors());
+				}
+
+//				//管道故障点
+//				if(curRouteInfoBean.getErrors() != null && curRouteInfoBean.getErrors().size() > 0){
+//					displayGdLineOnMap(curRouteInfoBean.getErrors());
+//				}
+//
+				if(curRouteInfoBean.getStartPosition() != null){
+					displayLineOnMap(curRouteInfoBean.getStartPosition(),curRouteInfoBean.getEndPosition(),curRouteInfoBean.getLocusPoints(), curRouteInfoBean.getDeliveryState());
+				}
+
+
+				String type = data.getExtras().getString("type");
+				//0:通过  1：未通过  2：未交割
+
+				if(type.equals("通过")){
+					mStatus = 0;
+				}else if(type.equals("不通过")){
+					mStatus = 1;
+				}else{
+					mStatus = 2;
+				}
+				getData(LOAD_DATA,1,mStatus);
+
 			}
 
 		}
-
 
 	}
 
@@ -609,13 +643,16 @@ public class MyDeliveryRouteListActivity extends BaseActivity implements OnMarke
 
 		return false;
 	}
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.menu_type, menu);
 		return super.onCreateOptionsMenu(menu);
 	}
+
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
+
 		switch (item.getItemId()) {
 			case R.id.jiaoge_1://通过
 				mStatus = 0;
@@ -630,11 +667,13 @@ public class MyDeliveryRouteListActivity extends BaseActivity implements OnMarke
 				getData(LOAD_DATA,1,mStatus);
 				break;
 			case R.id.action_location:
-				if(llSearch.getVisibility() == View.VISIBLE){
+				Intent gIntent = new Intent(MyDeliveryRouteListActivity.this,MyQueryActivity.class);
+				startActivityForResult(gIntent,1);
+				/*if(llSearch.getVisibility() == View.VISIBLE){
 					llSearch.setVisibility(View.GONE);
 				}else{
 					llSearch.setVisibility(View.VISIBLE);
-				}
+				}*/
 				break;
 		}
 		return super.onOptionsItemSelected(item);
@@ -654,6 +693,13 @@ public class MyDeliveryRouteListActivity extends BaseActivity implements OnMarke
 	protected void onPause() {
 		mapview.onPause();
 		super.onPause();
+	}
+
+	@Override
+	protected void onStop() {
+		super.onStop();
+		mLocationClient.stop();
+
 	}
 
 	@Override

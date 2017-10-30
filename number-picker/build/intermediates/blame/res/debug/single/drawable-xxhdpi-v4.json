@@ -8,12 +8,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable-xxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_keyboard_arrow_left_black_24dp.png",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/number-picker/res/drawable-xxhdpi/ic_keyboard_arrow_left_black_24dp.png"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png",
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable-xxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_keyboard_arrow_left_black_24dp.png",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/number-picker/res/drawable-xxhdpi/ic_keyboard_arrow_left_black_24dp.png"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_ic_star_half_black_16dp.png",

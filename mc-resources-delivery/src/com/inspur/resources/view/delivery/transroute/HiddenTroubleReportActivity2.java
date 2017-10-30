@@ -27,6 +27,7 @@ import com.inspur.common.RegionWheelDialog;
 import com.inspur.common.RequestTool;
 import com.inspur.easyresources.R;
 import com.inspur.resources.base.BaseActivity;
+import com.inspur.resources.base.DemoApplication;
 import com.inspur.resources.http.httpconnect;
 import com.inspur.resources.utils.ApplicationValue;
 import com.inspur.resources.utils.MyTimeUtils;
@@ -206,14 +207,19 @@ public class HiddenTroubleReportActivity2 extends BaseActivity {
 				resourceInfoBean =  (ResourceInfoBean) intent.getSerializableExtra("bean");
 				errorInfoBeanGd = new ErrorInfoGdgzBean();
 				errorInfoBeanGd.setRouteID(routeID);
-
-
 			}
 
 		}
 
 		initUI();
+		try {
+			Log.d("qqqqqqq", DemoApplication.mAddressComponent.city + "========" + DemoApplication.mAddressComponent.district);
+			//	if(DemoApplication.mAddressComponent!=null&&!"".equalsIgnoreCase(DemoApplication.mAddressComponent.city)){
 
+			company_edit.setText(DemoApplication.mAddressComponent.city);
+			qy_edit.setText(DemoApplication.mAddressComponent.district);
+		}catch (Exception e){}
+	//	}
 
 		if(cType != null){
 			if(cType.equals("资源隐患")){
@@ -672,8 +678,14 @@ public class HiddenTroubleReportActivity2 extends BaseActivity {
 				}
 			}
 
-			company_edit.setText(errorInfoBean.getCity());  //地市
-			qy_edit.setText(errorInfoBean.getCounty());	//区县
+			if(errorInfoBean.getCity() != null) {
+				company_edit.setText(errorInfoBean.getCity());  //地市
+			}
+			if(errorInfoBean.getCounty() != null) {
+				qy_edit.setText(errorInfoBean.getCounty());    //区县
+			}
+
+
 			sbr_edit.setText(errorInfoBean.getErrorLocateDes());//隐患位置描述
 			jd_edit.setText(String.valueOf(errorInfoBean.getLongitude()));	//经度
 			wd_edit.setText(String.valueOf(errorInfoBean.getLatitude()));	//纬度

@@ -300,10 +300,10 @@
             android:name="com.inspur.resources.view.delivery.LogoActivity"
             android:screenOrientation="portrait">
 
-   <!--<intent-filter>
-            <action android:name="com.inspur.zsyw.APP" />
-           <category android:name="android.intent.category.DEFAULT" />
-        </intent-filter>-->
+        <!--<intent-filter>-->
+            <!--<action android:name="com.inspur.zsyw.APP" />-->
+           <!--<category android:name="android.intent.category.DEFAULT" />-->
+        <!--</intent-filter>-->
         
        <intent-filter>
             <action android:name="android.intent.action.MAIN" />
@@ -322,7 +322,23 @@
             android:screenOrientation="portrait">
 
         </activity>
-        
+         <activity
+            android:name="com.inspur.resources.view.delivery.transroute.MyQueryActivity"
+            android:screenOrientation="portrait"
+             android:configChanges="orientation|keyboardHidden|screenSize"
+             android:windowSoftInputMode="adjustPan"
+             > </activity>
+<activity
+            android:name="com.inspur.resources.view.delivery.guang.MyGuangQueryActivity"
+            android:screenOrientation="portrait"
+             android:configChanges="orientation|keyboardHidden|screenSize"
+             android:windowSoftInputMode="adjustPan"
+             >
+
+        </activity>
+
+
+
         
          <activity
             android:name="com.inspur.resources.view.delivery.guang.ZSLGuangLine"

@@ -52,7 +52,7 @@ public class OfflineRouteActivity extends BaseActivity {
 	private DeliveryRouteAdapter mAdapter;
 	private List<RouteInfoBean> deliveryRouteList = new ArrayList<RouteInfoBean>();
 	private ProgressDialog mProgress;
-
+	private RouteInfoBean curRouteInfoBean;
 	private Handler handler = new Handler(new Handler.Callback() {
 
 		public boolean handleMessage(Message msg) {
@@ -61,6 +61,8 @@ public class OfflineRouteActivity extends BaseActivity {
 			}
 			switch (msg.what) {
 				case 0:
+					deliveryRouteList.clear();
+					mAdapter.notifyDataSetChanged();
 					Toast.makeText(OfflineRouteActivity.this, "暂无离线数据!", Toast.LENGTH_SHORT).show();
 					break;
 				case 1:
@@ -95,12 +97,12 @@ public class OfflineRouteActivity extends BaseActivity {
 
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-				final RouteInfoBean curRouteInfoBean = deliveryRouteList.get(position);
+				curRouteInfoBean = deliveryRouteList.get(position);
 				Intent intent = new Intent(OfflineRouteActivity.this,OfficeRouteSubmitActivity.class);
 				intent.putExtra(RouteSubmitActivity.INTENT_DATA_FLAG, curRouteInfoBean);
-				startActivity(intent);
+				startActivityForResult(intent,1);
 
-				CacheHelper.getInstance(OfflineRouteActivity.this).deleteObject(ZSLConst.PREFIX_OF_OFFLINE_ROUTE+curRouteInfoBean.getRouteID());
+				//CacheHelper.getInstance(OfflineRouteActivity.this).deleteObject(ZSLConst.PREFIX_OF_OFFLINE_ROUTE+curRouteInfoBean.getRouteID());
 
 				/*String msg = "是否提交此数据？";
 				AlertDialog ad;
@@ -115,6 +117,30 @@ public class OfflineRouteActivity extends BaseActivity {
 				ad.show();*/
 			}
 		});
+
+		listview.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+			@Override
+			public boolean onItemLongClick(AdapterView<?> adapterView, View view, final int i, long l) {
+				String msg = "是否删除路由："+	deliveryRouteList.get(i).getStartPosition().getResourceName() + "-"
+						+ deliveryRouteList.get(i).getEndPosition().getResourceName()+"？";
+
+				AlertDialog ad;
+				ad = new AlertDialog.Builder(OfflineRouteActivity.this).setTitle("温馨提示").setMessage(msg)
+						.setPositiveButton("是", new DialogInterface.OnClickListener() {
+
+							@Override
+							public void onClick(DialogInterface dWialog, int which) {
+								curRouteInfoBean = deliveryRouteList.get(i);
+
+								CacheHelper.getInstance(OfflineRouteActivity.this).deleteObject(ZSLConst.PREFIX_OF_OFFLINE_ROUTE+curRouteInfoBean.getRouteID());
+								getData();
+							}
+						}).setNegativeButton("否", null).create();
+				ad.show();
+				return true;
+			}
+		});
+
 	}
 
 	private void getData() {
@@ -289,4 +315,12 @@ public class OfflineRouteActivity extends BaseActivity {
 		}
 	}
 
+
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+		if(resultCode == RESULT_OK){
+			getData();
+		}
+	}
 }

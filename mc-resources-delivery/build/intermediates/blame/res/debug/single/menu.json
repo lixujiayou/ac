@@ -22,5 +22,9 @@
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/menu/menu_search.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/menu/menu_search.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/menu/menu_type2.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/menu/menu_type2.xml"
     }
 ]

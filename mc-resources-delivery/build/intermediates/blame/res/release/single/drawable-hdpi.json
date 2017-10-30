@@ -4,6 +4,10 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-hdpi/actionsheet_middle_pressed.9.png"
     },
     {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/drawable-hdpi/icon_guang_wait.png",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-hdpi/icon_guang_wait.png"
+    },
+    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/drawable-hdpi/xiaojiantou.png",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-hdpi/xiaojiantou.png"
     },
@@ -94,6 +98,10 @@
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/drawable-hdpi/search_1.png",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-hdpi/search_1.png"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/drawable-hdpi/icon_guang_no.png",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-hdpi/icon_guang_no.png"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/drawable-hdpi/title_old.png",
@@ -242,6 +250,14 @@
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/drawable-hdpi/button5.png",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-hdpi/button5.png"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/drawable-hdpi/icon_cancle.png",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-hdpi/icon_cancle.png"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/drawable-hdpi/icon_guang_y.png",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-hdpi/icon_guang_y.png"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/drawable-hdpi/duanzi_1.png",

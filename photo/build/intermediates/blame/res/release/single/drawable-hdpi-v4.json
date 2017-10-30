@@ -24,12 +24,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/photo/res/drawable-hdpi/bg_dark_translucent.png"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/res/merged/release/drawable-hdpi-v4/bg_dark.png",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/photo/res/drawable-hdpi/bg_dark.png"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_back_arrow_white_pressed.png",
         "source": "/Users/lixu/AndroidStudioProjects/ac/photo/res/drawable-hdpi/ic_back_arrow_white_pressed.png"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/res/merged/release/drawable-hdpi-v4/bg_dark.png",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/photo/res/drawable-hdpi/bg_dark.png"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png",

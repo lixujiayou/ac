@@ -1,7 +1,4 @@
-#Mon Jun 05 17:22:24 CST 2017
-base.0=/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_045566b22e8e12cc97a536891656b488f389fe1c
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_abb36b9430c2b478da022aa357f527d85634389a/classes.dex
-base.1=/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_abb36b9430c2b478da022aa357f527d85634389a
-file.0=/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_045566b22e8e12cc97a536891656b488f389fe1c/classes.dex
+#Mon Oct 30 11:28:29 CST 2017
+base.0=/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

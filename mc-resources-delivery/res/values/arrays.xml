@@ -1293,7 +1293,17 @@
         <item>光缆引上及出土不合规</item>
          <item>光缆无吊牌</item>
     </string-array>
-      
+
+    <string-array name="query">
+        <item>通过</item>
+        <item>未通过</item>
+        <item>未交割</item>
+    </string-array>
+      <string-array name="query2">
+        <item>通过</item>
+        <item>未通过</item>
+    </string-array>
+
     <string-array name="luyouzhuangtai">
         <item>正确</item>
         <item>系统需新增</item>

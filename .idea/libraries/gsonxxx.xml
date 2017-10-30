@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="gsonxxx">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/mc-resources-delivery/libs/gsonxxx.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

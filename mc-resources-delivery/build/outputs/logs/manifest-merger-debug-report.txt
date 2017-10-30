@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:2:1-399:12
+ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:2:1-415:12
 	package
 		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:3:5-39
 		INJECTED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml
@@ -36,6 +36,7 @@ MERGED from [ac:recyclerview:unspecified] /Users/lixu/AndroidStudioProjects/ac/r
 MERGED from [ac:cardview:unspecified] /Users/lixu/AndroidStudioProjects/ac/cardview/build/intermediates/bundles/default/AndroidManifest.xml:20:5-43
 MERGED from [ac:android-support-v7-appcompat:unspecified] /Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/AndroidManifest.xml:21:5-23:78
 MERGED from [ac:Swipyrefreshlayout:unspecified] /Users/lixu/AndroidStudioProjects/ac/Swipyrefreshlayout/build/intermediates/bundles/default/AndroidManifest.xml:5:5-43
+MERGED from [org.wlf:FileDownloader:0.3.1] /Users/lixu/.android/build-cache/bd22d0d533d08a86af9e3146a95fc02bf6ec8d64/output/AndroidManifest.xml:7:5-9:40
 	tools:overrideLibrary
 		ADDED from [ac:android-support-v7-appcompat:unspecified] /Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
@@ -48,6 +49,7 @@ MERGED from [ac:Swipyrefreshlayout:unspecified] /Users/lixu/AndroidStudioProject
 		INJECTED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:18:5-67
+MERGED from [org.wlf:FileDownloader:0.3.1] /Users/lixu/.android/build-cache/bd22d0d533d08a86af9e3146a95fc02bf6ec8d64/output/AndroidManifest.xml:15:5-67
 	android:name
 		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:18:22-64
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
@@ -88,6 +90,7 @@ ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidMan
 		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:27:22-77
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:28:5-79
+MERGED from [org.wlf:FileDownloader:0.3.1] /Users/lixu/.android/build-cache/bd22d0d533d08a86af9e3146a95fc02bf6ec8d64/output/AndroidManifest.xml:12:5-79
 	android:name
 		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:28:22-76
 uses-permission#com.android.launcher.permission.READ_SETTINGS
@@ -96,10 +99,12 @@ ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidMan
 		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:30:22-82
 uses-permission#android.permission.CHANGE_WIFI_STATE
 ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:31:5-76
+MERGED from [org.wlf:FileDownloader:0.3.1] /Users/lixu/.android/build-cache/bd22d0d533d08a86af9e3146a95fc02bf6ec8d64/output/AndroidManifest.xml:14:5-76
 	android:name
 		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:31:22-73
 uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:32:5-76
+MERGED from [org.wlf:FileDownloader:0.3.1] /Users/lixu/.android/build-cache/bd22d0d533d08a86af9e3146a95fc02bf6ec8d64/output/AndroidManifest.xml:13:5-76
 	android:name
 		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:32:22-73
 uses-permission#android.permission.READ_PHONE_STATE
@@ -109,6 +114,7 @@ ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidMan
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:34:5-81
 MERGED from [ac:photo:unspecified] /Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/bundles/default/AndroidManifest.xml:12:5-81
+MERGED from [org.wlf:FileDownloader:0.3.1] /Users/lixu/.android/build-cache/bd22d0d533d08a86af9e3146a95fc02bf6ec8d64/output/AndroidManifest.xml:17:5-81
 	android:name
 		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:34:22-78
 uses-permission#android.permission.BROADCAST_STICKY
@@ -164,7 +170,7 @@ ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidMan
 	android:name
 		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:52:22-76
 application
-ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:54:5-397:19
+ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:54:5-413:19
 MERGED from [ac:photo:unspecified] /Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/bundles/default/AndroidManifest.xml:14:5-25:19
 MERGED from [ac:design:unspecified] /Users/lixu/AndroidStudioProjects/ac/design/build/intermediates/bundles/default/AndroidManifest.xml:22:5-20
 MERGED from [ac:cardview:unspecified] /Users/lixu/AndroidStudioProjects/ac/cardview/build/intermediates/bundles/default/AndroidManifest.xml:22:5-20
@@ -486,78 +492,97 @@ ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidMan
 		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:321:13-33
 	android:name
 		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:320:13-93
+activity#com.inspur.resources.view.delivery.transroute.MyQueryActivity
+ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:325:10-330:27
+	android:screenOrientation
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:327:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:329:14-53
+	android:configChanges
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:328:14-75
+	android:name
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:326:13-89
+activity#com.inspur.resources.view.delivery.guang.MyGuangQueryActivity
+ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:331:1-338:20
+	android:screenOrientation
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:333:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:335:14-53
+	android:configChanges
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:334:14-75
+	android:name
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:332:13-89
 activity#com.inspur.resources.view.delivery.guang.ZSLGuangLine
-ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:327:10-331:20
+ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:343:10-347:20
 	android:screenOrientation
-		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:330:13-49
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:346:13-49
 	android:label
-		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:329:13-33
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:345:13-33
 	android:name
-		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:328:13-81
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:344:13-81
 activity#com.inspur.resources.view.delivery.transroute.HiddenTroubleReportActivity
-ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:340:9-343:20
+ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:356:9-359:20
 	android:screenOrientation
-		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:342:13-49
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:358:13-49
 	android:name
-		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:341:13-101
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:357:13-101
 activity#com.inspur.resources.view.delivery.transroute.HiddenTroubleReportActivity2
-ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:344:10-348:20
+ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:360:10-364:20
 	android:screenOrientation
-		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:346:14-50
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:362:14-50
 	android:name
-		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:345:13-102
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:361:13-102
 activity#com.inspur.resources.view.delivery.transroute.OfflineDeliveryActivity
-ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:350:9-353:20
-	android:screenOrientation
-		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:352:13-49
-	android:name
-		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:351:13-97
-activity#com.inspur.resources.view.delivery.transroute.DeliveryResourceSearchListActivity2
-ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:357:9-360:24
-	android:screenOrientation
-		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:359:13-49
-	android:name
-		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:358:13-109
-activity#com.inspur.resources.view.delivery.transroute.RouteSubmitActivity
-ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:361:13-364:20
-	android:screenOrientation
-		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:363:13-49
-	android:name
-		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:362:13-93
-activity#com.inspur.resources.view.delivery.transroute.DeliveryResourceSearchListActivity
 ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:366:9-369:20
 	android:screenOrientation
 		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:368:13-49
 	android:name
-		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:367:13-108
-activity#com.inspur.resources.view.delivery.transroute.MyDeliveryRouteListActivity
-ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:371:9-376:20
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:367:13-97
+activity#com.inspur.resources.view.delivery.transroute.DeliveryResourceSearchListActivity2
+ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:373:9-376:24
 	android:screenOrientation
 		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:375:13-49
-	android:windowSoftInputMode
-		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:374:13-52
-	android:configChanges
-		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:373:13-74
 	android:name
-		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:372:13-101
-activity#com.inspur.resources.view.delivery.guang.GuangSubmitActivity
-ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:381:10-385:20
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:374:13-109
+activity#com.inspur.resources.view.delivery.transroute.RouteSubmitActivity
+ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:377:13-380:20
+	android:screenOrientation
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:379:13-49
+	android:name
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:378:13-93
+activity#com.inspur.resources.view.delivery.transroute.DeliveryResourceSearchListActivity
+ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:382:9-385:20
 	android:screenOrientation
 		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:384:13-49
 	android:name
-		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:382:13-88
-activity#com.inspur.resources.view.delivery.guang.MyGuangRouteListActivity
-ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:387:11-393:20
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:383:13-108
+activity#com.inspur.resources.view.delivery.transroute.MyDeliveryRouteListActivity
+ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:387:9-392:20
 	android:screenOrientation
-		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:391:17-53
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:391:13-49
 	android:windowSoftInputMode
-		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:390:15-54
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:390:13-52
 	android:configChanges
-		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:389:15-76
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:389:13-74
 	android:name
-		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:388:13-93
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:388:13-101
+activity#com.inspur.resources.view.delivery.guang.GuangSubmitActivity
+ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:397:10-401:20
+	android:screenOrientation
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:400:13-49
+	android:name
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:398:13-88
+activity#com.inspur.resources.view.delivery.guang.MyGuangRouteListActivity
+ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:403:11-409:20
+	android:screenOrientation
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:407:17-53
+	android:windowSoftInputMode
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:406:15-54
+	android:configChanges
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:405:15-76
+	android:name
+		ADDED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:404:13-93
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from [ac:photo:unspecified] /Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/bundles/default/AndroidManifest.xml:11:5-80
-IMPLIED from /Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/AndroidManifest.xml:2:1-399:12 reason: com.inspur.component.photoselect requested WRITE_EXTERNAL_STORAGE
 	android:name
 		ADDED from [ac:photo:unspecified] /Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/bundles/default/AndroidManifest.xml:11:22-77

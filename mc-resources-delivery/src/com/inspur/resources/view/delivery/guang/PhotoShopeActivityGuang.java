@@ -30,6 +30,7 @@ import com.inspur.common.HttpListener;
 import com.inspur.common.RequestTool;
 import com.inspur.easyresources.R;
 import com.inspur.resources.base.BaseActivity;
+import com.inspur.resources.base.DemoApplication;
 import com.inspur.resources.http.httpconnect;
 import com.inspur.resources.utils.ApplicationValue;
 import com.inspur.resources.utils.ImageUtils;
@@ -52,6 +53,7 @@ import com.yolanda.nohttp.Response;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -547,7 +549,7 @@ public class PhotoShopeActivityGuang extends BaseActivity {
 		}.start();
 	}
 
-	public void photoSelect(View v) {
+	/*public void photoSelect(View v) {
 		File dir = new File(ZSLConst.photodir);
 		if (!dir.exists()) {
 			dir.mkdirs();
@@ -557,7 +559,6 @@ public class PhotoShopeActivityGuang extends BaseActivity {
 		File destination = new File(dir, photoName);
 		Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 		if (!destination.exists()) {
-
 			try {
 				destination.createNewFile();
 			} catch (IOException e) {
@@ -567,8 +568,57 @@ public class PhotoShopeActivityGuang extends BaseActivity {
 		}
 		intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(destination));
 		startActivityForResult(intent, REQUESTCODE_SHOOT_PHOTO);
-	}
+	}*/
+	/**
+	 * 打开相机拍照
+	 *
+	 */
+	public  void photoSelect(View v) {
 
+		File dir = new File(ZSLConst.photodir);
+		if (!dir.exists()) {
+			dir.mkdirs();
+		}
+		//獲取系統版本
+		int currentapiVersion = android.os.Build.VERSION.SDK_INT;
+		// 激活相机
+		Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+		// 判断存储卡是否可以用，可用进行存储
+
+
+		String photoName = System.currentTimeMillis() + ".jpg";
+		File destination = new File(dir, photoName);
+
+		if (!destination.exists()) {
+
+			try {
+				destination.createNewFile();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+
+		}
+
+
+
+		photoPath = ZSLConst.photodir + photoName;
+		if (currentapiVersion < 24) {
+			// 从文件中创建uri
+			intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(destination));
+		} else {
+			//兼容android7.0 使用共享文件的形式
+			ContentValues contentValues = new ContentValues(1);
+			contentValues.put(MediaStore.Images.Media.DATA, destination.getAbsolutePath());
+			Uri uri =this.getApplication().getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, contentValues);
+			intent.putExtra(MediaStore.EXTRA_OUTPUT, uri);
+		}
+
+
+		//intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(destination));
+
+		// 开启一个带有返回值的Activity，请求码为PHOTO_REQUEST_CAREMA
+		startActivityForResult(intent, REQUESTCODE_SHOOT_PHOTO);
+	}
 	public void save(View v) {
 		if(!photoed){
 			//没有拍照直接点保存时不做任何处理

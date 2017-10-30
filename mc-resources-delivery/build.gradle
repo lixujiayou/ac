@@ -5,6 +5,13 @@ dependencies {
     compile project(':number-picker')
     compile project(':android-support-v7-appcompat')
     compile project(':Swipyrefreshlayout')
+    compile 'org.wlf:FileDownloader:0.3.1'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile files('libs/baidumapapi_base_v4_2_1.jar')
+    compile files('libs/baidumapapi_map_v4_2_1.jar')
+    compile files('libs/baidumapapi_search_v4_2_1.jar')
+    compile files('libs/baidumapapi_util_v4_2_1.jar')
 
 }
 
@@ -15,9 +22,9 @@ android {
     defaultConfig {
         applicationId "com.inspur.easyresources"
         minSdkVersion 15
-        targetSdkVersion 25
-        versionCode 46
-        versionName "1.1.7.6"
+        targetSdkVersion 22
+        versionCode 47
+        versionName "1.1.7.7"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
@@ -57,5 +64,6 @@ android {
         // by a similar customization.
         debug.setRoot('build-types/debug')
         release.setRoot('build-types/release')
+
     }
 }

@@ -100,7 +100,7 @@ public  class MainActivity extends BaseActivity {
 	}
 
 	public void layuanzhan_onc(View v) {
-		//startActivity(new Intent(MainActivity.this, MainOfflineActivity.class));
+		startActivity(new Intent(MainActivity.this, MainOfflineActivity.class));
 	}
 
 	public void zhifangzhan_onc(View v) {

@@ -27,6 +27,7 @@ import com.inspur.common.RegionWheelDialog;
 import com.inspur.common.RequestTool;
 import com.inspur.easyresources.R;
 import com.inspur.resources.base.BaseActivity;
+import com.inspur.resources.base.DemoApplication;
 import com.inspur.resources.http.httpconnect;
 import com.inspur.resources.utils.ApplicationValue;
 import com.inspur.resources.utils.sq.MySQLHelper;
@@ -248,6 +249,13 @@ public class OfficeHiddenTroubleActivity extends BaseActivity {
 				ll_gone_1.setVisibility(View.GONE);
 			}
 		}
+		try {
+			Log.d("qqqqqqq", DemoApplication.mAddressComponent.city + "========" + DemoApplication.mAddressComponent.district);
+			//	if(DemoApplication.mAddressComponent!=null&&!"".equalsIgnoreCase(DemoApplication.mAddressComponent.city)){
+
+			company_edit.setText(DemoApplication.mAddressComponent.city);
+			qy_edit.setText(DemoApplication.mAddressComponent.district);
+		}catch (Exception e){}
 	}
 
 	private void initUI() {
@@ -409,7 +417,7 @@ public class OfficeHiddenTroubleActivity extends BaseActivity {
 								@Override
 								public void onDateSet(DatePicker view, int year,
 													  int monthOfYear, int dayOfMonth) {
-									tv_time.setText(year+"-"+monthOfYear+"-"+dayOfMonth);
+									tv_time.setText(year+"-"+(monthOfYear+1)+"-"+dayOfMonth);
 			                    	/*  Date date = new Date(year, monthOfYear, dayOfMonth);
 			                    	  tv_time.setText(date.toString());*/
 
@@ -548,7 +556,7 @@ public class OfficeHiddenTroubleActivity extends BaseActivity {
 								@Override
 								public void onDateSet(DatePicker view, int year,
 													  int monthOfYear, int dayOfMonth) {
-									tv_time.setText(year+"-"+monthOfYear+"-"+dayOfMonth);
+									tv_time.setText(year+"-"+(monthOfYear+1)+"-"+dayOfMonth);
 			                    	/*  Date date = new Date(year, monthOfYear, dayOfMonth);
 			                    	  tv_time.setText(date.toString());*/
 
@@ -624,7 +632,7 @@ public class OfficeHiddenTroubleActivity extends BaseActivity {
 								@Override
 								public void onDateSet(DatePicker view, int year,
 													  int monthOfYear, int dayOfMonth) {
-									tv_time.setText(year+"-"+monthOfYear+"-"+dayOfMonth);
+									tv_time.setText(year+"-"+(monthOfYear+1)+"-"+dayOfMonth);
 			                    	/*  Date date = new Date(year, monthOfYear, dayOfMonth);
 			                    	  tv_time.setText(date.toString());*/
 
@@ -638,7 +646,6 @@ public class OfficeHiddenTroubleActivity extends BaseActivity {
 			});
 		}
 	}
-
 
 
 	private void initData(ErrorInfoBean errorInfoBean) {

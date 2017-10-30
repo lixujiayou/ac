@@ -24,12 +24,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/layout/notification_template_big_media.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/androidTest/debug/layout/design_navigation_menu.xml",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/design/build/intermediates/bundles/default/res/layout/design_navigation_menu.xml"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/androidTest/debug/layout/activity_photopreview.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/bundles/default/res/layout/activity_photopreview.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/androidTest/debug/layout/design_navigation_menu.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/design/build/intermediates/bundles/default/res/layout/design_navigation_menu.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/androidTest/debug/layout/abc_popup_menu_item_layout.xml",
@@ -56,12 +56,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/androidTest/debug/layout/abc_dialog_title_material.xml",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/layout/abc_dialog_title_material.xml"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/androidTest/debug/layout/abc_screen_content_include.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/androidTest/debug/layout/abc_dialog_title_material.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/layout/abc_dialog_title_material.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/androidTest/debug/layout/abc_action_bar_up_container.xml",

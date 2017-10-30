@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="platform2.0v2">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/mc-resources-delivery/libs/platform2.0v2.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

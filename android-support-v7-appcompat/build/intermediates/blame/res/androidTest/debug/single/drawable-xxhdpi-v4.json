@@ -12,12 +12,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/abc_list_focused_holo.9.png",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/abc_ic_star_half_black_36dp.png",
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/abc_list_focused_holo.9.png",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/abc_list_longpressed_holo.9.png",

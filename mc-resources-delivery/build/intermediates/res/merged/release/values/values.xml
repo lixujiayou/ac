@@ -929,6 +929,15 @@
         <item>南乐县</item>
         <item>范县</item>
     </string-array>
+    <string-array name="query">
+        <item>通过</item>
+        <item>未通过</item>
+        <item>未交割</item>
+    </string-array>
+    <string-array name="query2">
+        <item>通过</item>
+        <item>未通过</item>
+    </string-array>
     <string-array name="resource_life_period_enum_id">
         <item>未知</item>
         <item>设计状态</item>

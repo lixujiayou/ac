@@ -125,15 +125,14 @@ public class LogoActivity extends Activity {
 
 
 		startActivity(new Intent(LogoActivity.this, com.inspur.resources.view.delivery.MainActivity.class));
-
-
-
 	}
 
 	@Override
 	protected void onDestroy() {
 		if (null != platform)
+
 			platform.unbindService();// 注销服务
-		super.onDestroy();
+			super.onDestroy();
+
 	}
 }

@@ -176,12 +176,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/bg_title_normal.png",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/bundles/default/res/drawable-hdpi-v4/bg_title_normal.png"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png",
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable-hdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/bg_title_normal.png",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/bundles/default/res/drawable-hdpi-v4/bg_title_normal.png"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png",

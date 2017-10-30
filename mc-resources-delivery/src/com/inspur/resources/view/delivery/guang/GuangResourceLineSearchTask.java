@@ -77,11 +77,10 @@ public class GuangResourceLineSearchTask extends AsyncTask<String, String, Strin
 			return "";
 		}
 
-//		String json = "{\"latitude\":"+center.latitude+",\"longitude\":"+center.longitude+"}";
 		String json = "{\"latitude\":"+ZSLConst.curGpsLocation.getLatitude()+",\"longitude\":"+ZSLConst.curGpsLocation.getLongitude()+"}";
-//		String json = "{\"latitude\":"+37.60359+",\"longitude\":"+114.6023+"}";
 
-//		String json = "{\"latitude\":"+38.040757+",\"longitude\":"+114.621817+"}";
+		//保定
+		//String json = "{\"latitude\":"+39.07531+",\"longitude\":"+115.66674+"}";
 
 
 		System.out.println(json);

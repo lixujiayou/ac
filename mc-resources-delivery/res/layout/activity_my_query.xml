@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        >
+        <ImageView
+            android:id="@+id/iv_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_cancle"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询历史记录"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="40dp"
+        android:orientation="horizontal"
+    >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="状态:"
+            android:textSize="16sp"
+            android:gravity="center"
+
+            />
+
+        <Spinner
+            android:id="@+id/sp_query"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+
+            ></Spinner>
+
+    </LinearLayout>
+ <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="40dp"
+        android:orientation="horizontal"
+    >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="时间:"
+            android:textSize="16sp"
+            android:gravity="center"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="点击选择"
+            ></TextView>
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="40dp"
+        android:orientation="horizontal"
+    >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="名称:"
+            android:textSize="16sp"
+            android:gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            ></EditText>
+            <Button
+                android:id="@+id/bt_query"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="查询"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_bg_blue_selector"
+                android:layout_marginRight="6dp"
+                />
+    </LinearLayout>
+
+    <com.inspur.component.swipyrefreshlayout.SwipyRefreshLayout
+        android:id="@+id/swipyrefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srl_direction="both">
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#ffcccccc"
+            android:dividerHeight="1px"
+            android:padding="3.0dip" />
+    </com.inspur.component.swipyrefreshlayout.SwipyRefreshLayout>
+</LinearLayout>

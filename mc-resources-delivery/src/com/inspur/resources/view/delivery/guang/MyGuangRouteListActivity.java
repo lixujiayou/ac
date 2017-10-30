@@ -30,13 +30,17 @@ import com.baidu.mapapi.map.PolylineOptions;
 import com.baidu.mapapi.model.LatLng;
 import com.baidu.mapapi.utils.CoordinateConverter;
 import com.baidu.mapapi.utils.CoordinateConverter.CoordType;
+import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import com.inspur.component.swipyrefreshlayout.SwipyRefreshLayout;
 import com.inspur.component.swipyrefreshlayout.SwipyRefreshLayoutDirection;
 import com.inspur.easyresources.R;
 import com.inspur.resources.base.BaseActivity;
+import com.inspur.resources.bean.QueryMyBean;
 import com.inspur.resources.http.httpconnect;
+import com.inspur.resources.view.delivery.transroute.MyDeliveryRouteListActivity;
+import com.inspur.resources.view.delivery.transroute.MyQueryActivity;
 import com.inspur.resources.view.delivery.transroute.bean.ErrorInfoBean;
 import com.inspur.resources.view.delivery.transroute.bean.GuangBean;
 import com.inspur.resources.view.delivery.transroute.bean.LocusPoint;
@@ -76,7 +80,7 @@ public class MyGuangRouteListActivity extends BaseActivity implements OnMarkerCl
 	private EditText etSearch;
 	private LinearLayout llSearch;
 
-
+	private String mTime;
 
 	private SwipyRefreshLayout mSwipyRefreshLayout;
 	private ListView listview;
@@ -85,6 +89,7 @@ public class MyGuangRouteListActivity extends BaseActivity implements OnMarkerCl
 	private ProgressDialog mProgress;
 	private GuangBean curRouteInfoBean;
 	private boolean firstLoc = true;
+	private int mStatus = 0;//查询交割状态 0:通过  1：未通过  2：未交割
 
 	private final static int LOAD_DATA = 1;
 	private final static int LOAD_MORE = 2;
@@ -119,10 +124,14 @@ public class MyGuangRouteListActivity extends BaseActivity implements OnMarkerCl
 					mSwipyRefreshLayout.setRefreshing(false);
 					break;
 				case -1:
+					deliveryRouteList.clear();
+					mAdapter.notifyDataSetChanged();
 					mSwipyRefreshLayout.setRefreshing(false);
 					Toast.makeText(MyGuangRouteListActivity.this, msg.obj.toString(), Toast.LENGTH_SHORT).show();
 					break;
 				default:
+					deliveryRouteList.clear();
+					mAdapter.notifyDataSetChanged();
 					mSwipyRefreshLayout.setRefreshing(false);
 					break;
 			}
@@ -140,7 +149,7 @@ public class MyGuangRouteListActivity extends BaseActivity implements OnMarkerCl
 		setContentView(R.layout.activty_my_delivery_route);
 		setTitle("我的传输交割");
 		init();
-		getData(LOAD_DATA,1);
+		getData(LOAD_DATA,1,mStatus);
 	}
 
 	private void animateMyToLocation(BDLocation lastLocation) {
@@ -167,7 +176,7 @@ public class MyGuangRouteListActivity extends BaseActivity implements OnMarkerCl
 		tvSearch.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View view) {
-				getData(LOAD_DATA,curPage);
+				getData(LOAD_DATA,curPage,mStatus);
 			}
 		});
 
@@ -216,10 +225,10 @@ public class MyGuangRouteListActivity extends BaseActivity implements OnMarkerCl
 			public void onRefresh(SwipyRefreshLayoutDirection direction) {
 				if(direction == SwipyRefreshLayoutDirection.TOP){
 					curPage=1;
-					getData(LOAD_DATA,curPage);
+					getData(LOAD_DATA,curPage,mStatus);
 				}else{
 					curPage++;
-					getData(LOAD_MORE,curPage);
+					getData(LOAD_MORE,curPage,mStatus);
 				}
 				Log.d("MainActivity",
 						"Refresh triggered at " + (direction == SwipyRefreshLayoutDirection.TOP ? "top" : "bottom"));
@@ -345,7 +354,7 @@ public class MyGuangRouteListActivity extends BaseActivity implements OnMarkerCl
 			mapview.getMap().addOverlay((new PolylineOptions()).width(10).color(color).points(arraylist));}
 	}
 	private String str;
-	private void getData(final int action,final int page) {
+	private void getData(final int action, final int page, final int status) {
 		if (this.mProgress == null) {
 			this.mProgress = ProgressDialog.show(this, "系统提示", "正在加载数据...");
 			this.mProgress.setCanceledOnTouchOutside(true);
@@ -358,12 +367,24 @@ public class MyGuangRouteListActivity extends BaseActivity implements OnMarkerCl
 		if(llSearch.getVisibility() == View.GONE){
 			str = "";
 		}
+
 		new Thread() {
 			@Override
 			public void run() {
 				final ArrayList<NameValuePair> list = new ArrayList<NameValuePair>();
 
-				String json = "{\"page\":"+page+",\"pageSize\":"+10+",\"gjName\":\""+str+"\"}";
+			//	String json = "{\"page\":"+page+",\"pageSize\":"+10+",\"gjName\":\""+str+"\"}";
+
+				QueryMyBean queryMyBean = new QueryMyBean();
+				queryMyBean.setName(str);
+				queryMyBean.setcTime(mTime);
+				queryMyBean.setStatus(status);
+				queryMyBean.setPage(page);
+				queryMyBean.setPageSize(10);
+				Gson gson = new Gson();
+				String json = gson.toJson(queryMyBean);
+
+
 				list.add((NameValuePair)new BasicNameValuePair("jsonRequest", json));
 
 				final String httpGetData = new httpconnect().httpGetData("pdaMainTask!getMyGjInfo.interface", list,
@@ -444,7 +465,7 @@ public class MyGuangRouteListActivity extends BaseActivity implements OnMarkerCl
 				}else{
 					tag.name.setText("");
 				}
-				tag.time.setText(routeInfoBean.getZgDate());
+				tag.time.setText(routeInfoBean.getCzDate());
 
 
 				tag.iv_info.setOnClickListener(new OnClickListener() {
@@ -546,17 +567,31 @@ public class MyGuangRouteListActivity extends BaseActivity implements OnMarkerCl
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.menu_search, menu);
+		getMenuInflater().inflate(R.menu.menu_type2, menu);
 		return super.onCreateOptionsMenu(menu);
 	}
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-			if(llSearch.getVisibility() == View.VISIBLE){
-				llSearch.setVisibility(View.GONE);
-			}else{
-				llSearch.setVisibility(View.VISIBLE);
-			}
+		switch (item.getItemId()) {
+			case R.id.jiaoge_1://通过
+				mStatus = 0;
+				getData(LOAD_DATA,1,mStatus);
+				break;
+			case R.id.jiaoge_2://未通过
+				mStatus = 1;
+				getData(LOAD_DATA,1,mStatus);
+				break;
 
+			case R.id.action_location:
+				Intent gIntent = new Intent(MyGuangRouteListActivity.this,MyGuangQueryActivity.class);
+				startActivity(gIntent);
+				/*if(llSearch.getVisibility() == View.VISIBLE){
+					llSearch.setVisibility(View.GONE);
+				}else{
+					llSearch.setVisibility(View.VISIBLE);
+				}*/
+				break;
+		}
 		return super.onOptionsItemSelected(item);
 	}
 

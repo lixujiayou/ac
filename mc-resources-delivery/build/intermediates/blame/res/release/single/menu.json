@@ -8,6 +8,10 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/menu/main.xml"
     },
     {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/menu/menu_type2.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/menu/menu_type2.xml"
+    },
+    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/menu/zsl_menu_transmission_line.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/menu/zsl_menu_transmission_line.xml"
     },

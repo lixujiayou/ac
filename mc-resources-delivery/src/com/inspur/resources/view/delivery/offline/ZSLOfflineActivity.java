@@ -171,7 +171,7 @@ public class ZSLOfflineActivity extends BaseActivity implements OnMarkerClickLis
 	private double totalDistance = 0;
 	private double distance = 0;
 	//定位请求的间隔
-	private	int span = 2000;//2000
+	private	int span = 5000;//2000
 	//当前已累计的请求周边资源的时间间隔
 	private int curInterval = 0;
 	private Gps gps = null;
@@ -317,6 +317,8 @@ public class ZSLOfflineActivity extends BaseActivity implements OnMarkerClickLis
 		mapS.setCompassEnabled(true);
 		mapS.setAllGesturesEnabled(true);
 
+		mBaiduMap.setMapStatus(MapStatusUpdateFactory.newMapStatus(new MapStatus.Builder().zoom(21).build()));
+
 		buGo = (Button) findViewById(R.id.zsl_go);
 		buGo.setOnClickListener(new View.OnClickListener() {
 
@@ -356,7 +358,6 @@ public class ZSLOfflineActivity extends BaseActivity implements OnMarkerClickLis
 		});
 		buTakephoto = (Button) findViewById(R.id.zsl_takephoto);
 		buTakephoto.setOnClickListener(new View.OnClickListener() {
-
 			@Override
 			public void onClick(View v) {
 				if (mRouteInfoBean == null) {
@@ -377,7 +378,6 @@ public class ZSLOfflineActivity extends BaseActivity implements OnMarkerClickLis
 		});
 		buErrorReport = (Button) findViewById(R.id.zsl_error_report);
 		buErrorReport.setOnClickListener(new OnClickListener() {
-
 			@Override
 			public void onClick(View v) {
 				if (mRouteInfoBean == null) {
@@ -415,10 +415,11 @@ public class ZSLOfflineActivity extends BaseActivity implements OnMarkerClickLis
 
 				try{
 					getResourceLineBeanList(ZSLConst.curGpsLocation.getLatitude(),ZSLConst.curGpsLocation.getLongitude());
+					//getResourceLineBeanList(38.04022825689031,114.61610688070446);
+
 				}catch(Exception e){
 					Log.d("lixu", "查询资源报错"+e.toString());
 				}
-
 			}
 		});
 	}
@@ -466,31 +467,14 @@ public class ZSLOfflineActivity extends BaseActivity implements OnMarkerClickLis
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);
-//		Toast.makeText(ZSLOfflineActivity.this, "resultCode="+resultCode+",requestCode="+requestCode, Toast.LENGTH_SHORT).show();
-//		if(resultCode == 17){
-//			if(mRouteInfoBean != null){
-//			if (mRouteInfoBean.getEndPosition() == null) {
-//				mRouteInfoBean.setEndPosition(new PointlikeResourceInfoBean());
-//			}
-//			}
-//			end();
-//		}
+
 		if (resultCode == RESULT_OK) {
 			if (requestCode == REQUESTCODE_ERRORREPORT) {
-//				if (data.hasExtra("errorInfo")) {
-//					ErrorInfoBean errorInfo = (ErrorInfoBean) data.getSerializableExtra("errorInfo");
-//					if (errorInfo == null) {
-//						return;
-//					}
-//					if (mRouteInfoBean.getErrors() == null) {
-//						mRouteInfoBean.setErrors(new ArrayList<ErrorInfoBean>());
-//					}
-//					mRouteInfoBean.getErrors().add(errorInfo);
-//				}
+
 			} else if (requestCode == REQUESTCODE_TAKE_PHOTO) {
 				String pType = data.getStringExtra("mPhotoType");
 //				ArrayList<PhotoInfoBean> photoList = (ArrayList<PhotoInfoBean>) data.getSerializableExtra("photos");
-				//拍照回调时会传递本次拍照的类型,进入此逻辑为RESULT_OK，则拍照成功过，当为起点或终点拍照时需要切换交割状态
+			//	拍照回调时会传递本次拍照的类型,进入此逻辑为RESULT_OK，则拍照成功过，当为起点或终点拍照时需要切换交割状态
 				Log.d("lixu","-----返回"+pType);
 				if(ZSLConst.PHOTO_TYPE_START.equalsIgnoreCase(pType)){
 					curStatus = DeliveryStatus.ONGOING;
@@ -498,8 +482,6 @@ public class ZSLOfflineActivity extends BaseActivity implements OnMarkerClickLis
 					curStatus = DeliveryStatus.OVER;
 					//	end();
 				}
-
-
 				if (ZSLConst.PHOTO_TYPE_START.equalsIgnoreCase(pType)) {
 					if (mRouteInfoBean.getStartPosition() == null) {
 						mRouteInfoBean.setStartPosition(new PointlikeResourceInfoBean());
@@ -538,49 +520,54 @@ public class ZSLOfflineActivity extends BaseActivity implements OnMarkerClickLis
 				distance = 0;
 				markerMap.clear();
 				curInterval = 0;
+				mRouteInfoBean = null ;
 			}
 		}
-		else{
+		//else{
 			//刚开始，尚未完成起点的拍照就放弃，则直接重置本次交割过程
 			// 在这只是把状态恢复为未开始状态，不清空routeid，尽量避免后台产生空数据
-			/*	curStatus = DeliveryStatus.NOT_START;
+				/*curStatus = DeliveryStatus.NOT_START;
 				buGo.setText("开始");
 				mBaiduMap.clear();
 				reset();*/
-		}
-		/*} else {
-			if (resultCode == RESULT_CANCELED){
-				if(requestCode == REQUESTCODE_TAKE_PHOTO) {
-				//根据不同的状态来处理，当已经成功开始（完成了起点的标记和照片）应该提示拍照，如果是起点放弃了拍照则放弃整个交割过程
-				if(curStatus.equals(DeliveryStatus.ONGOING)){
-					String msg = "按照要求必须拍照!是否重新拍照?";
-					AlertDialog ad = new AlertDialog.Builder(context).setTitle("温馨提示").setMessage(msg)
-							.setPositiveButton("拍照", new DialogInterface.OnClickListener() {
-								@Override
-								public void onClick(DialogInterface dialog, int which) {
-									dialog.dismiss();
-									takePhoto(ZSLConst.PHOTO_TYPE_START,mRouteInfoBean.getStartPosition().getResourceID(),mRouteInfoBean.getStartPosition().getResourceType());
-								}
-							}).setNegativeButton("否", new DialogInterface.OnClickListener() {
+		//}
+		 else {
+			if (resultCode == RESULT_CANCELED) {
+				if (requestCode == REQUESTCODE_TAKE_PHOTO) {
+					//根据不同的状态来处理，当已经成功开始（完成了起点的标记和照片）应该提示拍照，如果是起点放弃了拍照则放弃整个交割过程
+				/*	if (curStatus.equals(DeliveryStatus.ONGOING)) {
+						String msg = "按照要求必须拍照!是否重新拍照?";
+						AlertDialog ad = new AlertDialog.Builder(context).setTitle("温馨提示").setMessage(msg)
+								.setPositiveButton("拍照", new DialogInterface.OnClickListener() {
+									@Override
+									public void onClick(DialogInterface dialog, int which) {
+										dialog.dismiss();
+										takePhoto(ZSLConst.PHOTO_TYPE_START, mRouteInfoBean.getStartPosition().getResourceID(), mRouteInfoBean.getStartPosition().getResourceType());
+									}
+								}).setNegativeButton("否", new DialogInterface.OnClickListener() {
 
-								@Override
-								public void onClick(DialogInterface dialog, int which) {
-									//TODO 视为放弃交割过程,清除本地和服务端的数据
-									CacheHelper.getInstance(getApplicationContext()).deleteObject(ZSLConst.PREFIX_OF_OFFLINE_ROUTE+routeID);
-									clearRoute();
-									mBaiduMap.clear();
-									reset();
-								}
-							}).create();
-					ad.show();
-				}else if(curStatus.equals(DeliveryStatus.START)){
-					//刚开始，尚未完成起点的拍照就放弃，则直接重置本次交割过程
-					// 在这只是把状态恢复为未开始状态，不清空routeid，尽量避免后台产生空数据
-					curStatus = DeliveryStatus.NOT_START;
-					buGo.setText("开始");
-					mBaiduMap.clear();
-					reset();
-				}*/
+									@Override
+									public void onClick(DialogInterface dialog, int which) {
+										//TODO 视为放弃交割过程,清除本地和服务端的数据
+										CacheHelper.getInstance(getApplicationContext()).deleteObject(ZSLConst.PREFIX_OF_OFFLINE_ROUTE + routeID);
+										clearRoute();
+										mBaiduMap.clear();
+										reset();
+									}
+								}).create();
+						ad.show();
+					} else*/
+				if (curStatus.equals(DeliveryStatus.START)) {
+						//刚开始，尚未完成起点的拍照就放弃，则直接重置本次交割过程
+						// 在这只是把状态恢复为未开始状态，不清空routeid，尽量避免后台产生空数据
+						curStatus = DeliveryStatus.NOT_START;
+						buGo.setText("开始");
+						mBaiduMap.clear();
+						reset();
+					}
+				}
+			}
+		}
 		/*	else if(requestCode == REQUESTCODE_SUBMIT_ROUTE){
 				curStatus = DeliveryStatus.ONGOING;
 				reset();*/
@@ -603,6 +590,7 @@ public class ZSLOfflineActivity extends BaseActivity implements OnMarkerClickLis
 		distance = 0;
 		markerMap.clear();
 		curInterval = 0;
+		mRouteInfoBean = null;
 	}
 
 	private void initLocation() {
@@ -672,39 +660,49 @@ public class ZSLOfflineActivity extends BaseActivity implements OnMarkerClickLis
 		converter.coord(new LatLng(lat,lng));
 		return converter.convert();
 	}
-
+	double dis;
+	double dis2 = 0;
 	public class MyLocationListener implements BDLocationListener {
 		private BDLocation preLocation;
 		private BDLocation preLocation2;
+
 		private void recordAndPaintTrack(BDLocation location){
+
+//			location.setLatitude(38.04022825689031);
+//			location.setLongitude(114.61610688070446);
+
 			ArrayList<LatLng> arraylist = new ArrayList<LatLng>();
 
 			if(mRouteInfoBean.getLocusPoints().size() == 0){
 				arraylist.add(coverteToBaidu(mRouteInfoBean.getStartPosition().getLatitude(),mRouteInfoBean.getStartPosition().getLongitude()));
 			}else{
-				//		arraylist.add(new LatLng(preLocation.getLatitude(), preLocation.getLongitude()));
+				//arraylist.add(new LatLng(preLocation.getLatitude(), preLocation.getLongitude()));
 				arraylist.add(new LatLng(preLocation2.getLatitude(), preLocation2.getLongitude()));
 			}
 
 			arraylist.add(new LatLng(location.getLatitude(), location.getLongitude()));
 
 			mBaiduMap.addOverlay((new PolylineOptions()).width(10).color(0xaaff0000).points(arraylist));
-
-			// Toast.makeText(ZSLOfflineActivity.this, "划线", Toast.LENGTH_SHORT).show();
-
+			//Toast.makeText(ZSLOfflineActivity.this, "划线", Toast.LENGTH_SHORT).show();
 
 			curPoint = new LocusPoint();
 			curPoint.setRouteID(routeID);
 			curPoint.setLatitude(ZSLConst.curGpsLocation.getLatitude());
 			curPoint.setLongitude(ZSLConst.curGpsLocation.getLongitude());
-			mRouteInfoBean.getLocusPoints().add(curPoint);
+
+			if(!mRouteInfoBean.getLocusPoints().contains(curPoint)){
+				mRouteInfoBean.getLocusPoints().add(curPoint);
+			}
+		//	mRouteInfoBean.getLocusPoints().add(curPoint);
 		}
 
 		@Override
 		public void onReceiveLocation(BDLocation location) {
+//			location.setLatitude(38.04022825689031);
+//			location.setLongitude(114.61610688070446);
 
 			if (location == null || mapview == null) {
-				Toast.makeText(ZSLOfflineActivity.this,"定位数据为NULL", Toast.LENGTH_SHORT).show();
+				Toast.makeText(ZSLOfflineActivity.this,"定位失败", Toast.LENGTH_SHORT).show();
 				return;
 			}
 
@@ -715,12 +713,6 @@ public class ZSLOfflineActivity extends BaseActivity implements OnMarkerClickLis
 			lastLocation = location;
 			ZSLConst.curLocation = lastLocation;
 
-			// 构造定位数据
-			  /*MyLocationData locData = new MyLocationData.Builder().accuracy(location.getRadius())
-					// 此处设置开发者获取到的方向信息，顺时针0-360
-					.direction(location.getDirection()).latitude(location.getLatitude())
-					.longitude(location.getLongitude()).build();*/
-
 
 			MyLocationData locData = new MyLocationData.Builder()
 					// 此处设置开发者获取到的方向信息，顺时针0-360
@@ -729,22 +721,6 @@ public class ZSLOfflineActivity extends BaseActivity implements OnMarkerClickLis
 					.build();
 			// 设置定位数据
 			mBaiduMap.setMyLocationData(locData);
-
-
-			//设置定位图层的配置（定位模式，是否允许方向信息，用户自定义定位图标）
-
-
-
-			// callLocationProvider();
-
-			/*//保存上次的位置信息
-				preLocation = lastLocation;
-			// 保存最新的位置信息
-			lastLocation = location;
-			ZSLConst.curLocation = lastLocation;*/
-
-			//	 	System.out.println("ZSLConst.curLocation="+ZSLConst.curLocation.getLatitude()+","+ZSLConst.curLocation.getLongitude());
-
 
 
 			if (firstLocationFlg == true) // 如果是首次定位，则跳到定位的位置
@@ -763,7 +739,11 @@ public class ZSLOfflineActivity extends BaseActivity implements OnMarkerClickLis
 				firstLocationFlg = false;
 			}
 
-			animateMyToLocation();
+		//	animateMyToLocation();
+			Log.d("qqqqqqqq","地图比例=="+mBaiduMap.getMapStatus().zoom);
+			mBaiduMap.setMapStatus(MapStatusUpdateFactory.newMapStatus(new MapStatus.Builder().zoom(mBaiduMap.getMapStatus().zoom).build()));
+
+
 			//在当前界面并且不是“未开始”和“已结束”状态，则记录轨迹点
 			if(!curStatus.equals(DeliveryStatus.NOT_START)&&!curStatus.equals(DeliveryStatus.OVER)&&inThisFace){
 				//记录轨迹点并在地图上绘制轨迹。绘制轨迹时使用百度的坐标，保存轨迹点使用标准gps坐标
@@ -772,7 +752,7 @@ public class ZSLOfflineActivity extends BaseActivity implements OnMarkerClickLis
 						mRouteInfoBean.setLocusPoints(new ArrayList<LocusPoint>());
 					}
 
-					double dis;
+
 
 					//计算距离
 					if(mRouteInfoBean.getLocusPoints().size()==0){	//如果无轨迹点，则计算起点与当前点的距离
@@ -791,28 +771,25 @@ public class ZSLOfflineActivity extends BaseActivity implements OnMarkerClickLis
 						forceSubmit();
 						return;  //直接返回 不再计算距离
 					}
+
 					if(distance > 2000){
 						//总距离大于2km为拍照强制结束
 						vibrateAndBeep();
 						Toast.makeText(ZSLOfflineActivity.this, "由于您累计2KM未选择路径点，请结束本次交割并选择最近资源点！", Toast.LENGTH_SHORT).show();
 						return;
 					}
-
-					totalDistance+=dis;
-					distance += dis;
-
-
-					if(distance>1000){//1000
-						vibrateAndBeep();
-						Toast.makeText(ZSLOfflineActivity.this, "请选择最近资源作为路径点！", Toast.LENGTH_SHORT).show();
-					}
-
-					if(dis < 5){//10
+					dis2 += dis;
+					//10
+					if(dis2 < 15){
 						//当两次定位距离小于10米时，丢弃本次数据do nothing,但是需要计算如总距离
+
 					}else{
-						if(dis > 1000){
+						if(dis > 50){
+							dis2 = 0;
 							//当在一个采集周期（2s）两点之间距离超过50米时应该是定位出现了大的偏移，所以丢弃掉这个点
 						}else{
+							distance += dis;
+							totalDistance += dis;
 							//
 							recordAndPaintTrack(location);
 
@@ -821,22 +798,16 @@ public class ZSLOfflineActivity extends BaseActivity implements OnMarkerClickLis
 							preLocation = lastLocation;
 							// 保存最新的位置信息
 							lastLocation = location;
-
+							dis = 0;
+							dis2 = 0;
 						}
 					}
 
-					/*if(mDis < 10){//10
-						//当两次定位距离小于10米时，丢弃本次数据do nothing,但是需要计算如总距离
-					}else{
-						if(mDis > 500){
-							//当在一个采集周期（2s）两点之间距离超过100米时应该是定位出现了大的偏移，所以丢弃掉这个点
-							mDis = 0;
-						}else{
-							//
-							mDis = 0;
-							recordAndPaintTrack(location);
-						}
-					}*/
+					if(distance>1000){//1000
+						vibrateAndBeep();
+						Toast.makeText(ZSLOfflineActivity.this, "请选择最近资源作为路径点！", Toast.LENGTH_SHORT).show();
+					}
+
 				}
 				//	autoLoadAroundResource();
 				//  return;
@@ -1228,6 +1199,8 @@ public class ZSLOfflineActivity extends BaseActivity implements OnMarkerClickLis
 
 
 		getResourceLineBeanList(lastLocation.getLatitude(),lastLocation.getLongitude());
+		//getResourceLineBeanList(38.04022825689031,114.61610688070446);
+
 		Toast.makeText(ZSLOfflineActivity.this, "数据加载完成后请在地图上选择资源作为结束点", Toast.LENGTH_LONG).show();
 	}
 
@@ -1422,10 +1395,8 @@ public class ZSLOfflineActivity extends BaseActivity implements OnMarkerClickLis
 	}
 
 
-
-	private long exitTime = 0;
 	public void onBackPressed() {
-//		if(!routeOperated){
+		if(!routeOperated){
 		String msg = "传输交割尚未提交, 请先处理!";
 		AlertDialog ad = new AlertDialog.Builder(context).setTitle("温馨提示").setMessage(msg)
 				.setPositiveButton("处理", new DialogInterface.OnClickListener() {
@@ -1440,26 +1411,13 @@ public class ZSLOfflineActivity extends BaseActivity implements OnMarkerClickLis
 						// 清理本地和服务端生成的数据（本地缓存的数据和服务端生成的初始化数据如routeid），发起一个删除routeid的请求
 						clearRoute();
 						finish();
-
-							/*CacheHelper.getInstance(getApplicationContext()).deleteObject(ZSLConst.PREFIX_OF_OFFLINE_ROUTE+routeID);
-							clearRoute();
-							routeOperated = true;
-							curStatus = DeliveryStatus.NOT_START;
-							buGo.setText("开始");
-							mBaiduMap.clear();*/
 						reset();
 					}
 				}).create();
 		ad.show();
-		/*}else{
-			if((System.currentTimeMillis()-exitTime) > 2000){
-	            Toast.makeText(getApplicationContext(), "再按一次退出程序", Toast.LENGTH_SHORT).show();
-	            exitTime = System.currentTimeMillis();
-	        } else {
+		}else{
 	        	super.onBackPressed();
-	        }
-
-		}*/
+		}
 
 	}
 
@@ -1714,108 +1672,110 @@ public class ZSLOfflineActivity extends BaseActivity implements OnMarkerClickLis
 
 		if (this.mProgress == null) {
 			this.mProgress = ProgressDialog.show(this, "系统提示", "正在查询周边资源...");
+			this.mProgress.setCanceledOnTouchOutside(true);
+			this.mProgress.setCancelable(true);
 		} else {
 			this.mProgress.setMessage("正在查询周边资源...");
 			this.mProgress.show();
 		}
+try {
+	new Thread(new Runnable() {
 
-		new Thread(new Runnable() {
+		@Override
+		public void run() {
+			// TODO Auto-generated method stub
 
-			@Override
-			public void run() {
-				// TODO Auto-generated method stub
+			Log.d("lixu", "查询资源中");
 
-				Log.d("lixu","查询资源中");
-
-				List<ResourceInfoBean> resourceInfoBeanList= new ArrayList<ResourceInfoBean>();
-				List<ResourceLineBean> resourceLineBeanList = new ArrayList<ResourceLineBean>();
-
-//	    Double xMax = lon+(10000.0/33/3600);
-//		Double xMin = lon-(10000.0/33/3600);
-//		Double yMax = lat+(10000.0/33/3600);
-//		Double yMin = lat-(10000.0/33/3600);
-
-				Double xMax = lon+(300.0/33/3600);
-				Double xMin = lon-(300.0/33/3600);
-				Double yMax = lat+(300.0/33/3600);
-				Double yMin = lat-(300.0/33/3600);
-
-				Log.d("lixu", "========="+xMin+"-"+xMax+"-"+yMin+"-"+yMax);
-
-				String ids = "";
-				Map<Integer,ResourceInfoBean> map = new HashMap<Integer,ResourceInfoBean>();
-
-				//查询周围点资源
-				String mSq = "select int_id as resourceID,zh_label as resourceName,resource_type as resourceType,longitude,latitude, (case when is_pass='已巡检通过' then 0 when is_pass='已巡检未通过' then 1 else 0 end) isPass from RES_RESOURCE_POINT where longitude > "+xMin+" and longitude < "+xMax+" and latitude > "+yMin+" and latitude < "+yMax;
-				Cursor cur = db_line.rawQuery(mSq, null);
-				while (cur.moveToNext()) {
-					int mId = cur.getInt(cur.getColumnIndex("resourceID"));
-					String mName = cur.getString(cur.getColumnIndex("resourceName"));
-					String mType = cur.getString(cur.getColumnIndex("resourceType"));
-					double mLon = cur.getDouble(cur.getColumnIndex("longitude"));
-					double mLat = cur.getDouble(cur.getColumnIndex("latitude"));
-					String mIsPass = cur.getString(cur.getColumnIndex("isPass"));
-
-					Log.d("lixu", mLon+"查询经纬度=="+mLat);
-
-					mTestBean = new ResourceInfoBean();
-					mTestBean.setResourceID(mId);
-					mTestBean.setResourceName(mName);
-					mTestBean.setResourceType(mType);
-					mTestBean.setLongitude(mLon);
-					mTestBean.setLatitude(mLat);
-					mTestBean.setIsPass(mIsPass);
-
-					resourceInfoBeanList.add(mTestBean);
-
-					//将int_id和对应的bean对象放入map 后面封装用到
-					ids += mId+",";
-					map.put(mId, mTestBean);
-
-					mTestBean = null;
-				}
+			List<ResourceInfoBean> resourceInfoBeanList = new ArrayList<ResourceInfoBean>();
+			List<ResourceLineBean> resourceLineBeanList = new ArrayList<ResourceLineBean>();
 
 
+			Double xMax = lon + (300.0 / 33 / 3600);
+			Double xMin = lon - (300.0 / 33 / 3600);
+			Double yMax = lat + (300.0 / 33 / 3600);
+			Double yMin = lat - (300.0 / 33 / 3600);
 
-				if(ids!=""){
-					ids = ids.substring(0, ids.length()-1);
-				}else{
-					return;
-				}
-				//点对应的段信息
-				String mSql_2 = "select id,zh_label,a_object_id,z_object_id,related_branch,type,c_length from wx_daiwei_jiaoge where 1 = 1 and a_object_id in ("+ids+") "
-						+" union all "
-						+" select id,zh_label,a_object_id,z_object_id,related_branch,type,c_length from wx_daiwei_jiaoge where 1 = 1 and z_object_id in ("+ids+") ";
-				cur = db_line.rawQuery(mSql_2, null);
-				ResourceLineBean lineBean = null;
+			String ids = "";
+			Map<Integer, ResourceInfoBean> map = new HashMap<Integer, ResourceInfoBean>();
 
-				int testNum = 1;
-				while (cur.moveToNext()) {
-					lineBean = new ResourceLineBean();
-					int related_branch = cur.getInt(cur.getColumnIndex("related_branch"));
-					int a_object_id = cur.getInt(cur.getColumnIndex("a_object_id"));
-					int z_object_id = cur.getInt(cur.getColumnIndex("z_object_id"));
+			//查询周围点资源
+			String mSq = "select int_id as resourceID,zh_label as resourceName,resource_type as resourceType,longitude,latitude, (case when is_pass='已巡检通过' then 0 when is_pass='已巡检未通过' then 1 else 0 end) isPass from RES_RESOURCE_POINT where longitude > " + xMin + " and longitude < " + xMax + " and latitude > " + yMin + " and latitude < " + yMax;
+			Log.d("qqqqqqqq", "mSq=" + mSq);
+			Cursor cur = db_line.rawQuery(mSq, null);
+			while (cur.moveToNext()) {
+				int mId = cur.getInt(cur.getColumnIndex("resourceID"));
+				String mName = cur.getString(cur.getColumnIndex("resourceName"));
+				String mType = cur.getString(cur.getColumnIndex("resourceType"));
+				double mLon = cur.getDouble(cur.getColumnIndex("longitude"));
+				double mLat = cur.getDouble(cur.getColumnIndex("latitude"));
+				String mIsPass = cur.getString(cur.getColumnIndex("isPass"));
 
-					lineBean.setRelatedBranch(related_branch);
-					//封装ResourceInfoBean start 直接取之前map中放入的bean对象
-					ResourceInfoBean startBean = map.get(a_object_id);
-					//封装ResourceInfoBean end 直接取之前map中放入的bean对象
-					ResourceInfoBean endBean = map.get(z_object_id);
-					lineBean.setStart(startBean);
-					lineBean.setEnd(endBean);
+				Log.d("lixu", mLon + "查询经纬度==" + mLat);
 
-					resourceLineBeanList.add(lineBean);
-					lineBean = null;
-				}
+				mTestBean = new ResourceInfoBean();
+				mTestBean.setResourceID(mId);
+				mTestBean.setResourceName(mName);
+				mTestBean.setResourceType(mType);
+				mTestBean.setLongitude(mLon);
+				mTestBean.setLatitude(mLat);
+				mTestBean.setIsPass(mIsPass);
 
+				resourceInfoBeanList.add(mTestBean);
 
-				if (mProgress != null) {
-					mProgress.dismiss();
-				}
+				//将int_id和对应的bean对象放入map 后面封装用到
+				ids += mId + ",";
+				map.put(mId, mTestBean);
 
-				EventBus.getDefault().post(resourceLineBeanList, ZSLConst.tag_onResourceLineBeanList_get_ok);
+				mTestBean = null;
 			}
-		}).start();
+
+			if (ids != "") {
+				ids = ids.substring(0, ids.length() - 1);
+			} else {
+				return;
+			}
+			//点对应的段信息
+			String mSql_2 = "select id,zh_label,a_object_id,z_object_id,related_branch,type,c_length from wx_daiwei_jiaoge where 1 = 1 and a_object_id in (" + ids + ") "
+					+ " union all "
+					+ " select id,zh_label,a_object_id,z_object_id,related_branch,type,c_length from wx_daiwei_jiaoge where 1 = 1 and z_object_id in (" + ids + ") ";
+			Log.d("qqqqq", "点对饮==" + mSql_2);
+			cur = db_line.rawQuery(mSql_2, null);
+			ResourceLineBean lineBean = null;
+
+			int testNum = 1;
+			while (cur.moveToNext()) {
+				lineBean = new ResourceLineBean();
+				int related_branch = cur.getInt(cur.getColumnIndex("related_branch"));
+				int a_object_id = cur.getInt(cur.getColumnIndex("a_object_id"));
+				int z_object_id = cur.getInt(cur.getColumnIndex("z_object_id"));
+
+				lineBean.setRelatedBranch(related_branch);
+				//封装ResourceInfoBean start 直接取之前map中放入的bean对象
+				ResourceInfoBean startBean = map.get(a_object_id);
+				//封装ResourceInfoBean end 直接取之前map中放入的bean对象
+				ResourceInfoBean endBean = map.get(z_object_id);
+				lineBean.setStart(startBean);
+				lineBean.setEnd(endBean);
+
+				resourceLineBeanList.add(lineBean);
+				lineBean = null;
+			}
+
+
+			if (mProgress != null) {
+				mProgress.dismiss();
+			}
+			Log.d("qqqqqqqq", "线个数==" + resourceLineBeanList.size());
+			EventBus.getDefault().post(resourceLineBeanList, ZSLConst.tag_onResourceLineBeanList_get_ok);
+		}
+	}).start();
+
+
+}catch (Exception e){
+	Toast.makeText(ZSLOfflineActivity.this,"查询异常"+e.toString(),Toast.LENGTH_SHORT).show();
+}
+
 	}
 	@Override
 	protected void onStop() {

@@ -4,12 +4,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable/abc_tab_indicator_material.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
@@ -100,24 +100,24 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable/list_default_round.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable/btn_green_selector_rectangle.xml",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/bundles/default/res/drawable/btn_green_selector_rectangle.xml"
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable/btn_selector.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable/btn_selector.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable/gis_base_selector.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable/gis_base_selector.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable/btn_selector.xml",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable/btn_selector.xml"
-    },
-    {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable/fenxianhe_base_selector.xml",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable/fenxianhe_base_selector.xml"
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable/btn_green_selector_rectangle.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/bundles/default/res/drawable/btn_green_selector_rectangle.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable/zsl_stone_base_selector.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable/zsl_stone_base_selector.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable/fenxianhe_base_selector.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable/fenxianhe_base_selector.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable/juzhan_base_selector.xml",
@@ -140,12 +140,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable/abc_seekbar_track_material.xml"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable/tongji_base_selector.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable/tongji_base_selector.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable/abc_seekbar_track_material.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
@@ -212,12 +212,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable/btn_bg_green_selector.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable/mask.png",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable/mask.png"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable/bg_edittext_focused.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable/bg_edittext_focused.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable/mask.png",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable/mask.png"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable/wheel_entry_bg.xml",

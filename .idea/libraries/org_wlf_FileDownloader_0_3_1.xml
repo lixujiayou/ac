@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="org.wlf:FileDownloader-0.3.1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/bd22d0d533d08a86af9e3146a95fc02bf6ec8d64/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/bd22d0d533d08a86af9e3146a95fc02bf6ec8d64/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.wlf/FileDownloader/0.3.1/b371c2343f79f1d1aae320106cdcae4c06d6a3a0/FileDownloader-0.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

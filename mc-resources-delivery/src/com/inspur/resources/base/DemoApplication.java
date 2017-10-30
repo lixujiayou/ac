@@ -25,10 +25,16 @@ import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 import android.widget.Toast;
+
+import org.wlf.filedownloader.FileDownloadConfiguration;
+import org.wlf.filedownloader.FileDownloader;
+
+import java.io.File;
 
 public class DemoApplication extends Application  implements OnGetGeoCoderResultListener
 {
@@ -68,6 +74,32 @@ public class DemoApplication extends Application  implements OnGetGeoCoderResult
         NoHttp.init(this);
         Logger.setTag("resource_delivery");
         Logger.setDebug(false);//开始NoHttp的调试模式, 这样就能看到请求过程和日志
+
+
+
+
+        // 1、创建Builder
+        FileDownloadConfiguration.Builder builder = new FileDownloadConfiguration.Builder(this);
+
+        // 2.配置Builder
+        // 配置下载文件保存的文件夹
+        builder.configFileDownloadDir(Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator +
+                "FileDownloader");
+        // 配置同时下载任务数量，如果不配置默认为2
+        builder.configDownloadTaskSize(3);
+        // 配置失败时尝试重试的次数，如果不配置默认为0不尝试
+        builder.configRetryDownloadTimes(5);
+        // 开启调试模式，方便查看日志等调试相关，如果不配置默认不开启
+        builder.configDebugMode(true);
+        // 配置连接网络超时时间，如果不配置默认为15秒
+        builder.configConnectTimeout(25000);// 25秒
+
+        // 3、使用配置文件初始化FileDownloader
+        FileDownloadConfiguration configuration = builder.build();
+        FileDownloader.init(configuration);
+
+
+
     }
 
     ActivityLifecycleCallbacksCompat lifecycleCallback = new ActivityLifecycleCallbacksCompat() {

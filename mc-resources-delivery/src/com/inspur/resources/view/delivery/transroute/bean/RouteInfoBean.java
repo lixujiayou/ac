@@ -18,7 +18,6 @@ public class RouteInfoBean implements Serializable
 	private PointlikeResourceInfoBean startPosition;// 起始点
 	private PointlikeResourceInfoBean endPosition;// 终止点
 	private List<LocusPoint> locusPoints;// 轨迹点
-	//	private List<PhotoInfoBean> locusPhotos;// 中途照片
 	private List<ErrorInfoBean> errors;// 隐患列表
 
 	private String matchScores;//点资源匹配率

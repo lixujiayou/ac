@@ -184,6 +184,8 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 	});
 
 	private TextView tvinfo;
+	private TextView tvinfo2;
+	private TextView tvinfo3;
 
 
 	private void start(ResourceInfoBean startRes) {
@@ -258,6 +260,8 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 
 	private void initViews() {
 		tvinfo = (TextView) findViewById(R.id.tv_info);
+		tvinfo2 = (TextView) findViewById(R.id.tv_info2);
+		tvinfo3 = (TextView) findViewById(R.id.tv_info3);
 		mapview = (MapView) findViewById(R.id.zsl_mapview);
 		mapview.showZoomControls(false);
 		mBaiduMap = mapview.getMap();
@@ -381,7 +385,7 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 						new LatLng(lastLocation.getLatitude(), lastLocation.getLongitude())).execute("");*/
 
 				Log.d("qqqqqqqq",lastLocation.getLatitude()+"======"+lastLocation.getLongitude());
-
+				Toast.makeText(ZSLTransmissionLine.this,"开始加载数据",Toast.LENGTH_SHORT).show();
 				new AroundResourceLineSearchTask(ZSLTransmissionLine.this,
 						new LatLng(lastLocation.getLatitude(), lastLocation.getLongitude())).execute("");
 
@@ -434,27 +438,10 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);
-//		Toast.makeText(ZSLTransmissionLine.this, "resultCode="+resultCode+",requestCode="+requestCode, Toast.LENGTH_SHORT).show();
-//		if(resultCode == 17){
-//			if(mRouteInfoBean != null){
-//			if (mRouteInfoBean.getEndPosition() == null) {
-//				mRouteInfoBean.setEndPosition(new PointlikeResourceInfoBean());
-//			}
-//			}
-//			end();
-//		}
+
 		if (resultCode == RESULT_OK) {
 			if (requestCode == REQUESTCODE_ERRORREPORT) {
-//				if (data.hasExtra("errorInfo")) {
-//					ErrorInfoBean errorInfo = (ErrorInfoBean) data.getSerializableExtra("errorInfo");
-//					if (errorInfo == null) {
-//						return;
-//					}
-//					if (mRouteInfoBean.getErrors() == null) {
-//						mRouteInfoBean.setErrors(new ArrayList<ErrorInfoBean>());
-//					}
-//					mRouteInfoBean.getErrors().add(errorInfo);
-//				}
+
 			} else if (requestCode == REQUESTCODE_TAKE_PHOTO) {
 				String pType = data.getStringExtra("mPhotoType");
 //				ArrayList<PhotoInfoBean> photoList = (ArrayList<PhotoInfoBean>) data.getSerializableExtra("photos");
@@ -474,6 +461,7 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 					}
 					mBaiduMap.hideInfoWindow();
 					tvinfo.setVisibility(View.GONE);
+					tvinfo2.setVisibility(View.GONE);
 					curSelectedMarker = null;
 				} else if (ZSLConst.PHOTO_TYPE_END.equalsIgnoreCase(pType)) {
 					if (mRouteInfoBean.getEndPosition() == null) {
@@ -481,10 +469,7 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 					}
 					end();
 				} else if (ZSLConst.PHOTO_TYPE_WAY.equalsIgnoreCase(pType)) {
-//					if (locusSelectedResource == null) {
-//						Toast.makeText(getApplicationContext(), "请先选择资源后再拍照", Toast.LENGTH_SHORT).show();
-//						return;
-//					}
+
 					if(mRouteInfoBean.getLocusResourcePosition() == null){
 						mRouteInfoBean.setLocusResourcePosition(new ArrayList<PointlikeResourceInfoBean>());
 					}
@@ -496,6 +481,7 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 				//成功处理了路由（保存本地或提交成功）
 				mBaiduMap.hideInfoWindow();
 				tvinfo.setVisibility(View.GONE);
+				tvinfo2.setVisibility(View.GONE);
 				curSelectedMarker = null;
 				routeOperated = true;
 				curStatus = DeliveryStatus.NOT_START;
@@ -506,55 +492,25 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 				distance = 0;
 				markerMap.clear();
 				curInterval = 0;
+
 			}
 		}
 		else{
-			//刚开始，尚未完成起点的拍照就放弃，则直接重置本次交割过程
-			// 在这只是把状态恢复为未开始状态，不清空routeid，尽量避免后台产生空数据
-			/*	curStatus = DeliveryStatus.NOT_START;
-				buGo.setText("开始");
-				mBaiduMap.clear();
-				reset();*/
-		}
-		/*} else {
-			if (resultCode == RESULT_CANCELED){
-				if(requestCode == REQUESTCODE_TAKE_PHOTO) {
-				//根据不同的状态来处理，当已经成功开始（完成了起点的标记和照片）应该提示拍照，如果是起点放弃了拍照则放弃整个交割过程
-				if(curStatus.equals(DeliveryStatus.ONGOING)){
-					String msg = "按照要求必须拍照!是否重新拍照?";
-					AlertDialog ad = new AlertDialog.Builder(context).setTitle("温馨提示").setMessage(msg)
-							.setPositiveButton("拍照", new DialogInterface.OnClickListener() {
-								@Override
-								public void onClick(DialogInterface dialog, int which) {
-									dialog.dismiss();
-									takePhoto(ZSLConst.PHOTO_TYPE_START,mRouteInfoBean.getStartPosition().getResourceID(),mRouteInfoBean.getStartPosition().getResourceType());
-								}
-							}).setNegativeButton("否", new DialogInterface.OnClickListener() {
+			if (resultCode == RESULT_CANCELED) {
+				if (requestCode == REQUESTCODE_TAKE_PHOTO) {
 
-								@Override
-								public void onClick(DialogInterface dialog, int which) {
-									//TODO 视为放弃交割过程,清除本地和服务端的数据
-									CacheHelper.getInstance(getApplicationContext()).deleteObject(ZSLConst.PREFIX_OF_OFFLINE_ROUTE+routeID);
-									clearRoute();
-									mBaiduMap.clear();
-									reset();
-								}
-							}).create();
-					ad.show();
-				}else if(curStatus.equals(DeliveryStatus.START)){
-					//刚开始，尚未完成起点的拍照就放弃，则直接重置本次交割过程
-					// 在这只是把状态恢复为未开始状态，不清空routeid，尽量避免后台产生空数据
-					curStatus = DeliveryStatus.NOT_START;
-					buGo.setText("开始");
-					mBaiduMap.clear();
-					reset();
-				}*/
-		/*	else if(requestCode == REQUESTCODE_SUBMIT_ROUTE){
-				curStatus = DeliveryStatus.ONGOING;
-				reset();*/
-//			}
-//			}
-//		}
+					if (curStatus.equals(DeliveryStatus.START)) {
+						//刚开始，尚未完成起点的拍照就放弃，则直接重置本次交割过程
+						// 在这只是把状态恢复为未开始状态，不清空routeid，尽量避免后台产生空数据
+						curStatus = DeliveryStatus.NOT_START;
+						buGo.setText("开始");
+						mBaiduMap.clear();
+						reset();
+					}
+				}
+			}
+		}
+
 	}
 
 	private void reset(){
@@ -562,6 +518,7 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 		clearRoute();
 		mBaiduMap.hideInfoWindow();
 		tvinfo.setVisibility(View.GONE);
+		tvinfo2.setVisibility(View.GONE);
 		curSelectedMarker = null;
 		routeOperated = true;
 		curStatus = DeliveryStatus.NOT_START;
@@ -640,17 +597,22 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 		converter.coord(new LatLng(lat,lng));
 		return converter.convert();
 	}
+	double dis;
+	//double dis2 = 0;
 
 	public class MyLocationListener implements BDLocationListener {
 		private BDLocation preLocation;
 		private BDLocation preLocation2;
 		private void recordAndPaintTrack(BDLocation location){
+
+			//location.setLatitude(39.07531);
+			//location.setLongitude(115.66674);
+
 			ArrayList<LatLng> arraylist = new ArrayList<LatLng>();
 
 			if(mRouteInfoBean.getLocusPoints().size() == 0){
 				arraylist.add(coverteToBaidu(mRouteInfoBean.getStartPosition().getLatitude(),mRouteInfoBean.getStartPosition().getLongitude()));
 			}else{
-				//		arraylist.add(new LatLng(preLocation.getLatitude(), preLocation.getLongitude()));
 				arraylist.add(new LatLng(preLocation2.getLatitude(), preLocation2.getLongitude()));
 			}
 
@@ -661,22 +623,27 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 			// Toast.makeText(ZSLTransmissionLine.this, "划线", Toast.LENGTH_SHORT).show();
 
 
-
 			curPoint = new LocusPoint();
 			curPoint.setRouteID(routeID);
 			curPoint.setLatitude(ZSLConst.curGpsLocation.getLatitude());
 			curPoint.setLongitude(ZSLConst.curGpsLocation.getLongitude());
 
-			if(!mRouteInfoBean.getLocusPoints().contains(curPoint)){
+		//	if(!mRouteInfoBean.getLocusPoints().contains(curPoint)){
 				Log.d("lixu", ZSLConst.curGpsLocation.getLatitude()+"=========GPS"+ZSLConst.curGpsLocation.getLatitude());
 				Log.d("lixu", location.getLongitude()+"=========百度"+location.getLatitude());
 				mRouteInfoBean.getLocusPoints().add(curPoint);
-			}
+		//	}
 
 		}
 
 		@Override
 		public void onReceiveLocation(BDLocation location) {
+
+
+			//location.setLatitude(39.07531);
+			//location.setLongitude(115.66674);
+
+
 
 			if (location == null || mapview == null) {
 				Toast.makeText(ZSLTransmissionLine.this,"定位数据为NULL", Toast.LENGTH_SHORT).show();
@@ -706,16 +673,6 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 			mBaiduMap.setMyLocationConfigeration(config);
 
 
-			// callLocationProvider();
-
-			/*//保存上次的位置信息
-				preLocation = lastLocation;
-			// 保存最新的位置信息
-			lastLocation = location;
-			ZSLConst.curLocation = lastLocation;*/
-
-			// Log.d("lixu", "-----------------");
-			// 	System.out.println("ZSLConst.curLocation="+ZSLConst.curLocation.getLatitude()+","+ZSLConst.curLocation.getLongitude());
 
 			if (firstLocationFlg == true) // 如果是首次定位，则跳到定位的位置
 			{
@@ -733,7 +690,7 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 				firstLocationFlg = false;
 			}
 
-			//animateMyToLocation();
+		//	animateMyToLocation();
 
 			//在当前界面并且不是“未开始”和“已结束”状态，则记录轨迹点
 			if(!curStatus.equals(DeliveryStatus.NOT_START)&&!curStatus.equals(DeliveryStatus.OVER)&&inThisFace){
@@ -743,11 +700,10 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 						mRouteInfoBean.setLocusPoints(new ArrayList<LocusPoint>());
 					}
 
-					double dis;
-
 					//计算距离
 					if(mRouteInfoBean.getLocusPoints().size()==0){	//如果无轨迹点，则计算起点与当前点的距离
 						dis = DistanceUtil.getDistance(coverteToBaidu(mRouteInfoBean.getStartPosition().getLatitude(),mRouteInfoBean.getStartPosition().getLongitude()) , new LatLng(location.getLatitude(),location.getLongitude()));
+					//	dis = 0;
 						//全局路程变量
 						//	mDis = DistanceUtil.getDistance(coverteToBaidu(mRouteInfoBean.getStartPosition().getLatitude(),mRouteInfoBean.getStartPosition().getLongitude()) , new LatLng(location.getLatitude(),location.getLongitude()));
 					}else{
@@ -762,25 +718,28 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 						forceSubmit();
 						return;  //直接返回 不再计算距离
 					}
-					if(distance > 2000){
+					if( distance > 2000){
 						//总距离大于2km为拍照强制结束
 						vibrateAndBeep();
 						Toast.makeText(ZSLTransmissionLine.this, "由于您累计2KM未选择路径点，请结束本次交割并选择最近资源点！", Toast.LENGTH_SHORT).show();
 						return;
 					}
 
-					totalDistance += dis;
-
-
+				//	dis2 += dis;
 					if(dis < 10){//10
-						//当两次定位距离小于10米时，丢弃本次数据do nothing,但是需要计算如总距离
+
+						Log.d("qqqqqqq",totalDistance+"=="+distance+"=不足20米当前坐标="+location.getLatitude()+","+location.getLongitude());
 					}else{
-						if(dis > 150){
-							//distance -= dis;
-							//当在一个采集周期（2s）两点之间距离超过50米时应该是定位出现了大的偏移，所以丢弃掉这个点
+						if(dis > 200){
+
+							Log.d("qqqqqqq",totalDistance+"=="+distance+"=大于100米当前坐标="+location.getLatitude()+","+location.getLongitude());
 						}else{
+
+							Log.d("qqqqqqq",totalDistance+"=="+distance+"=当前坐标="+location.getLatitude()+","+location.getLongitude());
+
 							distance += dis;
-							//
+							totalDistance += dis;
+
 							recordAndPaintTrack(location);
 
 							preLocation2 = lastLocation;
@@ -788,19 +747,15 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 							preLocation = lastLocation;
 							// 保存最新的位置信息
 							lastLocation = location;
-
 						}
-
-
-
-						if(distance>1000){//1000
-							vibrateAndBeep();
-							Toast.makeText(ZSLTransmissionLine.this, "请选择最近资源作为路径点！", Toast.LENGTH_SHORT).show();
-						}
-
 
 
 					}
+					if(distance>1000){//1000
+						vibrateAndBeep();
+						Toast.makeText(ZSLTransmissionLine.this, "请选择最近资源作为路径点！", Toast.LENGTH_SHORT).show();
+					}
+
 
 					/*if(mDis < 10){//10
 						//当两次定位距离小于10米时，丢弃本次数据do nothing,但是需要计算如总距离
@@ -949,8 +904,15 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 		super.onDestroy();
 	}
 
+
+	private List<Marker> mmResourceInfoBeanList = new ArrayList<>();
 	private void displayAroundResourcesOnMap(boolean append,
 											 List<ResourceInfoBean> mResourceInfoBeanList) {
+		if(mmResourceInfoBeanList != null && mmResourceInfoBeanList.size() != 0){
+			mmResourceInfoBeanList.clear();
+		}
+
+
 		if (append == false) // 覆盖展示
 		{
 			// 隐藏气泡，置选中的marker为空
@@ -977,12 +939,18 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 			Marker mk = (Marker) bm.addOverlay(
 					new MarkerOptions().icon(getResourceTypeIco(bean.getResourceType())).position(new LatLng(bean.getLatitude(), bean.getLongitude())));
 			markerMap.put(mk, bean);
+			mmResourceInfoBeanList.add(mk);
 		}
+
+
 	}
 
 	/*//标识当前界面是否已经有一个小段的两个端点，如果有就不需要重复绘制了
 	private boolean containTwoPoint = true;*/
 	private void displayAroundResourcesLineOnMap(boolean append, List<ResourceLineBean> mResourceLineBeanList) {
+	//	if(mmResourceInfoBeanList != null && mmResourceInfoBeanList.size() != 0){
+			mmResourceInfoBeanList.clear();
+	//	}
 		if (!append) // 覆盖展示
 		{
 			// 隐藏气泡，置选中的marker为空
@@ -1002,7 +970,7 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 			resourceInfoBeanList.clear();
 		}
 
-		Marker mk;
+		Marker mk = null;
 		ArrayList<LatLng> line;
 		LatLng startLatLng = null,endLatLng,tempLatLng;
 		CoordinateConverter converter  = new CoordinateConverter();
@@ -1035,9 +1003,11 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 					mk = (Marker) mBaiduMap.addOverlay(new MarkerOptions().icon(getResourceTypeIco(bean.getStart().getResourceType()))
 							.position(startLatLng));
 					markerMap.put(mk, bean.getStart());
+
+
 				}
 				line.add(startLatLng);
-
+				mmResourceInfoBeanList.add(mk);
 			}
 
 			if(bean.getEnd()!=null){
@@ -1053,7 +1023,7 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 					markerMap.put(mk, bean.getEnd());
 				}
 				line.add(endLatLng);
-
+				mmResourceInfoBeanList.add(mk);
 			}
 
 			if(line.size()>=2/*&&!containTwoPoint*/){
@@ -1061,6 +1031,7 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 				mBaiduMap.addOverlay((new PolylineOptions()).width(10).color(color).points(line));
 			}
 		}
+		Log.d("qqqqqqqq","mmResourceInfoBeanList判断距离"+mmResourceInfoBeanList.size());
 	}
 
 	@Subscriber(tag = ZSLConst.tag_onResourceLineBeanList_get_ok)
@@ -1088,14 +1059,174 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 			Toast.makeText(ZSLTransmissionLine.this, "请在地图上选择资源作为结束点", Toast.LENGTH_SHORT).show();
 		}*/
 	}
-
+	ResourceInfoBean clickBean;
 	@Override
-	public boolean onMarkerClick(Marker arg0) {
+	public boolean onMarkerClick(final Marker arg0) {
 		// 注意，当点击了某个marker时，不能直接认为该marker已被选中，只有弹出了小气泡时才可认为
 		// 被选中了。
 
 		Log.d("lixu", "---点击marker");
-		ResourceInfoBean clickBean = markerMap.get(arg0);
+		try {
+			if (markerMap != null && markerMap.size() != 0) {
+				clickBean = markerMap.get(arg0);
+			}
+
+
+			mmMarker = null;
+			double mmDistance = 0;
+			for (int i = 0; i < mmResourceInfoBeanList.size(); i++) {
+				//	mmResourceInfoBeanList.get(i).getPosition().latitude
+				double mm = gps2m(clickBean.getLatitude(), clickBean.getLongitude(), mmResourceInfoBeanList.get(i).getPosition().latitude, mmResourceInfoBeanList.get(i).getPosition().longitude);
+				//100
+				if (mm < 200) {
+
+					if (mmMarker == null) {
+						mmDistance = mm;
+						mmMarker = mmResourceInfoBeanList.get(i);
+					} else {
+						if (mmDistance > mm) {
+							mmDistance = mm;
+							mmMarker = mmResourceInfoBeanList.get(i);
+
+						}
+					}
+				}
+			}
+		}catch (Exception e){
+			Log.d("qqqqqqq","泵啦====="+e.toString());
+		}
+
+
+		tvinfo.setVisibility(View.VISIBLE);
+		tvinfo.setText("当前资源: "+clickBean.getResourceName());
+		mClickM = markerMap.get(mmMarker);
+		tvinfo.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				Toast.makeText(ZSLTransmissionLine.this,"已选择当前资源"+clickBean.getResourceName(),Toast.LENGTH_SHORT).show();
+				if(!isSelect){
+
+//		Toast.makeText(getApplicationContext(), "curStatus="+curStatus+",arg0="+arg0+",clickBean="+clickBean.getResourceName(), Toast.LENGTH_SHORT).show();
+					switch (curStatus) {
+						case NOT_START:// 仅查看marker信息
+							showInfoWindow(mClickM);
+							curSelectedMarker = arg0;
+							if(mmMarker != null){
+								resourceInfoBean = markerMap.get(mmMarker);
+							}
+							break;
+						case START:// 仅查看marker信息
+							showInfoWindow(markerMap.get(mmMarker));
+							curSelectedMarker = arg0;
+							if(mmMarker != null){
+								resourceInfoBean = markerMap.get(mmMarker);
+							}
+							break;
+						case ONGOING:
+							showInfoWindow(markerMap.get(mmMarker));
+							curSelectedMarker = arg0;
+
+							if (mmMarker != null) {
+								resourceInfoBean = markerMap.get(mmMarker);
+								//	ResourceInfoBean bean = markerMap.get(curSelectedMarker);
+								showLocusSelectedDialog(markerMap.get(mmMarker));
+							} else {
+
+							}
+							break;
+						case OVER:
+							showInfoWindow(markerMap.get(mmMarker));
+							curSelectedMarker = arg0;
+							if (mmMarker != null) {
+								resourceInfoBean = markerMap.get(mmMarker);
+								//		ResourceInfoBean bean = markerMap.get(curSelectedMarker);
+								showEndDialog(markerMap.get(mmMarker));
+							} else {
+
+							}
+							break;
+						case ON_REPORT_ERROR:// 该种情况认为不可能在隐患上报界面点击某个marker
+							break;
+					}
+
+				}else{
+					Bundle bundle = new Bundle();
+					bundle.putSerializable("gd", markerMap.get(mmMarker));
+					Intent gIntent = new Intent();
+					gIntent.putExtras(bundle);
+					setResult(12,gIntent);
+					finish();
+				}
+			}
+		});
+
+		if(mmMarker!=null) {
+			tvinfo2.setVisibility(View.VISIBLE);
+			tvinfo2.setText("相邻资源:" + markerMap.get(mmMarker).getResourceName());
+			tvinfo2.setOnClickListener(new OnClickListener() {
+				@Override
+				public void onClick(View view) {
+					resourceInfoBean =markerMap.get(mmMarker);
+					Toast.makeText(ZSLTransmissionLine.this,"已选择相邻资源"+markerMap.get(mmMarker).getResourceName(),Toast.LENGTH_SHORT).show();
+					if(!isSelect){
+
+//		Toast.makeText(getApplicationContext(), "curStatus="+curStatus+",arg0="+arg0+",clickBean="+clickBean.getResourceName(), Toast.LENGTH_SHORT).show();
+						switch (curStatus) {
+							case NOT_START:// 仅查看marker信息
+								showInfoWindow(mClickM);
+									curSelectedMarker = mmMarker;
+								if(mmMarker != null){
+									resourceInfoBean = markerMap.get(mmMarker);
+								}
+								break;
+							case START:// 仅查看marker信息
+								showInfoWindow(markerMap.get(mmMarker));
+									curSelectedMarker = mmMarker;
+								if(mmMarker != null){
+									resourceInfoBean = markerMap.get(mmMarker);
+								}
+								break;
+							case ONGOING:
+								showInfoWindow(markerMap.get(mmMarker));
+									curSelectedMarker = mmMarker;
+
+								if (mmMarker != null) {
+									resourceInfoBean = markerMap.get(mmMarker);
+									//	ResourceInfoBean bean = markerMap.get(curSelectedMarker);
+									showLocusSelectedDialog(markerMap.get(mmMarker));
+								} else {
+
+								}
+								break;
+							case OVER:
+								showInfoWindow(markerMap.get(mmMarker));
+										curSelectedMarker = mmMarker;
+								if (mmMarker != null) {
+									resourceInfoBean = markerMap.get(mmMarker);
+									//		ResourceInfoBean bean = markerMap.get(curSelectedMarker);
+									showEndDialog(markerMap.get(mmMarker));
+								} else {
+
+								}
+								break;
+							case ON_REPORT_ERROR:// 该种情况认为不可能在隐患上报界面点击某个marker
+								break;
+						}
+
+					}else{
+						Bundle bundle = new Bundle();
+						bundle.putSerializable("gd", markerMap.get(mmMarker));
+						Intent gIntent = new Intent();
+						gIntent.putExtras(bundle);
+						setResult(12,gIntent);
+						finish();
+					}
+				}
+			});
+		}
+
+
+
 		if(!isSelect){
 
 //		Toast.makeText(getApplicationContext(), "curStatus="+curStatus+",arg0="+arg0+",clickBean="+clickBean.getResourceName(), Toast.LENGTH_SHORT).show();
@@ -1167,6 +1298,7 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 							Toast.makeText(getApplicationContext(), "不允许选择同一个资源作为起点和终点,请重新选择", Toast.LENGTH_SHORT).show();
 							mBaiduMap.hideInfoWindow();
 							tvinfo.setVisibility(View.GONE);
+							tvinfo2.setVisibility(View.GONE);
 							curSelectedMarker = null;
 							return;
 						}
@@ -1176,6 +1308,7 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 							Toast.makeText(getApplicationContext(), "无效的结束点!请选择80米范围内的资源作为结束点!", Toast.LENGTH_SHORT).show();
 							mBaiduMap.hideInfoWindow();
 							tvinfo.setVisibility(View.GONE);
+							tvinfo2.setVisibility(View.GONE);
 							curSelectedMarker = null;
 							return;
 						}
@@ -1188,6 +1321,7 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 					public void onClick(DialogInterface dialog, int which) {
 						mBaiduMap.hideInfoWindow();
 						tvinfo.setVisibility(View.GONE);
+						tvinfo2.setVisibility(View.GONE);
 						curSelectedMarker = null;
 					}
 				}).create();
@@ -1253,6 +1387,7 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 							Toast.makeText(getApplicationContext(), "已将此资源选定为起点,请重新选择", Toast.LENGTH_SHORT).show();
 							mBaiduMap.hideInfoWindow();
 							tvinfo.setVisibility(View.GONE);
+							tvinfo2.setVisibility(View.GONE);
 							curSelectedMarker = null;
 							return;
 						}
@@ -1262,6 +1397,7 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 							Toast.makeText(getApplicationContext(), "无效的路径点!请选择80米范围内的资源作为路径点!", Toast.LENGTH_SHORT).show();
 							mBaiduMap.hideInfoWindow();
 							tvinfo.setVisibility(View.GONE);
+							tvinfo2.setVisibility(View.GONE);
 							curSelectedMarker = null;
 							return;
 						}
@@ -1276,6 +1412,7 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 					public void onClick(DialogInterface dialog, int which) {
 						mBaiduMap.hideInfoWindow();
 						tvinfo.setVisibility(View.GONE);
+						tvinfo2.setVisibility(View.GONE);
 						curSelectedMarker = null;
 					}
 				}).create();
@@ -1306,11 +1443,11 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 						if(DistanceUtil.getDistance(lastLocationLatLng, selectMarkerLocation)>590){
 							Toast.makeText(getApplicationContext(), "无效的起始点!请选择80米范围内的资源作为起始点!", Toast.LENGTH_SHORT).show();
 							mBaiduMap.hideInfoWindow();
+							tvinfo2.setVisibility(View.GONE);
 							tvinfo.setVisibility(View.GONE);
 							curSelectedMarker = null;
 							return;
 						}
-
 
 						if (routeID != 0) {
 							start(bean);
@@ -1324,6 +1461,7 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 					public void onClick(DialogInterface dialog, int which) {
 						mBaiduMap.hideInfoWindow();
 						tvinfo.setVisibility(View.GONE);
+						tvinfo2.setVisibility(View.GONE);
 						curSelectedMarker = null;
 					}
 				}).create();
@@ -1373,10 +1511,108 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 			}
 		}.start();
 	}
-
+	// 计算两点距离
+	private final double EARTH_RADIUS = 6378137.0;
+	private double gps2m(double lat_a, double lng_a, double lat_b, double lng_b) {
+		double radLat1 = (lat_a * Math.PI / 180.0);
+		double radLat2 = (lat_b * Math.PI / 180.0);
+		double a = radLat1 - radLat2;
+		double b = (lng_a - lng_b) * Math.PI / 180.0;
+		double s = 2 * Math.asin(Math.sqrt(Math.pow(Math.sin(a / 2), 2)
+				+ Math.cos(radLat1) * Math.cos(radLat2)
+				* Math.pow(Math.sin(b / 2), 2)));
+		s = s * EARTH_RADIUS;
+		s = Math.round(s * 10000) / 10000;
+		return s;
+	}
+	ResourceInfoBean mClickM;
+	Marker mmMarker;
 	private void showInfoWindow(ResourceInfoBean bean) {
+		/*mmMarker = null;
+		double mmDistance = 0;
+		for(int i = 0;i < mmResourceInfoBeanList.size();i++){
+		//	mmResourceInfoBeanList.get(i).getPosition().latitude
+			double mm = gps2m(bean.getLatitude(),bean.getLongitude(),mmResourceInfoBeanList.get(i).getPosition().latitude,mmResourceInfoBeanList.get(i).getPosition().longitude);
+			if(mm < 100.2){
+				if(mmMarker == null) {
+					mmDistance = mm;
+					mmMarker = mmResourceInfoBeanList.get(i);
+				}else{
+					if(mmDistance < mm){
+						mmDistance = mm;
+						mmMarker = mmResourceInfoBeanList.get(i);
+					}
+				}
+			}
+
+		}
+
+
 		tvinfo.setVisibility(View.VISIBLE);
 		tvinfo.setText("当前资源: "+bean.getResourceName());
+		mClickM = markerMap.get(mmMarker);
+		if(mmMarker!=null) {
+			tvinfo2.setVisibility(View.VISIBLE);
+			tvinfo2.setText("相邻资源:" + markerMap.get(mmMarker).getResourceName());
+			tvinfo2.setOnClickListener(new OnClickListener() {
+				@Override
+				public void onClick(View view) {
+					if(!isSelect){
+
+//		Toast.makeText(getApplicationContext(), "curStatus="+curStatus+",arg0="+arg0+",clickBean="+clickBean.getResourceName(), Toast.LENGTH_SHORT).show();
+						switch (curStatus) {
+							case NOT_START:// 仅查看marker信息
+								showInfoWindow(mClickM);
+							//	curSelectedMarker = arg0;
+								if(mmMarker != null){
+									resourceInfoBean = mClickM;
+								}
+								break;
+							case START:// 仅查看marker信息
+								showInfoWindow(mClickM);
+							//	curSelectedMarker = arg0;
+								if(mmMarker != null){
+									resourceInfoBean = mClickM;
+								}
+								break;
+							case ONGOING:
+								showInfoWindow(mClickM);
+							//	curSelectedMarker = arg0;
+
+								if (mmMarker != null) {
+									resourceInfoBean = mClickM;
+								//	ResourceInfoBean bean = markerMap.get(curSelectedMarker);
+									showLocusSelectedDialog(mClickM);
+								} else {
+
+								}
+								break;
+							case OVER:
+								showInfoWindow(mClickM);
+						//		curSelectedMarker = arg0;
+								if (mmMarker != null) {
+									resourceInfoBean = mClickM;
+							//		ResourceInfoBean bean = markerMap.get(curSelectedMarker);
+									showEndDialog(mClickM);
+								} else {
+
+								}
+								break;
+							case ON_REPORT_ERROR:// 该种情况认为不可能在隐患上报界面点击某个marker
+								break;
+						}
+
+					}else{
+						Bundle bundle = new Bundle();
+						bundle.putSerializable("gd", mClickM);
+						Intent gIntent = new Intent();
+						gIntent.putExtras(bundle);
+						setResult(12,gIntent);
+						finish();
+					}
+				}
+			});
+		}*/
 		LatLng latlng = new LatLng(bean.getLatitude(), bean.getLongitude());
 
 		int padding = (int) ScreenUtils.dpToPx(context, 8f);
@@ -1400,6 +1636,7 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 	public void onMapClick(LatLng arg0) {
 		mBaiduMap.hideInfoWindow();
 		tvinfo.setVisibility(View.GONE);
+		tvinfo2.setVisibility(View.GONE);
 		curSelectedMarker = null;
 	}
 
@@ -1408,10 +1645,10 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 		return false;
 	}
 
-	/*private long exitTime = 0;
+	private long exitTime = 0;
 	public void onBackPressed() {
-//		if(!routeOperated){
-		String msg = "传输交割尚未提交, 请先处理!";
+		if(!routeOperated){
+		String msg = "传输交割尚未选择终点，放弃将不保存!";
 		AlertDialog ad = new AlertDialog.Builder(context).setTitle("温馨提示").setMessage(msg)
 				.setPositiveButton("处理", new DialogInterface.OnClickListener() {
 					@Override
@@ -1426,27 +1663,27 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 						clearRoute();
 						finish();
 
-							*//*CacheHelper.getInstance(getApplicationContext()).deleteObject(ZSLConst.PREFIX_OF_OFFLINE_ROUTE+routeID);
+					//		*//*CacheHelper.getInstance(getApplicationContext()).deleteObject(ZSLConst.PREFIX_OF_OFFLINE_ROUTE+routeID);
 							clearRoute();
 							routeOperated = true;
 							curStatus = DeliveryStatus.NOT_START;
 							buGo.setText("开始");
-							mBaiduMap.clear();*//*
+							mBaiduMap.clear();
 						reset();
 					}
 				}).create();
 		ad.show();
-		*//*}else{
+		}else{
 			if((System.currentTimeMillis()-exitTime) > 2000){
-	            Toast.makeText(getApplicationContext(), "再按一次退出程序", Toast.LENGTH_SHORT).show();
+	            Toast.makeText(getApplicationContext(), "再按一次退出交割", Toast.LENGTH_SHORT).show();
 	            exitTime = System.currentTimeMillis();
 	        } else {
 	        	super.onBackPressed();
 	        }
 
-		}*//*
+		}
 
-	}*/
+	}
 
 
 	private void clearRoute() {
@@ -1626,6 +1863,8 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 		displayLineOnMap(mRouteInfoBean.getStartPosition(),mRouteInfoBean.getEndPosition(),mRouteInfoBean.getLocusPoints());
 	}
 
+
+
 	private void displayLineOnMap(PointlikeResourceInfoBean start,PointlikeResourceInfoBean end,List<LocusPoint> mLocusPointList) {
 		List<LatLng> arraylist = new ArrayList<LatLng>(mLocusPointList.size());
 		arraylist.add(coverteToBaidu(start.getLatitude(), start.getLongitude()));
@@ -1703,6 +1942,9 @@ public class ZSLTransmissionLine extends BaseActivity implements OnMarkerClickLi
 		
 		
 	}*/
+
+
+
 	}
 
 

@@ -8,12 +8,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable/background_reg.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/drawable/bottom.png",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable/bottom.png"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/drawable/fenxianhe_base_selector.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable/fenxianhe_base_selector.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/drawable/bottom.png",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable/bottom.png"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/release/drawable/diaoxian_base_selector.xml",
