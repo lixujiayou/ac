@@ -47,6 +47,9 @@ public class httpconnect
     }
 
     public String httpOnPostData(String s, final ArrayList<NameValuePair> list, final Context context) {
+        Log.d("qqqqqqqq","1========"+s);
+        Log.d("qqqqqqqq","2========"+list.toString());
+
         try {
             final BasicHttpParams basicHttpParams = new BasicHttpParams();
             HttpConnectionParams.setConnectionTimeout((HttpParams)basicHttpParams, 60000);
@@ -54,6 +57,7 @@ public class httpconnect
             final DefaultHttpClient defaultHttpClient = new DefaultHttpClient((HttpParams)basicHttpParams);
             final HttpPost httpPost = new HttpPost(s);
             httpPost.setEntity((HttpEntity)new UrlEncodedFormEntity((List)list, "UTF-8"));
+
             final HttpResponse execute = ((HttpClient)defaultHttpClient).execute((HttpUriRequest)httpPost);
             Log.d("lixu", "查询==CODE"+execute.getStatusLine().getStatusCode());
             if (execute == null || execute.getStatusLine().getStatusCode() != 200) {

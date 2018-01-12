@@ -161,7 +161,7 @@ public class OfficeRouteSubmitActivity extends BaseActivity {
 		if(routeInfo.getStartPosition()!=null){
 			qsd_edit.setText(routeInfo.getStartPosition().getResourceName());
 		}
-		if(routeInfo.getEndPosition()!=null){
+		if(routeInfo.getEndPosition() != null){
 			zzd_edit.setText(routeInfo.getEndPosition().getResourceName());
 		}
 		jgr_edit.setText(StringUtils.isEmpty(routeInfo.getDealPerson())?PreferencesUtils.getString(OfficeRouteSubmitActivity.this, "UID", ""):routeInfo.getDealPerson());
@@ -312,14 +312,9 @@ public class OfficeRouteSubmitActivity extends BaseActivity {
 					submitedOK = true;
 					RouteInfoBean routeInfoBean2 = null;
 					try {
-						//routeInfoBean = JSON.parseObject(info, RouteInfoBean.class);
 
 						routeInfoBean2 = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss Z").create()
 								.fromJson(result, new TypeToken<RouteInfoBean>() {}.getType());
-
-//					RouteInfoBean aa = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss Z").create()
-//							.fromJson(msg, new TypeToken<RouteInfoBean>() {}.getType());
-
 
 					} catch (Exception e) {
 						Log.d("lixu","---json"+e.toString());
@@ -357,24 +352,24 @@ public class OfficeRouteSubmitActivity extends BaseActivity {
 						finish();
 					}
 
-					initData(routeInfoBean2);
-					lyzt_spinner.setEnabled(false);
-					jgzt_spinner.setEnabled(false);
-					cs_save_button.setEnabled(false);
-					submit_button.setEnabled(false);
-					if(!canEdit||(routeInfoBean2.getRouteState()!=null&&routeInfoBean2.getRouteState()!=0)){
-						Toast.makeText(OfficeRouteSubmitActivity.this, "提交成功!", Toast.LENGTH_SHORT).show();
-						//如果是从我的交割过来的,编辑提交后回传新的数据以更新列表
-						if(!canEdit){
-							Intent data = new Intent();
-							data.putExtra("route", routeInfoBean2);
-							setResult(RESULT_OK,data);
-						}else{
-							setResult(RESULT_OK);
-						}
-
-						finish();
-					}
+//					initData(routeInfoBean2);
+//					lyzt_spinner.setEnabled(false);
+//					jgzt_spinner.setEnabled(false);
+//					cs_save_button.setEnabled(false);
+//					submit_button.setEnabled(false);
+//					if(!canEdit||(routeInfoBean2.getRouteState()!=null&&routeInfoBean2.getRouteState()!=0)){
+//						Toast.makeText(OfficeRouteSubmitActivity.this, "提交成功!", Toast.LENGTH_SHORT).show();
+//						//如果是从我的交割过来的,编辑提交后回传新的数据以更新列表
+//						if(!canEdit){
+//							Intent data = new Intent();
+//							data.putExtra("route", routeInfoBean2);
+//							setResult(RESULT_OK,data);
+//						}else{
+//							setResult(RESULT_OK);
+//						}
+//
+//						finish();
+//					}
 
 					break;
 				//得到routeId后

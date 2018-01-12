@@ -122,17 +122,13 @@ public class LogoActivity extends Activity {
 		//正式平台应该注释掉下面两行
 		ApplicationValue.UID = "ChoasTest";
 		PreferencesUtils.putString(LogoActivity.this, "UID", "ChoasTest");
-
-
 		startActivity(new Intent(LogoActivity.this, com.inspur.resources.view.delivery.MainActivity.class));
 	}
 
 	@Override
 	protected void onDestroy() {
 		if (null != platform)
-
 			platform.unbindService();// 注销服务
 			super.onDestroy();
-
 	}
 }

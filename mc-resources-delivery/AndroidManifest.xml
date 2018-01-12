@@ -268,19 +268,11 @@
             android:name="com.inspur.qrcode.CaptureActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
-            
         </activity>
-        
-
-            
-
-
         
         <activity android:name="com.inspur.resources.view.delivery.offline.OfficeRouteSubmitActivity"
             android:screenOrientation="portrait"
             ></activity>
-        
-
 
         <activity android:name="com.inspur.resources.view.delivery.offline.PhotoOfficeActivity"
             android:screenOrientation="portrait"
@@ -314,7 +306,6 @@
          <activity
             android:name="com.inspur.resources.view.delivery.MainActivity"
             android:screenOrientation="portrait">
-           
         </activity>
         <activity
             android:name="com.inspur.resources.view.delivery.transroute.ZSLTransmissionLine"

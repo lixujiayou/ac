@@ -88,24 +88,24 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-xhdpi/hecha_base.png"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable-xhdpi/ganluduan_base.png",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-xhdpi/ganluduan_base.png"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable-xhdpi/zsl_fujin_blue.png",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-xhdpi/zsl_fujin_blue.png"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable-xhdpi/ganluduan_base.png",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-xhdpi/ganluduan_base.png"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable-xhdpi/jifang.png",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-xhdpi/jifang.png"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable-xhdpi/round_notepad_pressed.png",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-xhdpi/round_notepad_pressed.png"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable-xhdpi/btn_save.png",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-xhdpi/btn_save.png"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable-xhdpi/round_notepad_pressed.png",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-xhdpi/round_notepad_pressed.png"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable-xhdpi/zsl_light_box.png",

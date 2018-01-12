@@ -80,6 +80,7 @@ public class AroundResourceLineSearchTask extends AsyncTask<String, String, Stri
 		//保定
 		//String json = "{\"latitude\":"+39.07531+",\"longitude\":"+115.66674+"}";
 		System.out.println(json);
+		Log.d("qqqqqqqqqq","======加载周边资源json=="+json);
 //		MyLog.i("loc", "请求数据"+json);
 		final ArrayList<NameValuePair> list = new ArrayList<NameValuePair>();
 		list.add((NameValuePair)new BasicNameValuePair("jsonRequest", json));
@@ -110,25 +111,25 @@ public class AroundResourceLineSearchTask extends AsyncTask<String, String, Stri
 			result = jsonObject.getString("result");
 
 			Log.d("qqqqqqqq","打印==result="+result+"info="+info);
-	//		ToastUtils.show(context, info+"请求结束"+result);
+			ToastUtils.show(context, info+"请求结束"+result);
 
 		} catch (JSONException e)
 		{
-//			ToastUtils.show(context, "请求异常"+e.toString());
+			ToastUtils.show(context, "请求异常"+e.toString());
 			Log.d("qqqqqqq","打印异常=="+e.toString());
 			e.printStackTrace();
 		}
 
 		if("0".equals(result))
 		{
-//			ToastUtils.show(context, "恭喜你，请求成功了"+result);
+			ToastUtils.show(context, "恭喜你，请求成功了"+result);
 			final Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss Z").create();
 			List<ResourceLineBean> resourceList = (List<ResourceLineBean>)gson.fromJson(info, new TypeToken<List<ResourceLineBean>>() {}.getType());
 			EventBus.getDefault().post(resourceList, ZSLConst.tag_onResourceLineBeanList_get_ok);
 			Log.d("qqqqqqq","打印ok");
 		}else
 		{
-//			ToastUtils.show(context, "请求失败了"+result);
+			ToastUtils.show(context, "请求失败了"+result);
 
 //			EventBus.getDefault().post(new ArrayList<ResourceLineBean>(), ZSLConst.tag_onResourceLineBeanList_get_ok);
 			ToastUtils.show(context, info);

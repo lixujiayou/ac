@@ -111,6 +111,7 @@ public class ErrorInfoZzBean implements Serializable{
 	public Integer getResId() {
 		return errorResId;
 	}
+
 	public void setResId(Integer resId) {
 		this.errorResId = resId;
 	}

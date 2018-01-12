@@ -243,7 +243,6 @@ public class RouteSubmitActivity extends BaseActivity {
 		}*/
 
 
-
 		submited = true;
 		//	Toast.makeText(RouteSubmitActivity.this, "预计处理过程持续1到3分钟，请耐心等待...", Toast.LENGTH_SHORT).show();
 		final String url = "pdaMainTask!saveTask.interface";

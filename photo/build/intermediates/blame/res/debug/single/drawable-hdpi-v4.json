@@ -1,23 +1,23 @@
 [
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_star_black_16dp.png",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable-hdpi-v4/abc_ic_star_black_16dp.png"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_popup_background_mtrl_mult.9.png",
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable-hdpi-v4/abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_star_black_16dp.png",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable-hdpi-v4/abc_ic_star_black_16dp.png"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_star_black_36dp.png",
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable-hdpi-v4/abc_ic_star_black_36dp.png"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_camera_normal.png",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/photo/res/drawable-hdpi/ic_camera_normal.png"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png",
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_camera_normal.png",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/photo/res/drawable-hdpi/ic_camera_normal.png"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_menu_cut_mtrl_alpha.png",

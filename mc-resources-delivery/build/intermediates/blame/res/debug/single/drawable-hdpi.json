@@ -16,12 +16,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-hdpi/error.png"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable-hdpi/baidu_title_star.png",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-hdpi/baidu_title_star.png"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable-hdpi/progress_bar.png",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-hdpi/progress_bar.png"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable-hdpi/baidu_title_star.png",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-hdpi/baidu_title_star.png"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable-hdpi/bg_top.png",
@@ -56,12 +56,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-hdpi/datouzhen2.png"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable-hdpi/dianyuan.png",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-hdpi/dianyuan.png"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable-hdpi/n_loading_bg.9.png",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-hdpi/n_loading_bg.9.png"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable-hdpi/dianyuan.png",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-hdpi/dianyuan.png"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable-hdpi/icon_gcoding_2.png",
@@ -96,12 +96,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-hdpi/zsl_unselect.png"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable-hdpi/iconmarka_bianse.png",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-hdpi/iconmarka_bianse.png"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable-hdpi/search_1.png",
         "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-hdpi/search_1.png"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable-hdpi/iconmarka_bianse.png",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/res/drawable-hdpi/iconmarka_bianse.png"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/drawable-hdpi/more_new.png",

@@ -4,24 +4,24 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/anim/abc_shrink_fade_out_from_bottom.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/anim/abc_slide_in_top.xml"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/anim/design_snackbar_out.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/design/build/intermediates/bundles/default/res/anim/design_snackbar_out.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/anim/abc_slide_in_top.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/anim/translate_up.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/bundles/default/res/anim/translate_up.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/anim/design_fab_out.xml",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/design/build/intermediates/bundles/default/res/anim/design_fab_out.xml"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/anim/design_fab_out.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/design/build/intermediates/bundles/default/res/anim/design_fab_out.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/anim/translate_down.xml",
@@ -36,12 +36,12 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/design/build/intermediates/bundles/default/res/anim/design_snackbar_in.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/anim/design_fab_in.xml",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/design/build/intermediates/bundles/default/res/anim/design_fab_in.xml"
-    },
-    {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/anim/design_fab_in.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/design/build/intermediates/bundles/default/res/anim/design_fab_in.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/mc-resources-delivery/build/intermediates/res/merged/debug/anim/translate_up_current.xml",

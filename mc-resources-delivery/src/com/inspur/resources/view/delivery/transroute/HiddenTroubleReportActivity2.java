@@ -877,7 +877,6 @@ public class HiddenTroubleReportActivity2 extends BaseActivity {
 		tv_u_name.setText(uid);
 
 		return errorInfoBeanGd;
-
 	}
 
 	private boolean isKong(String s){

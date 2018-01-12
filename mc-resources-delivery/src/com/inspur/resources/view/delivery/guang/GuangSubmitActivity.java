@@ -226,10 +226,20 @@ public class GuangSubmitActivity extends BaseActivity {
 				if(position == 1){
 					isErro_str =  "是";
 					ll_erro.setVisibility(View.VISIBLE);
+
+
 				}else if(position == 2){
 					isErro_str =  "否";
 					erroType_str = "";
 					ll_erro.setVisibility(View.GONE);
+					//隐患类型清空
+					erroType_spinner.setSelection(0,true);
+					erroType_str = "";
+					//隐患描述
+					erro_edit.setText("");
+
+
+
 				}else{
 					isErro_str =  "";
 					erroType_str = "";
@@ -260,6 +270,8 @@ public class GuangSubmitActivity extends BaseActivity {
 					isOk_str = "是";
 				}else if(position == 2){
 					isOk_str = "否";
+					//整改日期
+					tv_time.setText("");
 				}else{
 					isOk_str = "";
 				}
@@ -490,9 +502,11 @@ public class GuangSubmitActivity extends BaseActivity {
 		routeInfo.setYhMs(erro_edit.getText().toString().trim());
 		routeInfo.setIsZgWc(isOk_str);
 		routeInfo.setCzr(PreferencesUtils.getString(GuangSubmitActivity.this, "UID", ""));
+		if(!isOk_str.equals("否")) {
+			routeInfo.setZgDate(MyTimeUtils.getCurrentTime());
+		}else{
 
-		routeInfo.setZgDate(MyTimeUtils.getCurrentTime());
-
+		}
 		routeInfo.setJgStatus(state_str);
 
 		return routeInfo;

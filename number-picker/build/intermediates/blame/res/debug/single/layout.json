@@ -64,16 +64,16 @@
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/layout/abc_dialog_title_material.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/debug/layout/activity_photoselector.xml",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/bundles/default/res/layout/activity_photoselector.xml"
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/layout/abc_action_bar_up_container.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
         "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/layout/abc_alert_dialog_material.xml"
     },
     {
-        "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
-        "source": "/Users/lixu/AndroidStudioProjects/ac/android-support-v7-appcompat/build/intermediates/bundles/default/res/layout/abc_action_bar_up_container.xml"
+        "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/debug/layout/activity_photoselector.xml",
+        "source": "/Users/lixu/AndroidStudioProjects/ac/photo/build/intermediates/bundles/default/res/layout/activity_photoselector.xml"
     },
     {
         "merged": "/Users/lixu/AndroidStudioProjects/ac/number-picker/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
